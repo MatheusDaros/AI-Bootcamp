@@ -101,7 +101,7 @@ The only concepts you need to fully understand when interacting with this librar
   * [Text generation with LLMs](https://huggingface.co/docs/transformers/main/en/llm_tutorial#generation-with-llms) make use of _Autoregressive generation_ to iteratively infer outputs from a given input from a model
 * Practical exercises
   * Exercise 1: [Installing Hugging Face's Transformers](./project/00-Install-Transformers.md)
-  * Exercise 2: [Using a Sentiment Analysis pipeline](./project/01-Sentiment-Analysis.md)
+  * Exercise 2: [Using a Sentiment Analysis pipeline](./project/01-Sentiment-Analysis-Example.md)
     * Code and run [SentimentAnalysisExampleV0.py](./project/SentimentAnalysisExampleV0.py) and [SentimentAnalysisExampleV1.py](./project/SentimentAnalysisExampleV1.py) in this exercise
     * More examples on [Transformers quick tour](https://huggingface.co/docs/transformers/quicktour)
   * Exercise 3: [Using a Text Generation pipeline](./project/02-Text-Generation.md)
