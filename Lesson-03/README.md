@@ -1,6 +1,6 @@
 # Lesson 03: Introduction to GPTs
 
-In this lesson, we will advance to the introduction of GPTs, the Generative Pre-trained Transformers, and how they work.
+In this lesson we will advance to the introduction of GPTs, the Generative Pre-trained Transformers, and how they work.
 
 We will have a better overview on how transformers are used to train and compute outputs from models, and we will evaluate in depth the capabilities and limitations of current GPT applications.
 
