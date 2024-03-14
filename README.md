@@ -87,7 +87,7 @@ Students will gain insights from guest experts and participate in exclusive work
 
 ## Project Building Week
 
-The las week is entirely dedicated to the students' projects. They will work in groups to build a project using the concepts learned during the bootcamp. Building a project is a non negotiable requirement for the bootcamp's completion and certification.
+The last week is entirely dedicated to the students' projects. They will work in groups to build a project using the concepts learned during the bootcamp. Building a project is a non negotiable requirement for the bootcamp's completion and certification.
 
 ## Support
 
