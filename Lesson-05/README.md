@@ -8,75 +8,81 @@ Finally, we will learn how to use Vercel NextJS AI SDK to build an AI applicatio
 
 ## Pre-requisites
 
-* Learn how to use a shell/terminal/console/bash in your device
-  * Get familiar with basic commands like `cd`, `ls` and `mkdir`
-  * Learn how to execute packages, scripts and commands in your device
-* Install Node.js in your device
-  * [Node.js](https://nodejs.org/en/download/)
-* Learn how to use `npm` and `npx` commands
-  * Docs: [npm](https://docs.npmjs.com/)
-  * Docs: [npx](https://www.npmjs.com/package/npx)
-* Learn how to use `npm install` and how to deal with `node_modules` folder
-  * Docs: [npm install](https://docs.npmjs.com/cli/v10/commands/npm-install)
-* Install `git` CLI in your device
-  * [Git](https://git-scm.com/downloads)
-* Learn how to use `git` commands to clone repositories
-  * Docs: [Git](https://git-scm.com/doc)
-* Learn the basics of `javascript` programming language syntax
-  * [javascript official tutorial](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide)
-  * [Learn X in Y minutes](https://learnxinyminutes.com/docs/javascript/)
-* Learn the basics of `typescript` programming language syntax
-  * [typescript official tutorial](https://www.typescriptlang.org/docs/)
-  * [Learn X in Y minutes](https://learnxinyminutes.com/docs/typescript/)
+- Learn how to use a shell/terminal/console/bash in your device
+  - Get familiar with basic commands like `cd`, `ls` and `mkdir`
+  - Learn how to execute packages, scripts and commands in your device
+- Install Node.js in your device
+  - [Node.js](https://nodejs.org/en/download/)
+- Learn how to use `npm` and `npx` commands
+  - Docs: [npm](https://docs.npmjs.com/)
+  - Docs: [npx](https://www.npmjs.com/package/npx)
+- Learn how to use `npm install` and how to deal with `node_modules` folder
+  - Docs: [npm install](https://docs.npmjs.com/cli/v10/commands/npm-install)
+- Install `git` CLI in your device
+  - [Git](https://git-scm.com/downloads)
+- Learn how to use `git` commands to clone repositories
+  - Docs: [Git](https://git-scm.com/doc)
+- Learn the basics of `javascript` programming language syntax
+  - [javascript official tutorial](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide)
+  - [Learn X in Y minutes](https://learnxinyminutes.com/docs/javascript/)
+- Learn the basics of `typescript` programming language syntax
+  - [typescript official tutorial](https://www.typescriptlang.org/docs/)
+  - [Learn X in Y minutes](https://learnxinyminutes.com/docs/typescript/)
 
 ## Review of Lesson 04
 
-* Weekend project review
-* OpenAI APIs
-* Handling requests
-* Streaming responses
-* Model configurations
-* Prompt engineering
+- Weekend project review
+- OpenAI APIs
+- Handling requests
+- Streaming responses
+- Model configurations
+- Prompt engineering
 
 ## What is a Web Application
 
-* What are Web Applications
-* HTML, CSS and JavaScript
-* Opening a web page in a browser
+- What are Web Applications
+- HTML, CSS and JavaScript
+- Opening a web page in a browser
 
 ## Building my first web page
 
-* Practical exercises
-  * Exercise 1: [Creating a simple index.html file](./project/00-Index-HTML-Example.md) to understand what is a Web Application
-    * Code [index.html](./project/index.html) in this exercise and interact with it in your browser
-  * Exercise 2: [Generating a simple page with AI](./project/01-Web-Page-With-AI.md) to understand how ChatGPT can help us to code a simple web page
-    * Code [WebPageWithAI.html](./project/WebPageWithAI.html) in this exercise and interact with it in your browser
+- Practical exercises
+  - Exercise 1: [Creating a simple index.html file](./project/00-Index-HTML-Example.md) to understand what is a Web Application
+    - Code [index.html](./project/index.html) in this exercise and interact with it in your browser
+  - Exercise 2: [Generating a simple page with AI](./project/01-Web-Page-With-AI.md) to understand how ChatGPT can help us to code a simple web page
+    - Code [WebPageWithAI.html](./project/WebPageWithAI.html) in this exercise and interact with it in your browser
 
 ## Using a Javascript Framework
 
-* What is a JavaScript Framework
-  * TODO: Add a brief explanation of what is a JavaScript Framework
-* How to use Frameworks
-  * TODO: Add a brief explanation of how to use Frameworks and what problems they solve
-* What frameworks are most used nowadays
-  * TODO: Add a brief explanation of the most used frameworks
-* Using React.js library
-  * TODO: Add a brief explanation of what is React.js library and what is the difference between a library and a framework
-* NextJS React framework
-  * TODO: Add a brief explanation of what is NextJS and its philosophy
-* Vercel NextJS AI SDK
-  * TODO: Add a brief explanation of what is Vercel NextJS AI SDK and the AI helper features
+- What is a JavaScript Framework
+  - A `JavaScript` framework is a collection of pre-written code that provides frameworks, libraries, and design patterns to facilitate web application development.
+    JavaScript frameworks are designed to simplify common tasks in web development, such as DOM (Document Object Model) manipulation, page routing, state management, asynchronous API calls, form validation. They also provide an organized and standardized architecture for applications, facilitating maintenance and scalability.
+- How to use Frameworks
+  - To start using the framework, you need to configure the project environment and install the dependencies. After this initial step, begins the application structure, routes, components and business logic are defined using the framework's APIs and conventions. Frameworks solve development problems such as: `Complexity Abstraction`, which results in greater concentration on application logic and less on low-level implementation details; `Standardization of Practices`, has best practices and standardized coding conventions, ensuring that the project has consistency and maintainability; `Efficiency and Productivity`, by providing reusable components, libraries and utilities, frameworks eliminate the need to reinvent the wheel for common features and functionality; `Enhanced Developer Experience`, they offer features such as real-time module reloading, code splitting, and comprehensive bug reporting that streamline the development workflow and accelerate iteration cycles; another important point refers to `Scalability and Performance Optimization`, features such as server-side rendering, on-demand loading and caching mechanisms, which optimize the application's performance and resource usage.
+- What frameworks are most used nowadays
+  - Currently four frameworks are widely known in the development industry, they are:
+    - `Next.js`, is a React framework that makes it easy to build modern web applications. It offers hybrid rendering, dynamic routing, and static pre-rendering to improve application performance and scalability. With native TypeScript support and deep integration with the Vercel platform.
+    - `Vue.js`, known for its simplicity and ease of learning, offers a component-based approach and has a rich collection of plugins and extensions that facilitate the development of scalable and responsive applications.
+    - `Angular`, used for building large-scale and enterprise web applications, offers a robust and comprehensive framework that includes powerful features such as dependency injection, page routing, and state management. It has a module-based architecture.
+    - `Express.js`, a minimalist and flexible Node.js framework designed for building RESTful web applications and APIs, offers a lightweight and simple framework that simplifies the development of web servers in Node.js.
+- Using React.js library
+  - React.js is an open source library that introduces the concept of component-based development, where the user interface is divided into reusable and independent components. Each component represents a specific part of the user interface and can contain its own logic and internal state. Its main characteristic refers to the declarative approach to creating user interfaces.
+    - Difference between a library and a framework: a library offers specific functionality that can be used as needed; control is inverted, that is, developers call library functions when necessary and have the freedom to decide how and where to use them in their code. A framework provides a more comprehensive structure that guides the entire development of the application. `React.js` is considered a library because of its modular approach and the fact that developers can choose how to integrate it.
+- NextJS React framework
+  - TODO: Add a brief explanation of what is NextJS and its philosophy
+- Vercel NextJS AI SDK
+  - TODO: Add a brief explanation of what is Vercel NextJS AI SDK and the AI helper features
 
 ## Building an application using Vercel NextJS AI SDK
 
-* Practical exercises
-  * Exercise 3: [Creating a simple web application with AI](./project/02-Vercel-NextJS-AI-SDK.md) to understand how to use Vercel NextJS AI SDK
-    * Code and run a simple project using Vercel NextJS AI SDK
-  * Exercise 4: Add features by creating a [Chef GPT Page](./project/03-Chef-GPT-Page.md) to explore what we can do with NextJS
-    * Edit the project created in the previous exercise to add the new features
+- Practical exercises
+  - Exercise 3: [Creating a simple web application with AI](./project/02-Vercel-NextJS-AI-SDK.md) to understand how to use Vercel NextJS AI SDK
+    - Code and run a simple project using Vercel NextJS AI SDK
+  - Exercise 4: Add features by creating a [Chef GPT Page](./project/03-Chef-GPT-Page.md) to explore what we can do with NextJS
+    - Edit the project created in the previous exercise to add the new features
 
 ## Next steps
 
-* Adding more features
-* Implementing more AI Generation features
-* Running AI models in your own device
+- Adding more features
+- Implementing more AI Generation features
+- Running AI models in your own device
