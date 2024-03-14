@@ -44,7 +44,10 @@ We will expand in the Text Generation topic by studying how different `prompt` t
 ## OpenAI APIs
 
 * How APIs work
-  * TODO: Add a brief explanation of how APIs work
+  * Instead of running executions in your own device, an API call can run these executions in a remote server, over the internet
+    * This is useful when the execution requires a lot of computational power, or when the execution requires a lot of data that is not available in your device
+    * Sometimes you need to process sensitive data, like credentials or personal information, and you don't want to expose this data to the `client side`
+      * In these cases, you can run the execution in a `remote server` and only send the results to the `client`
 * Interacting with APIs over HTTP
   * TODO: Add a brief explanation of how to interact with APIs over HTTP
   * TODO: Explain how to do this in a python script
