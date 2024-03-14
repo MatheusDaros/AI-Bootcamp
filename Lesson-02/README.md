@@ -1,6 +1,10 @@
 # Lesson 02: Introduction to Machine Learning, Transformers and LLMs
 
-In this lesson, we will introduce the basic concepts of machine learning, transformers and GPTs to better understand how Generative AI works, their capabilities and limitations.
+In this lesson, we will introduce the basic concepts of machine learning, transformers and LLMs to better understand how Generative AI works, their capabilities and limitations.
+
+We will get practical insights on how Machine Learning models works and what they can do by using the Hugging Face's Transformers library to run pre-trained models for many AI tasks. Using this library, we will abstract away most of the complexities of using Machine Learning and other AI techniques, making it simple and quick to use and apply these models to real-world problems.
+
+For this lesson, you should have a basic understanding on how to use developer tools in your device. You should also have at least a very basic understanding of the python programming language syntax.
 
 ## Pre-requisites
 
@@ -22,6 +26,7 @@ In this lesson, we will introduce the basic concepts of machine learning, transf
 * Learn the basics of `python` programming language syntax
   * [Python official tutorial](https://docs.python.org/3.12/tutorial/index.html)
   * [Learn X in Y minutes](https://learnxinyminutes.com/docs/python/)
+* Create an account at [Hugging Face](https://huggingface.co/)
 
 ## Review of Lesson 01
 
@@ -109,5 +114,9 @@ The only concepts you need to fully understand when interacting with this librar
 
 ## Next steps
 
+* What is a _pre-trained_ model?
+* What are these _tokens_ and what is _encoding_/_decoding_?
+* What is a _prompt_?
+* What is _inference_?
 * Getting to know GPTs
 * Using OpenAI APIs for running GPTs for text-to-text tasks
