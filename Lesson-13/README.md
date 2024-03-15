@@ -1,9 +1,17 @@
-# Lesson XX:
+# Lesson 13:
+
+TODO
 
 ## Pre-requisites
 
-## Review of Lesson XX
+TODO
+
+## Review of Lesson 12
+
+TODO
 
 ## --content--
 
 ## Next steps
+
+TODO

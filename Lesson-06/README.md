@@ -1,5 +1,7 @@
 # Lesson 06: Using GPT models in your own device
 
+TODO
+
 ## Pre-requisites
 
 TODO

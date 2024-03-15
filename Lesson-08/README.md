@@ -1,5 +1,7 @@
 # Lesson 08: Building our first local AI application
 
+TODO
+
 ## Pre-requisites
 
 TODO

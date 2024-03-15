@@ -1,9 +1,17 @@
-# Lesson XX:
+# Lesson 09: Deep Dive on GPTs
+
+TODO
 
 ## Pre-requisites
 
-## Review of Lesson XX
+TODO
+
+## Review of Lesson 08
+
+TODO
 
 ## --content--
 
 ## Next steps
+
+TODO

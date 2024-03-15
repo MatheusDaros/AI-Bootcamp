@@ -1,11 +1,19 @@
-# Lesson XX:
+# Lesson 16:
+
+TODO
 
 ## Pre-requisites
 
-## Review of Lesson XX
+TODO
+
+## Review of Lesson 15
+
+TODO
 
 ## --content--
 
 ## Next steps
+
+TODO
 
 ## Final project
