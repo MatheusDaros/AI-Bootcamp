@@ -1,4 +1,4 @@
-Tutorial link: https://sdk.vercel.ai/docs/guides/providers/openai
+You can check the official tutorial from Vercel at this link: https://sdk.vercel.ai/docs/guides/providers/openai
 
 1. Create your project: This will set up a new project for you using Next.js, a popular framework for building web applications. Open your terminal and type the following command:
 
