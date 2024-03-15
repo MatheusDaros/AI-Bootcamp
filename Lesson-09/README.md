@@ -8,10 +8,10 @@ TODO
 
 ## Review of Lesson 08
 
+* Weekend project
 * Building applications using local AI services
 * Testing prompts to improve the quality and precision of generation
 * Building a storytelling application
-* Weekend project
 
 ## Running GPT models
 
