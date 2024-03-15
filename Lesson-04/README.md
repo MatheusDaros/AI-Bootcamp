@@ -29,7 +29,7 @@ We will expand in the Text Generation topic by studying how different `prompt` t
   * [Python official tutorial](https://docs.python.org/3.12/tutorial/index.html)
   * [Learn X in Y minutes](https://learnxinyminutes.com/docs/python/)
 * Create an account at [OpenAI Platform](https://platform.openai.com/)
-  - If you want to run the API Commands on the platform, set up [billing](https://platform.openai.com/account/billing/overview) and add at least **5 USD** credits to your account
+  * If you want to run the API Commands on the platform, set up [billing](https://platform.openai.com/account/billing/overview) and add at least **5 USD** credits to your account
 
 ## Review of Lesson 03
 
