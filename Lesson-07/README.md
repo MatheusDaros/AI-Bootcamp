@@ -80,5 +80,6 @@ By using the built-in OpenAI API Extension from Text Generation WebUI, we can no
 * Deepening your understanding of a _prompt_ and its role in guiding AI-generated text
 * Familiarizing yourself with the concept of inference in the context of AI models
 * Exploring the usage of OpenAI APIs for executing GPTs and other AI tasks
+* Quality and accuracy of text generation
 * Building applications
 
