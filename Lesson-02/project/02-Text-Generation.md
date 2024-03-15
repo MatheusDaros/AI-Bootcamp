@@ -2,6 +2,9 @@
 
 1. Install all of the required dependencies for this exercise
    * Run `pip install bitsandbytes auto-gptq optimum`
+  
+    >Note: bitsandbytes relies on CUDA, which is exclusively available for Nvidia GPUs. Please note that installation instructions for Windows and MacOS differ from the general instructions. For detailed guidelines on installing bitsandbytes on Windows and MacOS, refer to the official documentation [here](https://huggingface.co/docs/bitsandbytes/installation)
+
 2. Create a new Python file
    * Create a new file in your favorite code editor or simply run `touch <filename>.py` in your terminal (Linux/MacOS) or `type nul > <filename>.py` in your terminal (Windows)
      * Remember to replace `<filename>` with the name of your file
