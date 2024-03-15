@@ -1,10 +1,32 @@
 # Lesson 08: Building our first local AI application
 
-TODO
+In Lesson 08, we'll explore creating our first local AI application. Throughout the lesson, we will understand how to integrate local AI services into our applications, allowing us to perform text generation tasks directly on our own devices.
+
+During the lesson, we will perform practical exercises with a local API in our NextJS application, exploring the text generation capabilities offered by GPT templates. 
+
+We will also analyze the quality and accuracy of text generation, identifying the areas where GPT models are most effective and those where they can be improved. Finally, we will create a storytelling application using NextJS and a local API, consolidating the concepts learned during the lesson and preparing for more advanced projects.
 
 ## Pre-requisites
 
-TODO
+* Learn how to use a shell/terminal/console/bash in your device
+  * Get familiar with basic commands like `cd`, `ls` and `mkdir`
+  * Learn how to execute packages, scripts and commands in your device
+* Install Node.js in your device
+  * [Node.js](https://nodejs.org/en/download/)
+* Learn how to use `npm` and `npx` commands
+  * Docs: [npm](https://docs.npmjs.com/)
+  * Docs: [npx](https://www.npmjs.com/package/npx)
+* Learn how to use `npm install` and how to deal with `node_modules` folder
+  * Docs: [npm install](https://docs.npmjs.com/cli/v10/commands/npm-install)
+* Install `git` CLI in your device
+  * [Git](https://git-scm.com/downloads)
+* Learn how to use `git` commands to clone repositories
+  * Docs: [Git](https://git-scm.com/doc)
+* Install Next.js in your device
+  * [Next.js installation](https://nextjs.org/docs/getting-started/installation)
+* Learn about the Next.js
+  * Docs: [Next.js](https://nextjs.org/docs)
+
 
 ## Review of Lesson 07
 
@@ -79,4 +101,7 @@ For consolidating the knowledge acquired in this week, the students should compl
 
 ## Next steps
 
-TODO
+* Implementing GPT models;
+* Training with GPT;
+* Experimenting with GPT-2 and Fine-tuning GPT-2;
+* Practical exercises;
