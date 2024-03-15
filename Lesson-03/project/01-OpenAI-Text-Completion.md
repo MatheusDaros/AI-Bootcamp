@@ -61,7 +61,7 @@
 
    * The `model` parameter is the name of the model that you want to use to generate the text
      * The models available to use from OpenAI API are listed in the [Models](https://platform.openai.com/docs/models/overview) API documentation
-   * The `messages` parameter is a list of messages that you want to use to use as `prompt` generate the text
+   * The `messages` parameter is a list of messages that you want to use as `prompt` to generate the text
      * This example is using a set of instructions for separating the _roles_ of different _actors_ in the chat conversation
    * The `stream` parameter is a boolean that indicates if the response should be streamed or not
      * By default the API will wait for the model inference to be completed and return the result in a single response
