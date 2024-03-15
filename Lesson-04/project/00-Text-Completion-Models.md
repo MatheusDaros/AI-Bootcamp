@@ -132,17 +132,31 @@
     * `gpt-4-0125-preview`: Up to Dec 2023 
     *  This refers to the time at which the data used to train the model ends
 
-15. **Accuracy and performance metrics**: 
+15. According to the training data cut-off try in each model to ask about something that happened after the cut-off. As an example try to use as prompt:
+    ```text
+    When did the current war between Russia and Ukraine started?
+    ```
+
+16. **Accuracy and performance metrics**: 
     * `gpt-3.5-turbo`: This model has shown to perform well on a variety of tasks. Fine-tuning can improve its performance, making it match or even outperform base GPT-4-level capabilities on certain narrow tasks
     * `gpt-4`:  GPT-4 exhibits human-level performance on various professional and academic benchmarks. For example, it passes a simulated bar exam with a score around the top 10% of test-takers2. It is more reliable, creative, and able to handle much more nuanced instructions than GPT-3.5
     * `gpt-4-0125-preview` This is the latest version of GPT-4 intended to reduce cases of “laziness” where the model doesn’t complete a task. It shares the same capabilities as GPT-4.
 
-16. **Pricing**: 
-    * `gpt-3.5-turbo`: The cost for using GPT-3.5-turbo is $0.002 per 1,000 tokens
-    * `gpt-4`:  The input price for GPT-4 is $0.03 per 1,000 tokens and the output price is $0.06 per 1,000 tokens
-    * `gpt-4-0125-preview` The pricing for this model is the same as GPT-4
+17. **Pricing**:
+    Taking as example this text:
+    
+    
+    ```text
+    Author-contribution statements and acknowledgements in research papers should state clearly and specifically whether, and to what extent, the authors used AI technologies such as ChatGPT in the preparation of their manuscript and analysis. They should also indicate which LLMs were used. This will alert editors and reviewers to scrutinize manuscripts more carefully for potential biases, inaccuracies and improper source crediting. Likewise, scientific journals should be transparent about their use of LLMs, for example when selecting submitted manuscripts.
 
-17. **Context window**: 
+    Mention the large language model based product mentioned in the paragraph above:
+    ```
+    The text has a input of 119 tokens.
+    * `gpt-3.5-turbo`: The cost for input using GPT-3.5-turbo is $0.0000595. The output consisted of 3 tokens, resulting in a cost of $0000045 if it were like the other with 16 tokens it should be $0.000024
+    * `gpt-4`:  The cost for input using GPT-4 is $0.00357. The output consisted of 16 tokens, resulting in a cost of $0.00096
+    * `gpt-4-0125-preview`: The cost for input using GPT-4-0125-preview is $0.00119. The output consisted of 16 tokens, resulting in a cost of $00048
+
+18. **Context window**: 
     * `gpt-3.5-turbo`: 16,385 tokens
     * `gpt-4`: 8,192 tokens 
     * `gpt-4-0125-preview`: 128,000 tokens 
