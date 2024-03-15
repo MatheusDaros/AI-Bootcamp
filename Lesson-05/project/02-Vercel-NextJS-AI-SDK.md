@@ -65,7 +65,7 @@ export async function POST(req: Request) {
 
 11. Modify the UI with the chat components: 
     * In VSCode, open the file 'page.tsx' inside the folder 'app'
-    * Replace the existing code with the following code:
+    * Replace the existing code with the following:
 
 ```js
 'use client';
