@@ -38,7 +38,7 @@ We will expand in the Text Generation topic by studying how different `prompt` t
 * Capabilities and limitations
 * Use cases
 * Applications using GPTs
-* How to use GPTs with the `transformes` package
+* How to use GPTs with the `transformers` package
 * How to use GPTs with API calls
 
 ## OpenAI APIs
