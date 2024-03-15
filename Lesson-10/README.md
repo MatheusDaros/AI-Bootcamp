@@ -8,7 +8,10 @@ TODO
 
 ## Review of Lesson 09
 
-TODO
+* Types of models
+* Hardware requirements and tweaking models to run in your hardware
+* Overview of GPT training
+* Fine-tuning GPT-2
 
 ## Overcoming the limitations of GPTs
 

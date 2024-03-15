@@ -8,8 +8,10 @@ TODO
 
 ## Review of Lesson 08
 
-* Weekend project review
-TODO
+* Building applications using local AI services
+* Testing prompts to improve the quality and precision of generation
+* Building a storytelling application
+* Weekend project
 
 ## Running GPT models
 
@@ -75,4 +77,7 @@ TODO
 
 ## Next steps
 
-TODO
+* Overcoming the limitations of GPTs
+* Understanding what a GPT assistant is
+* Building and testing an Assistant with OpenAI APIs
+* Exploring Retrieval-Augmented Generation (RAG)
