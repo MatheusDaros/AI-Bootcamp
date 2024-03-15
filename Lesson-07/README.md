@@ -1,12 +1,43 @@
 # Lesson 07: Using Text Generation WebUI
 
+In this lesson, we will delve into the practical application of Generative AI by exploring the Text Generation WebUI tool. Text Generation WebUI offers a user-friendly interface to interact with various [GPT models](https://platform.openai.com/docs/models), allowing us to generate text for a multitude of tasks and scenarios.
+
+By abstracting away complexities and providing a streamlined workflow, this tool empowers us to leverage the power of Generative AI more effectively.
+
+Prior to diving into this lesson, it is recommended to have a basic understanding of developer tools and a rudimentary grasp of Python programming syntax. With these prerequisites in place, we can explore the capabilities of Text Generation WebUI and harness its potential to address real-world challenges through AI-driven text generation.
+
 ## Pre-requisites
 
-TODO
+* Learn how to use a shell/terminal/console/bash in your device
+  * Get familiar with basic commands like `cd`, `ls` and `mkdir`
+  * Learn how to execute packages, scripts and commands in your device
+* Install python tools in your device
+  * [Python](https://www.python.org/downloads/)
+  * [Pip](https://pip.pypa.io/en/stable/installation/)
+* Learn how to use `python` and `pip` commands
+  * Docs: [Python](https://docs.python.org/3/)
+  * Docs: [Pip](https://pip.pypa.io/en/stable/)
+* Learn how to use `venv` to create and manage virtual environments
+  * Docs: [Python venv](https://docs.python.org/3/library/venv.html)
+* Install `git` CLI in your device
+  * [Git](https://git-scm.com/downloads)
+* Learn how to use `git` commands to clone repositories
+  * Docs: [Git](https://git-scm.com/doc)
+* Learn the basics of `python` programming language syntax
+  * [Python official tutorial](https://docs.python.org/3.12/tutorial/index.html)
+  * [Learn X in Y minutes](https://learnxinyminutes.com/docs/python/)
+* Create an account at [OpenAI Platform](https://platform.openai.com/)
+  * If you want to run the API Commands on the platform, set up [billing](https://platform.openai.com/account/billing/overview) and add at least **5 USD** credits to your account
+* Basic knowledge about Artificial Intelligence (AI)
+  * [OpenAI Platform Introduction](https://platform.openai.com/docs/introduction)
 
 ## Review of Lesson 06
 
-TODO
+* Running models 
+* Capabilities of the Vercel NextJS AI SDK
+* Generative AI Tools
+* Creating the frontend code
+
 
 ## Exploring different models
 
@@ -46,4 +77,8 @@ By using the built-in OpenAI API Extension from Text Generation WebUI, we can no
 
 ## Next steps
 
-TODO
+* Deepening your understanding of a _prompt_ and its role in guiding AI-generated text
+* Familiarizing yourself with the concept of inference in the context of AI models
+* Exploring the usage of OpenAI APIs for executing GPTs and other AI tasks
+* Building applications
+
