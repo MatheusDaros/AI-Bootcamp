@@ -21,9 +21,9 @@ We will overview the image generation techniques involving multi-modal models, n
 * Learn how to use `git` commands to clone repositories
   * Docs: [Git](https://git-scm.com/doc)
 * Learn about the `OpenAi`
- * Docs: [OpenAi](https://platform.openai.com/docs/)
-*Learn about the `OpenAi Models`
- * [OpenAi Models](https://platform.openai.com/docs/models/overview)
+  * Docs: [OpenAi](https://platform.openai.com/docs/)
+* Learn about the `OpenAi Models`
+  * [OpenAi Models](https://platform.openai.com/docs/models/overview)
 
 ## Review of Lesson 10
 
