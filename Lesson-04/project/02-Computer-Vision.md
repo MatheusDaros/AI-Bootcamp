@@ -49,7 +49,7 @@
 
      * Have caution if you prefer to hardcode your key in this file, since this could lead to you inadvertently sharing your key with others
 
-7. Call the [Vision](https://platform.openai.com/docs/api-reference/images) endpoint in the `client` with the following parameters:
+7. Call the [Vision](https://platform.openai.com/docs/guides/vision) endpoint in the `client` with the following parameters:
 
    ```python
    response = client.chat.completions.create(
