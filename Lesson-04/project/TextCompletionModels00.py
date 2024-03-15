@@ -16,11 +16,9 @@ for model in models:
     stream = client.chat.completions.create(
         model=model,
         messages=messages,
-        stream=False,
+        stream=True,
     )
-    # for chunk in stream:
-    #     print(chunk.choices[0].delta.content or "", end="")
-    print(stream.usage)
-    print(stream.choices[0].message.content)
+    for chunk in stream:
+        print(chunk.choices[0].delta.content or "", end="")
         
     print("\n\n---\n")
