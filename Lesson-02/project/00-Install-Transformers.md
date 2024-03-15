@@ -5,7 +5,7 @@
    * Run `python -m venv .env` (Linux/MacOS) or `py -m venv .venv` (Windows) to create a virtual environment in your project's folder
 2. Activate the virtual environment
    * venv [docs](https://docs.python.org/3/library/venv.html)
-   * Run `source .env/bin/activate` (Linux/MacOS) or `source .env/Scripts/activate` (Windows) to activate the virtual environment
+   * Run `source .env/bin/activate` (Linux/MacOS) or `source .venv/Scripts/activate` (Windows) to activate the virtual environment
 3. Install the `transformers` package with `pip`
    * pip [docs](https://pip.pypa.io/en/stable/)
    * Run `pip install transformers` to install the `transformers` package
