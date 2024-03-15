@@ -22,7 +22,7 @@ You can check the official tutorial from Vercel at this link: https://sdk.vercel
 
 6. Create a `.env` file: This is a special file where you can store things like API keys. In the root folder of your project, create a new file named `.env`
 
-7. Paste the API key: You need an API key to use OpenAI's services. For now, paste `OPENAI_API_KEY=xxx` into the `.env` (to save the file, press 'Ctrl + S')
+7. Paste the API key: You need an API key to use OpenAI's services. For now, paste `OPENAI_API_KEY=xxx` into the `.env` and save the file
 
 8. Get an API Key: This is the same key you set up in Exercise 2 of Lesson 01. If you've lost it, don't worry. You can get a new one from https://platform.openai.com/api-keys
 
