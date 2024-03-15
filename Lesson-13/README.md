@@ -8,6 +8,7 @@ TODO
 
 ## Review of Lesson 12
 
+* Weekend project review
 TODO
 
 ## --content--
