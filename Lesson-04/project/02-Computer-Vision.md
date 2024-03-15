@@ -75,7 +75,7 @@
    * The `model` parameter is the name of the model that you want to use to analyze the image 
      * The models available to use from OpenAI API are listed in the [Models](https://platform.openai.com/docs/models/overview) API documentation
    * The `messages` parameter is a list of messages that you want to send to the model
-     * You can provide an image either by passing a link to the image in the `image_url` parameter or by encoding the image as a base64 string within the same parameter
+     * You can provide an image either by passing a link to the image in the `image_url` parameter or by encoding the image as a base64 string within the same parameter. Check the [Vision](https://platform.openai.com/docs/guides/vision) guide for more information
    * The `max_tokens` parameter is the maximum number of tokens to generate in the response
 
 8. Print the response
