@@ -49,7 +49,7 @@
 
      * Have caution if you prefer to hardcode your key in this file, since this could lead to you inadvertently sharing your key with others
 
-7. Call the [Vision](https://platform.openai.com/docs/guides/vision) endpoint in the `client` with the following parameters:
+7. Call the [Chat Completion](https://platform.openai.com/docs/guides/vision) endpoint in the `client` with the following parameters:
 
    ```python
    response = client.chat.completions.create(
@@ -106,6 +106,6 @@
     The image shows a beautiful nature scene with a wooden boardwalk stretching through a lush green meadow. The sky is partly cloudy with blue patches showing through, suggesting a pleasant day. The meadow appears to be tall grass or a wetland environment. The boardwalk serves as a walking path that allows visitors to enjoy the natural surroundings without disturbing the ecosystem. There are no people visible in the image, which adds to the peaceful and serene atmosphere. The greenery is vibrant and appears well-lit by the sunlight, indicating that the photo was taken during a time of day when the sun was shining brightly.
     ```
 
-11. Experiment with the [Vision API Parameters](https://platform.openai.com/docs/api-reference/chat/create) to test how the model behaves with different inputs and configurations
+11. Experiment with the [Chat Completion API Parameters](https://platform.openai.com/docs/api-reference/chat) to test how the model behaves with different inputs and configurations
 
 >View more information about the OpenAI API at <https://platform.openai.com/docs> and the OpenAI Python Package at <https://github.com/openai/openai-python>
