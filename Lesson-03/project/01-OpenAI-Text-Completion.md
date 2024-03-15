@@ -110,6 +110,6 @@
     7. Press and serve: If desired, heat your sandwich in a panini press or skillet to melt the cheese and toast the bread. Otherwise, simply slice your sandwich in half and enjoy!%
     ```
 
-11. Experiment with the [Chat Completion API Parameters](https://platform.openai.com/docs/api-reference/completions) to test how the model behaves with different inputs and configurations
+11. Experiment with the [Chat Completion API Parameters](https://platform.openai.com/docs/api-reference/chat) to test how the model behaves with different inputs and configurations
 
 >View more information about the OpenAI API at <https://platform.openai.com/docs> and the OpenAI Python Package at <https://github.com/openai/openai-python>
