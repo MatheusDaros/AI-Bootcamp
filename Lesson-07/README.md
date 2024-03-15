@@ -1,6 +1,6 @@
 # Lesson 07: Using Text Generation WebUI
 
-In this lesson, we will delve into the practical application of Generative AI by exploring the Text Generation WebUI tool. Text Generation WebUI offers a user-friendly interface to interact with various [GPT models](https://platform.openai.com/docs/models), allowing us to generate text for a multitude of tasks and scenarios.
+In this lesson, we will delve into the practical application of Generative AI by exploring the Text Generation WebUI tool. Text Generation WebUI offers a user-friendly interface to interact with various [GPT models](https://huggingface.co/models), allowing us to generate text for a multitude of tasks and scenarios.
 
 By abstracting away complexities and providing a streamlined workflow, this tool empowers us to leverage the power of Generative AI more effectively.
 
@@ -23,13 +23,7 @@ Prior to diving into this lesson, it is recommended to have a basic understandin
   * [Git](https://git-scm.com/downloads)
 * Learn how to use `git` commands to clone repositories
   * Docs: [Git](https://git-scm.com/doc)
-* Learn the basics of `python` programming language syntax
-  * [Python official tutorial](https://docs.python.org/3.12/tutorial/index.html)
-  * [Learn X in Y minutes](https://learnxinyminutes.com/docs/python/)
-* Create an account at [OpenAI Platform](https://platform.openai.com/)
-  * If you want to run the API Commands on the platform, set up [billing](https://platform.openai.com/account/billing/overview) and add at least **5 USD** credits to your account
-* Basic knowledge about Artificial Intelligence (AI)
-  * [OpenAI Platform Introduction](https://platform.openai.com/docs/introduction)
+* Install and run [Text Generation WebUI](https://github.com/oobabooga/text-generation-webui?tab=readme-ov-file#how-to-install) in your device
 
 ## Review of Lesson 06
 
@@ -37,7 +31,6 @@ Prior to diving into this lesson, it is recommended to have a basic understandin
 * Capabilities of the Vercel NextJS AI SDK
 * Generative AI Tools
 * Creating the frontend code
-
 
 ## Exploring different models
 
@@ -77,9 +70,7 @@ By using the built-in OpenAI API Extension from Text Generation WebUI, we can no
 
 ## Next steps
 
-* Deepening your understanding of a _prompt_ and its role in guiding AI-generated text
-* Familiarizing yourself with the concept of inference in the context of AI models
-* Exploring the usage of OpenAI APIs for executing GPTs and other AI tasks
-* Quality and accuracy of text generation
-* Building applications
-
+* Exploring more features of Text Generation WebUI
+* Experimenting with local GPTs
+* Testing different prompting techniques
+* Building an application using the local API
