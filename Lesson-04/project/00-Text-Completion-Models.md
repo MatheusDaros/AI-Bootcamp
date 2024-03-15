@@ -162,4 +162,10 @@
     * `gpt-4-0125-preview`: 128,000 tokens 
     * This refers to the amount of text that the model can consider when generating a response 
   
+19. Let's test the behavior of the gpt when using 10k tokens and  20k, use example file `TextCompletionModels02.py` run it one time and see what happens. To test the behavior with 20,000 tokens, you'll want to comment out this line and uncomment the line that assigns the `twenty_thousand_token_message` to `messages`. Here's how you can do it:
+
+    ```python
+    # messages = ten_thousand_token_message
+    messages = twenty_thousand_token_message
+    ```
   >For more information about each model, go to  <https://platform.openai.com/docs/models>
