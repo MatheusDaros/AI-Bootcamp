@@ -1,4 +1,4 @@
-# Lesson 13:
+# Lesson 13: Running Stable Diffusion Model Locally
 
 TODO
 

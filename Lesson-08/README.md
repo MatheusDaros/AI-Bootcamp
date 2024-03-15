@@ -1,4 +1,4 @@
-# Lesson 08: Building our first local AI application
+# Lesson 08: Building our First Local AI Application
 
 TODO
 

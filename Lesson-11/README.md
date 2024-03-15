@@ -1,4 +1,4 @@
-# Lesson 11: Exploring more AI models
+# Lesson 11: Exploring more AI Models
 
 TODO
 

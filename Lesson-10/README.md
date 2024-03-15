@@ -1,4 +1,4 @@
-# Lesson 10: Extending the capabilities of GPTs
+# Lesson 10: Extending the Capabilities of GPTs
 
 TODO
 

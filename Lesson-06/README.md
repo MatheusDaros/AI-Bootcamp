@@ -1,4 +1,4 @@
-# Lesson 06: Using GPT models in your own device
+# Lesson 06: Using GPT Models in Your Own Device
 
 TODO
 
