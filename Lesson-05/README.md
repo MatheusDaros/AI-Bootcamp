@@ -69,9 +69,9 @@ Finally, we will learn how to use Vercel NextJS AI SDK to build an AI applicatio
   - React.js is an open source library that introduces the concept of component-based development, where the user interface is divided into reusable and independent components. Each component represents a specific part of the user interface and can contain its own logic and internal state. Its main characteristic refers to the declarative approach to creating user interfaces.
     - Difference between a library and a framework: a library offers specific functionality that can be used as needed; control is inverted, that is, developers call library functions when necessary and have the freedom to decide how and where to use them in their code. A framework provides a more comprehensive structure that guides the entire development of the application. `React.js` is considered a library because of its modular approach and the fact that developers can choose how to integrate it.
 - NextJS React framework
-  - TODO: Add a brief explanation of what is NextJS and its philosophy
+  - Next.js is a React framework that simplifies the development of modern web applications by offering features such as hybrid rendering, dynamic routing, and static pre-rendering. Its philosophy is centered on efficiency and scalability, providing a robust framework for rapid construction and simplified deployment.
 - Vercel NextJS AI SDK
-  - TODO: Add a brief explanation of what is Vercel NextJS AI SDK and the AI helper features
+  - `The Vercel Next.js AI SDK` is an extension to the Vercel platform that adds artificial intelligence (AI) capabilities to Next.js. It offers AI features for development assistance, such as code completion, intelligent component suggestions, and integrations with AI APIs, simplifying the process of building AI-powered applications.These features help developers write more efficient code, identify common errors, and speed up the development process.
 
 ## Building an application using Vercel NextJS AI SDK
 
