@@ -1,14 +1,36 @@
 # Lesson 11: Exploring more AI models
 
-TODO
+In Lesson 11, we will dive deeper into the realm of AI models, exploring a variety of text generation, code generation, and image generation models. We will compare different models such as GPT, Llama, Claude, Mistral, and Gemma to understand their strengths and weaknesses in generating text. 
+
+We will overview the image generation techniques involving multi-modal models, neural network-based models, and transformers-based models, understanding their advantages and applications.
 
 ## Pre-requisites
 
-TODO
+* Learn how to use a shell/terminal/console/bash in your device
+  * Get familiar with basic commands like `cd`, `ls` and `mkdir`
+  * Learn how to execute packages, scripts and commands in your device
+* Install Node.js in your device
+  * [Node.js](https://nodejs.org/en/download/)
+* Learn how to use `npm` and `npx` commands
+  * Docs: [npm](https://docs.npmjs.com/)
+  * Docs: [npx](https://www.npmjs.com/package/npx)
+* Learn how to use `npm install` and how to deal with `node_modules` folder
+  * Docs: [npm install](https://docs.npmjs.com/cli/v10/commands/npm-install)
+* Install `git` CLI in your device
+  * [Git](https://git-scm.com/downloads)
+* Learn how to use `git` commands to clone repositories
+  * Docs: [Git](https://git-scm.com/doc)
+* Learn about the `OpenAi`
+ * Docs: [OpenAi](https://platform.openai.com/docs/)
+*Learn about the `OpenAi Models`
+ * [OpenAi Models](https://platform.openai.com/docs/models/overview)
 
 ## Review of Lesson 10
 
-TODO
+* GPT Assistants
+* Assistant with OpenAI APIs
+* Limitations of GPTs and ways to overcome them
+* Retrieval-Augmented Generation (RAG)
 
 ## Comparing Text Generation Models
 
@@ -99,4 +121,8 @@ TODO
 
 ## Next steps
 
-TODO
+* Stable diffusion
+* Modern AI models for image generation
+* OpenAI Image Generation APIs
+* Generating Images with DALL·E using Python
+* Practical exercise
