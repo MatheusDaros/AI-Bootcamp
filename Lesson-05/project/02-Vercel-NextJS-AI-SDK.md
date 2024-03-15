@@ -100,4 +100,4 @@ export default function Chat() {
 
     `npm run dev`
 
-    * If everithing is okay, you can now access the application in http://localhost:3000/
+    * If everything is okay, you can now access the application at http://localhost:3000/
