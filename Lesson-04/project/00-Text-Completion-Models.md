@@ -1,15 +1,26 @@
 # OpenAI's API using text completion models
 
-1.  Make sure that you have everything configured check [`here`](../../Lesson-03/project/01-OpenAI-Text-Completion.md)
+1. Make sure that you have set up your keys correctly with the exercise `01-OpenAI-Key.md` from Lesson 01
 
-2.  Write a code to call chat completions api using `gpt-3.5-turbo` vs `gpt-4` vs `gpt-4-0125-preview`
-3.  Create a new Python file
+2. Make sure that your `venv` is activates
+
+3. Run the following code in your terminal:
+
+   ```bash
+   pip install openai
+   ```
+
+   * This command will install the `openai` [API Package](https://github.com/openai/openai-python) in your environment
+
+4.  Write a code to call chat completions api using `gpt-3.5-turbo` vs `gpt-4` vs `gpt-4-0125-preview`
+
+5.  Create a new Python file
 
     * Create a new file in your favorite code editor or simply run `touch <filename>.py` in your terminal (Linux/MacOS) or `type nul > <filename>.py` in your terminal (Windows)
 
     * Remember to replace `<filename>` with the name of your file
 
-4.  Import the `openai` module in your file
+6.  Import the `openai` module in your file
 
     ```python
     from openai import OpenAI
@@ -19,7 +30,7 @@
 
     * To use this library correctly, all you need to do is to understand well the [API parameters](https://platform.openai.com/docs) that you want to consume
 
-5.  Create a new `client` instance
+7.  Create a new `client` instance
 
     ```python
     client = OpenAI()
@@ -42,7 +53,7 @@
 
       * Have caution if you prefer to hardcode your key in this file, since this could lead yo you inadvertently sharing your key with others
 
-6.  Write a variable with the message to test in the loop:
+8.  Write a variable with the message to test in the loop:
 
     ```python
     messages = [
@@ -53,14 +64,14 @@
     ]
     ```
 
-7.  Do and array with the gpt's models:
+9.  Do and array with the gpt's models:
 
     ```python
     models = ["gpt-3.5-turbo", "gpt-4", "gpt-4-0125-preview"]
 
     ```
 
-8.  Call the [Chat Completion](https://platform.openai.com/docs/guides/text-generation/chat-completions-api) endpoint in the `client` with the following parameters:
+10. Call the [Chat Completion](https://platform.openai.com/docs/guides/text-generation/chat-completions-api) endpoint in the `client` with the following parameters:
 
     ```python
     for model in models:
@@ -90,13 +101,15 @@
           print(chunk.choices[0].delta.content or "", end="")
       ```
 
-9.  Use the following prompt for your chat completions:
+11.  Use the following prompt for your chat completions:
 
     ```text
-    Generate an HTML file with a simple chat interface and include a script to send the message somewhere when you click the "generate" button
+    Author-contribution statements and acknowledgements in research papers should state clearly and specifically whether, and to what extent, the authors used AI technologies such as ChatGPT in the preparation of their manuscript and analysis. They should also indicate which LLMs were used. This will alert editors and reviewers to scrutinize manuscripts more carefully for potential biases, inaccuracies and improper source crediting. Likewise, scientific journals should be transparent about their use of LLMs, for example when selecting submitted manuscripts.
+
+    Mention the large language model based product mentioned in the paragraph above:
     ```
 
-10. Run the file
+12. Run the file
 
     ```bash
     # Linux/MacOS
@@ -108,16 +121,31 @@
     py <filename>.py
     ```
 
-TODO:
-11. Compare the results from each model. Test other prompts as well to see the difference in their responses.
-    In your comparison, consider the following factors:
+13. Compare the results from each model. Test other prompts as well to see the difference in their responses. You'll note that each one has a more implemented response, mainly if you ask something more complex
 
-    - **Training data cut-off**: Mention the point at which the training data was cut off for each model. This refers to the time at which the data used to train the model ends.
-    - **Accuracy and performance metrics**: Discuss the accuracy of each model’s responses and how well they perform on your specific task.
-    - **Pricing**: Mention the cost of using each model. You can refer to the OpenAI Pricing page for this information.
-    - **Context window**: Discuss the context window size for each model. This refers to the amount of text that the model can consider when generating a response.
+   
 
-- Mention the training data cutting point
-- Mention accuracy and performance metrics
-- Mention pricing
-- Mention context window
+
+14. **Training data cut-off**: 
+    * `gpt-3.5-turbo`: Up to Sep 2021
+    * `gpt-4`: Up to Sep 2021 
+    * `gpt-4-0125-preview`: Up to Dec 2023 
+    *  This refers to the time at which the data used to train the model ends
+
+15. **Accuracy and performance metrics**: 
+    * `gpt-3.5-turbo`: This model has shown to perform well on a variety of tasks. Fine-tuning can improve its performance, making it match or even outperform base GPT-4-level capabilities on certain narrow tasks
+    * `gpt-4`:  GPT-4 exhibits human-level performance on various professional and academic benchmarks. For example, it passes a simulated bar exam with a score around the top 10% of test-takers2. It is more reliable, creative, and able to handle much more nuanced instructions than GPT-3.5
+    * `gpt-4-0125-preview` This is the latest version of GPT-4 intended to reduce cases of “laziness” where the model doesn’t complete a task. It shares the same capabilities as GPT-4.
+
+16. **Pricing**: 
+    * `gpt-3.5-turbo`: The cost for using GPT-3.5-turbo is $0.002 per 1,000 tokens
+    * `gpt-4`:  The input price for GPT-4 is $0.03 per 1,000 tokens and the output price is $0.06 per 1,000 tokens
+    * `gpt-4-0125-preview` The pricing for this model is the same as GPT-4
+
+17. **Context window**: 
+    * `gpt-3.5-turbo`: 16,385 tokens
+    * `gpt-4`: 8,192 tokens 
+    * `gpt-4-0125-preview`: 128,000 tokens 
+    * This refers to the amount of text that the model can consider when generating a response 
+  
+  >For more information about each model, go to  <https://platform.openai.com/docs/models>

@@ -5,7 +5,7 @@ client = OpenAI()
 messages = [
     {
         "role": "user",
-        "content": 'Generate an HTML file with a simple chat interface and include a script to send the message somewhere when you click the "generate" button',
+        "content": "Author-contribution statements and acknowledgements in research papers should state clearly and specifically whether, and to what extent, the authors used AI technologies such as ChatGPT in the preparation of their manuscript and analysis. They should also indicate which LLMs were used. This will alert editors and reviewers to scrutinize manuscripts more carefully for potential biases, inaccuracies and improper source crediting. Likewise, scientific journals should be transparent about their use of LLMs, for example when selecting submitted manuscripts.\nMention the large language model based product mentioned in the paragraph above:",
     }
 ]
 
