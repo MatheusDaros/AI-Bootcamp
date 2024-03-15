@@ -59,7 +59,7 @@
     generated_text = model.generate(**model_inputs, max_length=20, pad_token_id=tokenizer.eos_token_id)
     ```
 
-10.  Decode the generated text and print the result
+10. Decode the generated text and print the result
 
     ```python
     result = tokenizer.batch_decode(generated_text, skip_special_tokens=True)[0]
