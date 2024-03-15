@@ -1,12 +1,16 @@
 # Lesson 08: Building our first local AI application
 
+TODO
+
 ## Pre-requisites
 
 TODO
 
-## Review of Lesson 05
+## Review of Lesson 07
 
-TODO
+* Executing various GPT models and tasks
+* Interacting with a local GPT model
+* Using the Text Generation WebUI API as an alternative to OpenAI APIs
 
 ## Building applications using local AI services
 

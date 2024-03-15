@@ -34,9 +34,9 @@ At the completion of the bootcamp, students will have an overview understanding 
 ### Week 3
 
 * Deep dive on GPTs
-* Using Assistants
 * Model training
 * Fine tuning
+* Using Assistants
 * RAG
 * Exploring other models
 * Generating images with AI

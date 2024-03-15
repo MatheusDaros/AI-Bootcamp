@@ -2,9 +2,9 @@
 
 In this lesson we will advance to the introduction of GPTs, the Generative Pre-trained Transformers, and how they work.
 
-We will have a better overview on how transformers are used to train and compute outputs from models, and we will evaluate in depth the capabilities and limitations of current GPT applications.
+We will have a better overview of how transformers are used to train and compute outputs from models, and we will evaluate in depth the capabilities and limitations of current GPT applications.
 
-We will exercise more on using the Hugging Face's Transformers library to run pre-trained models for text-to-text tasks with a LLM, but this time using sampling methods and tweaking the model configurations to understand more on the maths and logics behind the models.
+We will exercise more on using the Hugging Face's Transformers library to run pre-trained models for text-to-text tasks with an LLM, but this time using sampling methods and tweaking the model configurations to understand more on the maths and logics behind the models.
 
 We will also use the OpenAI APIs to run GPTs for text-to-text tasks, by invoking a remote execution of a server that runs the GPTs for us.
 
@@ -41,7 +41,7 @@ For this lesson, you should have a basic understanding on how to use developer t
 * Using Transformers for text-to-text tasks with Hugging Face's Transformers library
 * What are LLMs
 * Using pre-trained LLMs for text generation
-* Running a LLM inference for text generation with Hugging Face's Transformers library
+* Running an LLM inference for text generation with Hugging Face's Transformers library
 * What is a _pre-trained_ model?
 * What are these _tokens_ and what is _encoding_/_decoding_?
 * What is a _prompt_?
@@ -86,7 +86,7 @@ There are many discussions about evolving these applications for reaching [AGI](
   * Each word (or fragment of letters) is broken down into tiny pieces ([n-grams](https://en.wikipedia.org/wiki/N-gram)) that are used to compute the _patterns_ and _probabilities_ between the contents present in the training data
   * The _encoding_ process is the process of converting the character strings into these _tokens_, and the _decoding_ process is the process of converting these _tokens_ back into the character strings
 * Transformers
-  * The process of relating the tokens to each other in the training data is done by these [Transformers](https://en.wikipedia.org/wiki/Transformer_(machine_learning_model)) neural networks that we saw in the previou lesson
+  * The process of relating the tokens to each other in the training data is done by these [Transformers](https://en.wikipedia.org/wiki/Transformer_(machine_learning_model)) neural networks that we saw in the previous lesson
   * These transformers are used both in the training phase and in the inference phase of these models to calculate the relations between the tokens and generate the outputs based on these
 * Inference
   * The process of generating outputs from inputs in a transformer is called inference, and can be accomplished much more quickly for `prompting` than the training phase, since the _patterns_ and _probabilities_ between the contents present in the training data are already computed and stored in the model

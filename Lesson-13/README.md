@@ -1,9 +1,18 @@
-# Lesson XX:
+# Lesson 13:
+
+TODO
 
 ## Pre-requisites
 
-## Review of Lesson XX
+TODO
+
+## Review of Lesson 12
+
+* Weekend project review
+TODO
 
 ## --content--
 
 ## Next steps
+
+TODO

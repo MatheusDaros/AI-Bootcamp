@@ -127,8 +127,8 @@ In this lesson, we will introduce the basic concepts of AI, its capabilities and
   * Exercise 1: Using the [Open AI Chat Playground](./project/00-OpenAI-Chat-Playground.md)
   * Exercise 2: [Set up your keys](./project/01-OpenAI-Key.md) in your device
   * Exercise 3: Execute a [Simple text to text curl example](./project/02-Text-To-Text-Curl-Example.md)
-* Does it sounds like a person?
-* Does it sounds intelligent?
+* Does it sound like a person?
+* Does it sound intelligent?
 
 ## Next steps
 
