@@ -1,15 +1,38 @@
 # Lesson 13: Running Stable Diffusion Model Locally
 
-TODO
+In this lesson, we will explore more about AI Image Generation with Stable Diffusion models by running models locally in our own devices.
+
+We're going to use different models and techniques for text-to-image generation tasks using the Stable Diffusion WebUI tool, which is capable of handling many of the complex tasks to run these models while providing a simple and intuitive interface for us to interact with.
+
+While we use the Stable Diffusion WebUI, we're going to learn about some technical details of how stable diffusion models work, the possible configurations and parameters to better run these models in our hardware, the many sampling and denoising algorithms that can be used to generate images, and how to use the API to run these models in a more programmatic way.
+
+By the end of this lesson, we'll explore some of the types of models and checkpoints publicly available for us to download from public hubs, and we're going to test what are the limitations and capabilities of some of these models.
 
 ## Pre-requisites
 
-TODO
+* Learn how to use a shell/terminal/console/bash in your device
+  * Get familiar with basic commands like `cd`, `ls` and `mkdir`
+  * Learn how to execute packages, scripts and commands in your device
+* Install python tools in your device
+  * [Python](https://www.python.org/downloads/)
+  * [Pip](https://pip.pypa.io/en/stable/installation/)
+* Learn how to use `python` and `pip` commands
+  * Docs: [Python](https://docs.python.org/3/)
+  * Docs: [Pip](https://pip.pypa.io/en/stable/)
+* Learn how to use `venv` to create and manage virtual environments
+  * Docs: [Python venv](https://docs.python.org/3/library/venv.html)
+* Install `git` CLI in your device
+  * [Git](https://git-scm.com/downloads)
+* Learn how to use `git` commands to clone repositories
+  * Docs: [Git](https://git-scm.com/doc)
+* Install [Stable Diffusion WebUI](https://github.com/AUTOMATIC1111/stable-diffusion-webui) in your device and all the correct dependencies for your hardware
 
 ## Review of Lesson 12
 
 * Weekend project review
-TODO
+* AI Image Generation
+* Stable Diffusion overview
+* Using DALI·E model from OpenAI
 
 ## Setting Up Stable Diffusion WebUI
 
@@ -160,4 +183,9 @@ TODO
 
 ## Next steps
 
-TODO
+* Testing different models and checkpoints
+* Exploring more about the Stable Diffusion WebUI
+* Tweaking configurations and parameters for running models in your device
+* Prompting techniques for image generation
+* Using Extensions in Stable Diffusion WebUI
+* Using a ControlNet to guide the diffusion process

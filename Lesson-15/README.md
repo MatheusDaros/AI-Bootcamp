@@ -1,14 +1,45 @@
 # Lesson 15: AI Image Processing
 
-TODO
+In this lesson we'll learn about more extensions to image generation models, like generating videos frame-by-frame with the help of ControlNets, and how to fine-tune models to generate images with more precision using curated datasets.
+
+We're going to explore how models can be fine-tuned and enhanced using LoRAs and VAEs to greatly extend their image generation capabilities. We'll experiment with image datasets and techniques to properly correlate elements in an image to approximated text descriptions.
+
+By the second half of this lesson we're going to explore more on the idea of extracting information from images, and we're going to learn about a technique called "Computer Vision" and how it can be used to process text from images.
+
+We're going to see an overview on how the same versatile Transformes architecture we've been seeing before for text and image generation can be used again for image processing tasks. We're going to experiment using transformers to run Zero-shot detection and classification tasks to better understand what computer vision can do.
+
+Finally, we're going to learn how to install and use the Vision Process WebUI to run computer vision tasks in our own devices.
 
 ## Pre-requisites
 
-TODO
+* Learn how to use a shell/terminal/console/bash in your device
+  * Get familiar with basic commands like `cd`, `ls` and `mkdir`
+  * Learn how to execute packages, scripts and commands in your device
+* Install python tools in your device
+  * [Python](https://www.python.org/downloads/)
+  * [Pip](https://pip.pypa.io/en/stable/installation/)
+* Learn how to use `python` and `pip` commands
+  * Docs: [Python](https://docs.python.org/3/)
+  * Docs: [Pip](https://pip.pypa.io/en/stable/)
+* Learn how to use `venv` to create and manage virtual environments
+  * Docs: [Python venv](https://docs.python.org/3/library/venv.html)
+* Install `git` CLI in your device
+  * [Git](https://git-scm.com/downloads)
+* Learn how to use `git` commands to clone repositories
+  * Docs: [Git](https://git-scm.com/doc)
+* Install [Stable Diffusion WebUI](https://github.com/AUTOMATIC1111/stable-diffusion-webui) in your device and all the correct dependencies for your hardware
+* Install [EbSynth](https://github.com/s9roll7/ebsynth_utility) extension in Stable Diffusion WebUI and all the correct dependencies
+* Install [Dreambooth](https://github.com/d8ahazard/sd_dreambooth_extension) extension in Stable Diffusion WebUI and all the correct dependencies
+* Install the [Transformers](https://huggingface.co/docs/transformers/main/en/installation) library in your environment
+* Install [Vision Process WebUI](https://github.com/isLinXu/vision-process-webui) in your device and all the correct dependencies for your hardware
 
 ## Review of Lesson 14
 
-TODO
+* Prompt engineering for image generation
+* Configuring Stable Diffusion WebUI
+* Capabilities and limitations of stable diffusion models
+* Using ControlNet to guide the diffusion process
+* ControlNet extension for Stable Diffusion WebUI
 
 ## Using ControlNet to Generate Videos
 
@@ -99,4 +130,7 @@ TODO
 
 ## Next steps
 
-TODO
+* Experimenting with more Computer Vision models
+* Using the Vision Process WebUI for more computer vision tasks
+* Using computer vision inside an application
+* Wrapping up all of the bootcamp content

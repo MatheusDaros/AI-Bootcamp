@@ -1,14 +1,28 @@
 # Lesson 16: AI Applications
 
-TODO
+In this final lesson we're going to wrap all the major concepts we've learned so far for generative AI, and we're going to put them to practice by creating a new application that integrates many AI functionalities.
+
+By the end of this lesson you should be well prepared for starting to ideate and plan your final project, and you should be able to start prototyping your ideas by using the tools and replicating the techniques we used in all the lessons within this bootcamp.
 
 ## Pre-requisites
 
-TODO
+* Complete all the exercises from the previous lessons
+* Prepare a Text Generation API in your device
+* Prepare an Image Generation API in your device
+* Prepare a Computer Vision API in your device
 
 ## Review of Lesson 15
 
-TODO
+* Image generation techniques
+* Generating videos
+* Fine-tuning models
+* LoRAs and VAEs
+* Working with image datasets
+* Extracting text information from images
+* Computer Vision models
+* Using transformers for image processing
+* Using the Vision Process WebUI
+* Processing image detection and classification tasks
 
 ## Implementing Many AI Tasks in One Application
 
@@ -22,10 +36,6 @@ TODO
 * Adding a [page](./project/00-Computer-Vision-Page.md) for uploading images and processing them with Computer Vision
 * Adding a [page](./project/01-Chat-Page.md) for chatting with a text generation model
 * Adding a [page](./project/02-Image-Generation-Page.md) for generating images with an image generation model
-
-## Next steps
-
-TODO
 
 ## Final project
 

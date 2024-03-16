@@ -1,12 +1,44 @@
 # Lesson 14: AI Image Generation
 
-TODO
+In this lesson we'll learn about prompting techniques and best practices for generating images using AI models, and how to properly control the diffusion process to produce images accordingly to our expectations.
+
+We're going to start by understanding how the prompts in text space are correlated to the images in the training data, and then we'll experiment with several different prompt engineering practices to try and generate precise images that correctly follows our instructions.
+
+We're going to test what kind of terms and instructions models are able to process better, and also how some models can benefit from the use of negative prompts to avoid certain flaws or deformations in the generated images.
+
+Due to the random nature of the denoising diffusion process, we're going to notice how difficult it is to get consistent results across several generations, or even to guide specific elements on arrangements in the images generated, like poses, layouts, scales and such details. To address this, we're going to learn how to use a ControlNet to guide the diffusion process and to control the generation of images in a more precise way.
 
 ## Pre-requisites
 
+* Learn how to use a shell/terminal/console/bash in your device
+  * Get familiar with basic commands like `cd`, `ls` and `mkdir`
+  * Learn how to execute packages, scripts and commands in your device
+* Install python tools in your device
+  * [Python](https://www.python.org/downloads/)
+  * [Pip](https://pip.pypa.io/en/stable/installation/)
+* Learn how to use `python` and `pip` commands
+  * Docs: [Python](https://docs.python.org/3/)
+  * Docs: [Pip](https://pip.pypa.io/en/stable/)
+* Learn how to use `venv` to create and manage virtual environments
+  * Docs: [Python venv](https://docs.python.org/3/library/venv.html)
+* Install `git` CLI in your device
+  * [Git](https://git-scm.com/downloads)
+* Learn how to use `git` commands to clone repositories
+  * Docs: [Git](https://git-scm.com/doc)
+* Install [Stable Diffusion WebUI](https://github.com/AUTOMATIC1111/stable-diffusion-webui) in your device and all the correct dependencies for your hardware
+* Install the [ControlNet](https://github.com/Mikubill/sd-webui-controlnet) extension and all the correct dependencies for your hardware
+  * Download at least one [Compatible Model](https://github.com/Mikubill/sd-webui-controlnet?tab=readme-ov-file#download-models) and put it inside the `models` folder inside the directory of the ControlNet extension
+
 ## Review of Lesson 13
 
-TODO
+* Stable Diffusion WebUI
+  * Installation
+  * Running
+  * Configuration
+  * Extensions
+* Text-to-image tasks
+* Models and checkpoints
+* Comparing models
 
 ## Prompting Techniques for Image Generation
 
@@ -105,4 +137,7 @@ TODO
 
 ## Next steps
 
-TODO
+* Experimenting with more ControlNet features
+* Overview on video generation
+* Fine-tuning sable diffusion models
+* Introduction to Computer Vision
