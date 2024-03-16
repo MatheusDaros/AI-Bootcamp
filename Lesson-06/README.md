@@ -127,6 +127,9 @@ We are going to see a developer tool that can help dealing with many of these co
   * When prompted, select your GPU manufacturer and model
   * Confirm selection and wait until the entire installation process finishes
   * Open your browser and go to <http://localhost:7860> to test if the application is working
+* Alternatives
+  * Using a [Docker container](https://github.com/oobabooga/text-generation-webui/wiki/09-%E2%80%90-Docker)
+  * Using a [Google Colab notebook](https://github.com/oobabooga/text-generation-webui?tab=readme-ov-file#google-colab-notebook)
 
 ## Using Text Generation WebUI
 
