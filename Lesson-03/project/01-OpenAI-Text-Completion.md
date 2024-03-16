@@ -2,7 +2,7 @@
 
 1. Make sure that you have set up your keys correctly with the exercise `01-OpenAI-Key.md` from Lesson 01
 
-2. Make sure that your `venv` is activates
+2. Make sure that your `venv` is activated
 
 3. Run the following code in your terminal:
 
@@ -61,7 +61,7 @@
 
    * The `model` parameter is the name of the model that you want to use to generate the text
      * The models available to use from OpenAI API are listed in the [Models](https://platform.openai.com/docs/models/overview) API documentation
-   * The `messages` parameter is a list of messages that you want to use to use as `prompt` generate the text
+   * The `messages` parameter is a list of messages that you want to use as `prompt` to generate the text
      * This example is using a set of instructions for separating the _roles_ of different _actors_ in the chat conversation
    * The `stream` parameter is a boolean that indicates if the response should be streamed or not
      * By default the API will wait for the model inference to be completed and return the result in a single response
@@ -110,6 +110,6 @@
     7. Press and serve: If desired, heat your sandwich in a panini press or skillet to melt the cheese and toast the bread. Otherwise, simply slice your sandwich in half and enjoy!%
     ```
 
-11. Experiment with the [Chat Completion API Parameters](https://platform.openai.com/docs/api-reference/completions) to test how the model behaves with different inputs and configurations
+11. Experiment with the [Chat Completion API Parameters](https://platform.openai.com/docs/api-reference/chat) to test how the model behaves with different inputs and configurations
 
 >View more information about the OpenAI API at <https://platform.openai.com/docs> and the OpenAI Python Package at <https://github.com/openai/openai-python>
