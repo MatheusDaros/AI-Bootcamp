@@ -1,10 +1,31 @@
 # Lesson 08: Building our First Local AI Application
 
-TODO
+In this lesson we'll explore creating our first local AI application. Throughout the lesson, we will understand how to integrate locally hosted AI services into our applications, allowing us to perform text generation tasks directly on our own devices.
+
+During the lesson, we will perform practical exercises with a local API in our NextJS application, exploring the text generation capabilities offered by GPT templates.
+
+We will also analyze the quality and accuracy of text generation based in different prompt techniques, identifying the ways that GPT models are most effectively prompted and those where they require more attention. Finally, we will create an example application using NextJS and a local API, consolidating the concepts learned during the weeks and preparing for more advanced AI projects in the following days.
 
 ## Pre-requisites
 
-TODO
+* Learn how to use a shell/terminal/console/bash in your device
+  * Get familiar with basic commands like `cd`, `ls` and `mkdir`
+  * Learn how to execute packages, scripts and commands in your device
+* Install Node.js in your device
+  * [Node.js](https://nodejs.org/en/download/)
+* Learn how to use `npm` and `npx` commands
+  * Docs: [npm](https://docs.npmjs.com/)
+  * Docs: [npx](https://www.npmjs.com/package/npx)
+* Learn how to use `npm install` and how to deal with `node_modules` folder
+  * Docs: [npm install](https://docs.npmjs.com/cli/v10/commands/npm-install)
+* Install `git` CLI in your device
+  * [Git](https://git-scm.com/downloads)
+* Learn how to use `git` commands to clone repositories
+  * Docs: [Git](https://git-scm.com/doc)
+* Install Next.js in your device project
+  * [Next.js installation](https://nextjs.org/docs/getting-started/installation)
+* Learn about the Next.js
+  * Docs: [Next.js](https://nextjs.org/docs)
 
 ## Review of Lesson 07
 
@@ -79,4 +100,7 @@ For consolidating the knowledge acquired in this week, the students should compl
 
 ## Next steps
 
-TODO
+* Deep dive on GPTs
+* Models and hardware requirements
+* Understanding GPT training
+* Fine-tuning Models
