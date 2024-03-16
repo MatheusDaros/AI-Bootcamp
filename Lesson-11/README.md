@@ -1,6 +1,6 @@
 # Lesson 11: Exploring more AI models
 
-In Lesson 11, we will dive deeper into the realm of AI models, exploring a variety of text generation, code generation, and image generation models. We will compare different models such as GPT, Llama, Claude, Mistral, and Gemma to understand their strengths and weaknesses in generating text. 
+In this lesson we will dive deeper into the realm of AI models, exploring a variety of text generation, code generation, and image generation models. We will compare different models such as GPT, Llama, Claude, Mistral, and Gemma to understand their strengths and weaknesses in generating text.
 
 We will overview the image generation techniques involving multi-modal models, neural network-based models, and transformers-based models, understanding their advantages and applications.
 
@@ -9,21 +9,25 @@ We will overview the image generation techniques involving multi-modal models, n
 * Learn how to use a shell/terminal/console/bash in your device
   * Get familiar with basic commands like `cd`, `ls` and `mkdir`
   * Learn how to execute packages, scripts and commands in your device
-* Install Node.js in your device
-  * [Node.js](https://nodejs.org/en/download/)
-* Learn how to use `npm` and `npx` commands
-  * Docs: [npm](https://docs.npmjs.com/)
-  * Docs: [npx](https://www.npmjs.com/package/npx)
-* Learn how to use `npm install` and how to deal with `node_modules` folder
-  * Docs: [npm install](https://docs.npmjs.com/cli/v10/commands/npm-install)
+* Install python tools in your device
+  * [Python](https://www.python.org/downloads/)
+  * [Pip](https://pip.pypa.io/en/stable/installation/)
+* Learn how to use `python` and `pip` commands
+  * Docs: [Python](https://docs.python.org/3/)
+  * Docs: [Pip](https://pip.pypa.io/en/stable/)
+* Learn how to use `venv` to create and manage virtual environments
+  * Docs: [Python venv](https://docs.python.org/3/library/venv.html)
 * Install `git` CLI in your device
   * [Git](https://git-scm.com/downloads)
 * Learn how to use `git` commands to clone repositories
   * Docs: [Git](https://git-scm.com/doc)
-* Learn about the `OpenAi`
-  * Docs: [OpenAi](https://platform.openai.com/docs/)
-* Learn about the `OpenAi Models`
-  * [OpenAi Models](https://platform.openai.com/docs/models/overview)
+* Learn the basics of `python` programming language syntax
+  * [Python official tutorial](https://docs.python.org/3.12/tutorial/index.html)
+  * [Learn X in Y minutes](https://learnxinyminutes.com/docs/python/)
+* Create an account with [Vercel](https://vercel.com/) to use the [Vercel AI Playground](https://sdk.vercel.ai/)
+* Create an account to use [ChatGPT](https://chat.openai.com/)
+* Create an account to use [Bing Image Creator](https://www.bing.com/images/create)
+
 
 ## Review of Lesson 10
 
@@ -121,8 +125,7 @@ We will overview the image generation techniques involving multi-modal models, n
 
 ## Next steps
 
+* Generating images with AI
+* Image generation models
 * Stable diffusion
-* Modern AI models for image generation
 * OpenAI Image Generation APIs
-* Generating Images with DALL·E using Python
-* Practical exercise

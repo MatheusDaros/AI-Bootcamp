@@ -48,10 +48,19 @@ TODO
 * Retrieving relevant information from a bigger dataset
 * Feeding the GPT with retrieved information
 
+## Retrieval-Augmented Generation (RAG) Tools
+
+* Searching the web
+* Searching a file's content
+* Watching a video
+* Reading from PDF documents and books
+* Experimentation with the NVidia [Chat with RTX](https://www.nvidia.com/en-us/ai-on-rtx/chat-with-rtx-generative-ai/) tool
+
 ## Experimenting with RAG
 
 * Practical exercises
   * Exercise 3: Create an assistant and [Provide a File](./project/02-RAG-Assistant.md) for it to retrieve information from, and then test it with a message thread
+  * Exercise 4: [Feed a local dataset](./project/03-RAG-With-Local-Dataset.md) to the NVidia's Chat with RTX tool and test it with a message
 
 ## Next steps
 
