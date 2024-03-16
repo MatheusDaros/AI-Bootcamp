@@ -1,10 +1,10 @@
 # Lesson 08: Building our first local AI application
 
-In Lesson 08, we'll explore creating our first local AI application. Throughout the lesson, we will understand how to integrate local AI services into our applications, allowing us to perform text generation tasks directly on our own devices.
+In this lesson we'll explore creating our first local AI application. Throughout the lesson, we will understand how to integrate locally hosted AI services into our applications, allowing us to perform text generation tasks directly on our own devices.
 
-During the lesson, we will perform practical exercises with a local API in our NextJS application, exploring the text generation capabilities offered by GPT templates. 
+During the lesson, we will perform practical exercises with a local API in our NextJS application, exploring the text generation capabilities offered by GPT templates.
 
-We will also analyze the quality and accuracy of text generation, identifying the areas where GPT models are most effective and those where they can be improved. Finally, we will create a storytelling application using NextJS and a local API, consolidating the concepts learned during the lesson and preparing for more advanced projects.
+We will also analyze the quality and accuracy of text generation based in different prompt techniques, identifying the ways that GPT models are most effectively prompted and those where they require more attention. Finally, we will create an example application using NextJS and a local API, consolidating the concepts learned during the weeks and preparing for more advanced AI projects in the following days.
 
 ## Pre-requisites
 
@@ -22,11 +22,10 @@ We will also analyze the quality and accuracy of text generation, identifying th
   * [Git](https://git-scm.com/downloads)
 * Learn how to use `git` commands to clone repositories
   * Docs: [Git](https://git-scm.com/doc)
-* Install Next.js in your device
+* Install Next.js in your device project
   * [Next.js installation](https://nextjs.org/docs/getting-started/installation)
 * Learn about the Next.js
   * Docs: [Next.js](https://nextjs.org/docs)
-
 
 ## Review of Lesson 07
 
@@ -101,7 +100,7 @@ For consolidating the knowledge acquired in this week, the students should compl
 
 ## Next steps
 
-* Implementing GPT models;
-* Training with GPT;
-* Experimenting with GPT-2 and Fine-tuning GPT-2;
-* Practical exercises;
+* Deep dive on GPTs
+* Models and hardware requirements
+* Understanding GPT training
+* Fine-tuning Models
