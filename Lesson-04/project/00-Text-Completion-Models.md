@@ -12,66 +12,64 @@
 
    * This command will install the `openai` [API Package](https://github.com/openai/openai-python) in your environment
 
-4.  Write a code to call chat completions api using `gpt-3.5-turbo` vs `gpt-4` vs `gpt-4-0125-preview`
+4. Write a code to call chat completions api using `gpt-3.5-turbo` vs `gpt-4` vs `gpt-4-0125-preview`
 
-5.  Create a new Python file
+5. Create a new Python file
 
-    * Create a new file in your favorite code editor or simply run `touch <filename>.py` in your terminal (Linux/MacOS) or `type nul > <filename>.py` in your terminal (Windows)
+   * Create a new file in your favorite code editor or simply run `touch <filename>.py` in your terminal (Linux/MacOS) or `type nul > <filename>.py` in your terminal (Windows)
 
-    * Remember to replace `<filename>` with the name of your file
+   * Remember to replace `<filename>` with the name of your file
 
-6.  Import the `openai` module in your file
+6. Import the `openai` module in your file
 
-    ```python
+   ```python
     from openai import OpenAI
     ```
 
-    * This `client` can abstract all of the complexities of consuming the OpenAI API endpoints, like handling the authentication, the request and response formats, synchronous and asynchronous requests, and many other features
+   * This `client` can abstract all of the complexities of consuming the OpenAI API endpoints, like handling the authentication, the request and response formats, synchronous and asynchronous requests, and many other features
 
-    * To use this library correctly, all you need to do is to understand well the [API parameters](https://platform.openai.com/docs) that you want to consume
+   * To use this library correctly, all you need to do is to understand well the [API parameters](https://platform.openai.com/docs) that you want to consume
 
-7.  Create a new `client` instance
+7. Create a new `client` instance
 
-    ```python
+   ```python
     client = OpenAI()
     ```
 
-    * By default, this will try yo use the `OPENAI_API_KEY` environment variable to create this client
+   * By default, this will try yo use the `OPENAI_API_KEY` environment variable to create this client
 
-    * You can customize the logic by doing an explicit definition like this:
+   * You can customize the logic by doing an explicit definition like this:
 
-      ```python
-      import os
-      from openai import OpenAI
+   ```python
+   import os
+   from openai import OpenAI
+   client = OpenAI(
+       api_key=os.environ.get("OPENAI_API_KEY"),
+   )
+   ```
 
-      client = OpenAI(
-          api_key=os.environ.get("OPENAI_API_KEY"),
-      )
-      ```
+   * Here you can change `api_key` to any value that you want to use
 
-      * Here you can change `api_key` to any value that you want to use
+   * Have caution if you prefer to hardcode your key in this file, since this could lead yo you inadvertently sharing your key with others
 
-      * Have caution if you prefer to hardcode your key in this file, since this could lead yo you inadvertently sharing your key with others
+8. Write a variable with the message to test in the loop:
 
-8.  Write a variable with the message to test in the loop:
+   ```python
+   messages = [
+       {
+           "role": "user",
+           "content": "Say this is a testSay this is a test",
+       }
+   ]
+   ```
 
-    ```python
-    messages = [
-        {
-            "role": "user",
-            "content": "Say this is a testSay this is a test",
-        }
-    ]
-    ```
+9. Do and array with the gpt's models:
 
-9.  Do and array with the gpt's models:
+   ```python
+   models = ["gpt-3.5-turbo", "gpt-4", "gpt-4-0125-preview"]
+   ```
 
-    ```python
-    models = ["gpt-3.5-turbo", "gpt-4", "gpt-4-0125-preview"]
-
-    ```
-
-10. Call the [Chat Completion](https://platform.openai.com/docs/guides/text-generation/chat-completions-api) endpoint in the `client` with the following parameters:
+10. Call the [Chat Completion](https://platform.openai.com/docs/guides/text-generation/chat-completions-api) endpoint in the `client` in a loop with the following parameters:
 
     ```python
     for model in models:
@@ -86,14 +84,22 @@
     print("\n\n---\n")
     ```
 
-    * The for loop will iterate each element of models and configure to that model
+    * The for loop will iterate each element of models that you've put in the array, and will and configure a stream to that model
+
     * The `model` parameter is the name of the model that you want to use to generate the text
+
       * The models available to use from OpenAI API are listed in the [Models](https://platform.openai.com/docs/models/overview) API documentation
+
     * The `messages` parameter is a list of messages that you want to use to use as `prompt` generate the text
+
       * This example is using a set of instructions for separating the _roles_ of different _actors_ in the chat conversation
+
     * The `stream` parameter is a boolean that indicates if the response should be streamed or not
+
       * By default the API will wait for the model inference to be completed and return the result in a single response
+
     * If you set this parameter to `True`, the API will return a `stream` object that you can use to read the response chunks by chunks, as they are generated by the server running the model
+
     * This function will print the response chunks as they are generated by the server running the model:
 
       ```python
@@ -101,7 +107,7 @@
           print(chunk.choices[0].delta.content or "", end="")
       ```
 
-11.  Use the following prompt for your chat completions:
+11. Use the following prompt for your chat completions:
 
     ```text
     Author-contribution statements and acknowledgements in research papers should state clearly and specifically whether, and to what extent, the authors used AI technologies such as ChatGPT in the preparation of their manuscript and analysis. They should also indicate which LLMs were used. This will alert editors and reviewers to scrutinize manuscripts more carefully for potential biases, inaccuracies and improper source crediting. Likewise, scientific journals should be transparent about their use of LLMs, for example when selecting submitted manuscripts.
@@ -121,46 +127,96 @@
     py <filename>.py
     ```
 
-13. Compare the results from each model. Test other prompts as well to see the difference in their responses. You'll note that each one has a more implemented response, mainly if you ask something more complex
+13. Compare the results from each model. Test other prompts as well to see the difference in their responses
 
-   
+    * You'll note that each modal has a different response to the same prompt
 
+14. Notice in the [Models Documentation](https://platform.openai.com/docs/models/overview) that each model has a different training data cut-off
 
-14. **Training data cut-off**: 
     * `gpt-3.5-turbo`: Up to Sep 2021
-    * `gpt-4`: Up to Sep 2021 
-    * `gpt-4-0125-preview`: Up to Dec 2023 
-    *  This refers to the time at which the data used to train the model ends
 
-15. According to the training data cut-off try in each model to ask about something that happened after the cut-off. As an example try to use as prompt:
+    * `gpt-4`: Up to Sep 2021
+
+    * `gpt-4-0125-preview`: Up to Dec 2023
+
+15. Experiment with prompts mentioning historical events, considering the training data cut-off of each model
+
+    * As an example try to use as prompt:
+
     ```text
     When did the current war between Russia and Ukraine started?
     ```
 
-16. **Accuracy and performance metrics**: 
-    * `gpt-3.5-turbo`: This model has shown to perform well on a variety of tasks. Fine-tuning can improve its performance, making it match or even outperform base GPT-4-level capabilities on certain narrow tasks
-    * `gpt-4`:  GPT-4 exhibits human-level performance on various professional and academic benchmarks. For example, it passes a simulated bar exam with a score around the top 10% of test-takers2. It is more reliable, creative, and able to handle much more nuanced instructions than GPT-3.5
-    * `gpt-4-0125-preview` This is the latest version of GPT-4 intended to reduce cases of “laziness” where the model doesn’t complete a task. It shares the same capabilities as GPT-4.
+16. Notice that each model has different performance characteristics and related costs of execution
 
-17. **Pricing**:
-    Taking as example this text:
-    
-    
+    * `gpt-3.5-turbo`: This is one of the most cost-efficient model that can perform relatively well on a variety of tasks
+      * Fine-tuning can improve its performance, making it match or even outperform base GPT-4-level capabilities on certain narrow tasks
+
+    * `gpt-4`: GPT-4 is one of the first models to exhibit human-level performance on various professional and academic benchmarks
+
+       * For example, it passes a simulated bar exam with a score around the top 10% of test-takers2
+
+       * It is more reliable, creative, and able to handle much more nuanced instructions than GPT-3.5
+
+    * `gpt-4-0125-preview` This is the latest version of GPT-4 (as of March 2024) intended to reduce cases of “laziness” where the model doesn’t complete a task
+
+      * It shares almost the same capabilities as GPT-4, with some tweaking in the instructions and chat completions tasks
+
+17. Notice that each model has a different [pricing](https://openai.com/pricing) of execution per token, usually related to the model's performance and capabilities, and consequently to the associated costs of developing and running it
+
+    * Use this example prompt to test the cost of execution per token for each model:
+
     ```text
     Author-contribution statements and acknowledgements in research papers should state clearly and specifically whether, and to what extent, the authors used AI technologies such as ChatGPT in the preparation of their manuscript and analysis. They should also indicate which LLMs were used. This will alert editors and reviewers to scrutinize manuscripts more carefully for potential biases, inaccuracies and improper source crediting. Likewise, scientific journals should be transparent about their use of LLMs, for example when selecting submitted manuscripts.
 
     Mention the large language model based product mentioned in the paragraph above:
     ```
-    The text has a input of 119 tokens.
-    * `gpt-3.5-turbo`: The cost for input using GPT-3.5-turbo is $0.0000595. The output consisted of 3 tokens, resulting in a cost of $0000045 if it were like the other with 16 tokens it should be $0.000024
-    * `gpt-4`:  The cost for input using GPT-4 is $0.00357. The output consisted of 16 tokens, resulting in a cost of $0.00096
-    * `gpt-4-0125-preview`: The cost for input using GPT-4-0125-preview is $0.00119. The output consisted of 16 tokens, resulting in a cost of $00048
 
-18. **Context window**: 
+    * Notice that text has a input of 112 tokens using the OpenAI GPT encoding algorithm
+
+      * You can check the number of tokens in a text passed to ChatGPT using the [Tokenizer](https://platform.openai.com/tokenizer) tool 
+
+    * Costs for `gpt-3.5-turbo`:
+
+      * Input: The cost for input is $0.50 per 1M tokens, thus totaling **$0.000056** for 112 tokens
+
+      * Output: The output is very short and consisted of only 3 tokens to state `ChatGPT`
+
+        * Considering the cost of $1.50 per 1M tokens, the output cost is **$0.00000045**
+
+      * Total: **$0.00005645**
+
+    * `gpt-4`:
+
+      * Input: The cost for input using $30 per 1M tokens, thus totaling **$0.00336** for 112 tokens
+
+      * Output: The output is longer and consisted of 16 tokens to state `The large language model based product mentioned in the paragraph above is ChatGPT.`
+
+        * considering the cost of $60 per 1M tokens, the output cost is **$0.000256**
+
+      * Total: **$0.003616**
+
+    * `gpt-4-0125-preview`:
+
+      * Input: The cost for input using $10 per 1M tokens, thus totaling **$0.00112** for 112 tokens
+
+      * Output: The output is the longest and consisted of 20 tokens to state `The large language model (LLM) based product mentioned in the paragraph above is ChatGPT.`
+
+        * considering the cost of $30 per 1M tokens, the output cost is **$0.0006**
+
+      * Total: **$0.00172**
+
+    * Considering that your AI App can have thousands of operations like this from many different users, the costs can add up quickly, and cost efficiency can become a predominant factor in the choice of which model to use
+
+18. Notice that different models can have different limitations on the context window:
+
     * `gpt-3.5-turbo`: 16,385 tokens
-    * `gpt-4`: 8,192 tokens 
-    * `gpt-4-0125-preview`: 128,000 tokens 
-    * This refers to the amount of text that the model can consider when generating a response 
+
+    * `gpt-4`: 8,192 tokens
+
+    * `gpt-4-0125-preview`: 128,000 tokens
+
+    * This refers to the amount of information that the model can consider when processing a response
   
 19. Let's test the behavior of the gpt when using 10k tokens and  20k, use example file `TextCompletionModels02.py` run it one time and see what happens. To test the behavior with 20,000 tokens, you'll want to comment out this line and uncomment the line that assigns the `twenty_thousand_token_message` to `messages`. Here's how you can do it:
 
