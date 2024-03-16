@@ -127,9 +127,11 @@
     py <filename>.py
     ```
 
-13. Compare the results from each model. Test other prompts as well to see the difference in their responses
+13. Compare the results from each model
 
-    * You'll note that each modal has a different response to the same prompt
+    * Test other prompts as well to see the difference in their responses
+
+    * You'll note that each model has a different response to the same prompt
 
 14. Notice in the [Models Documentation](https://platform.openai.com/docs/models/overview) that each model has a different training data cut-off
 
@@ -208,20 +210,4 @@
 
     * Considering that your AI App can have thousands of operations like this from many different users, the costs can add up quickly, and cost efficiency can become a predominant factor in the choice of which model to use
 
-18. Notice that different models can have different limitations on the context window:
-
-    * `gpt-3.5-turbo`: 16,385 tokens
-
-    * `gpt-4`: 8,192 tokens
-
-    * `gpt-4-0125-preview`: 128,000 tokens
-
-    * This refers to the amount of information that the model can consider when processing a response
-  
-19. Let's test the behavior of the gpt when using 10k tokens and  20k, use example file `TextCompletionModels02.py` run it one time and see what happens. To test the behavior with 20,000 tokens, you'll want to comment out this line and uncomment the line that assigns the `twenty_thousand_token_message` to `messages`. Here's how you can do it:
-
-    ```python
-    # messages = ten_thousand_token_message
-    messages = twenty_thousand_token_message
-    ```
-  >For more information about each model, go to  <https://platform.openai.com/docs/models>
+>For more information about each model, refer to <https://platform.openai.com/docs/models>
