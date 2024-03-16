@@ -1,14 +1,40 @@
 # Lesson 11: Exploring more AI Models
 
-TODO
+In this lesson we will dive deeper into the realm of AI models, exploring a variety of text generation, code generation, and image generation models. We will compare different models such as GPT, Llama, Claude, Mistral, and Gemma to understand their strengths and weaknesses in generating text.
+
+We will overview the image generation techniques involving multi-modal models, neural network-based models, and transformers-based models, understanding their advantages and applications.
 
 ## Pre-requisites
 
-TODO
+* Learn how to use a shell/terminal/console/bash in your device
+  * Get familiar with basic commands like `cd`, `ls` and `mkdir`
+  * Learn how to execute packages, scripts and commands in your device
+* Install python tools in your device
+  * [Python](https://www.python.org/downloads/)
+  * [Pip](https://pip.pypa.io/en/stable/installation/)
+* Learn how to use `python` and `pip` commands
+  * Docs: [Python](https://docs.python.org/3/)
+  * Docs: [Pip](https://pip.pypa.io/en/stable/)
+* Learn how to use `venv` to create and manage virtual environments
+  * Docs: [Python venv](https://docs.python.org/3/library/venv.html)
+* Install `git` CLI in your device
+  * [Git](https://git-scm.com/downloads)
+* Learn how to use `git` commands to clone repositories
+  * Docs: [Git](https://git-scm.com/doc)
+* Learn the basics of `python` programming language syntax
+  * [Python official tutorial](https://docs.python.org/3.12/tutorial/index.html)
+  * [Learn X in Y minutes](https://learnxinyminutes.com/docs/python/)
+* Create an account with [Vercel](https://vercel.com/) to use the [Vercel AI Playground](https://sdk.vercel.ai/)
+* Create an account to use [ChatGPT](https://chat.openai.com/)
+* Create an account to use [Bing Image Creator](https://www.bing.com/images/create)
+
 
 ## Review of Lesson 10
 
-TODO
+* GPT Assistants
+* Assistant with OpenAI APIs
+* Limitations of GPTs and ways to overcome them
+* Retrieval-Augmented Generation (RAG)
 
 ## Comparing Text Generation Models
 
@@ -99,4 +125,7 @@ TODO
 
 ## Next steps
 
-TODO
+* Generating images with AI
+* Image generation models
+* Stable diffusion
+* OpenAI Image Generation APIs
