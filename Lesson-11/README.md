@@ -28,7 +28,6 @@ We will overview the image generation techniques involving multi-modal models, n
 * Create an account to use [ChatGPT](https://chat.openai.com/)
 * Create an account to use [Bing Image Creator](https://www.bing.com/images/create)
 
-
 ## Review of Lesson 10
 
 * GPT Assistants
@@ -101,9 +100,9 @@ We will overview the image generation techniques involving multi-modal models, n
   * Transformer-based models have several advantages over traditional neural network architectures, including the ability to handle long-range dependencies, parallelize computation, and scale to large datasets
   * Because of that, they have achieved state-of-the-art results in image generation models
 
-## Generating Images with Sable Diffusion
+## Generating Images with Stable Diffusion
 
-* Overview of Sable Diffusion
+* Overview of Stable Diffusion
   * Stable diffusion is a type of generative model that uses a process called diffusion to model the generation of images
   * The basic idea is to iteratively apply a series of transformations to a random noise vector until it matches the target image
   * At each step, the transformation is chosen such that it moves the current state of the noise vector closer to the target image
@@ -111,7 +110,7 @@ We will overview the image generation techniques involving multi-modal models, n
   * The process of running a diffusion model involves iteratively applying a series of transformations to a random noise vector until it matches the target image
   * The transformations are chosen such that they move the current state of the noise vector closer to the target image
   * The process is repeated until the noise vector matches the target image
-* Using Hugging Face's [Sable Diffusion Pipelines](https://huggingface.co/docs/diffusers/quicktour)
+* Using Hugging Face's [Stable Diffusion Pipelines](https://huggingface.co/docs/diffusers/quicktour)
   * Hardware requirements
   * Dependencies
   * Installation
@@ -120,12 +119,12 @@ We will overview the image generation techniques involving multi-modal models, n
 ### Using Diffusion models with Python
 
 * Practical exercise
-  * Exercise 3: [Generate Images with Sable Diffusion](./project/02-Generate-Images-Diffusion.md)
+  * Exercise 3: [Generate Images with Stable Diffusion](./project/02-Generate-Images-Diffusion.md)
     * Code and run [Diffusion.py](./project/Diffusion.py) to generate an image from a text prompt
 
 ## Next steps
 
 * Generating images with AI
 * Image generation models
-* Stable diffusion
+* Stable diffusion overview
 * OpenAI Image Generation APIs

@@ -1,14 +1,42 @@
 # Lesson 12: Image Generation
 
-TODO
+In this lesson, we will learn about the image generation models and how to use the OpenAI Image Generation APIs.
+
+We are going to learn about the Stable Diffusion process used in AI image generation, particularly using the DALI·E model provided by OpenAI. We are going to learn how to use the OpenAI Image Generation APIs to generate images from text prompts and from other images.
+
+We'll study how the transformers architecture that we used in the text generation models can be used similarly to run image generation models. We're going to learn about noising and denoising processes and how they have been adapted in the last years to build clever image generation algorithms.
 
 ## Pre-requisites
 
-TODO
+* Learn how to use a shell/terminal/console/bash in your device
+  * Get familiar with basic commands like `cd`, `ls` and `mkdir`
+  * Learn how to execute packages, scripts and commands in your device
+* Install python tools in your device
+  * [Python](https://www.python.org/downloads/)
+  * [Pip](https://pip.pypa.io/en/stable/installation/)
+* Learn how to use `python` and `pip` commands
+  * Docs: [Python](https://docs.python.org/3/)
+  * Docs: [Pip](https://pip.pypa.io/en/stable/)
+* Learn how to use `venv` to create and manage virtual environments
+  * Docs: [Python venv](https://docs.python.org/3/library/venv.html)
+* Install `git` CLI in your device
+  * [Git](https://git-scm.com/downloads)
+* Learn how to use `git` commands to clone repositories
+  * Docs: [Git](https://git-scm.com/doc)
+* Learn the basics of `python` programming language syntax
+  * [Python official tutorial](https://docs.python.org/3.12/tutorial/index.html)
+  * [Learn X in Y minutes](https://learnxinyminutes.com/docs/python/)
+* Create an account at [OpenAI Platform](https://platform.openai.com/)
+  * If you want to run the API Commands on the platform, set up [billing](https://platform.openai.com/account/billing/overview) and add at least **5 USD** credits to your account
 
 ## Review of Lesson 11
 
-TODO
+* Comparing models
+* Code generation models
+* Image generation models
+* Stable Diffusion
+* `Diffusion` python package from Hugging Face
+* Running text-to-image models
 
 ## Overview of Stable Diffusion for Image Generation
 
@@ -88,18 +116,26 @@ For consolidating the knowledge acquired in this week, the students should compl
 2. Add all members of your group
 3. Create a README.md file with the description of your project
 4. Create a new application from scratch using NextJS
-5. Create a page for entering the description of a picture
-6. Create a form to choose the image generation parameters
-7. Include a button to request the image to be generated
-8. Ask the Image Generation API to generate the image
-9. Display a loader while the image is being generated
-10. Display the image in the page when it is generated
-11. Allow the user to generate a new image with the same configurations
-12. Submit your project in the submission form
+5. Create an assistant in OpenAI that is able to suggest and describe a painting based in a short description from the user
+6. Configure the assistant prompt to be efficient at answering strictly painting descriptions
+7. Create a page for the user to pick an option from a selection of painting themes
+8. Include a button to send a message to the assistant for it to generate a painting description with the selected theme
+9. When the assistant answers, display the generated output in a text area
+10. Create a button for the user to request the image to be generated based on the assistant's output
+11. Create a form after the button for the user to choose the image generation parameters
+12. Include a button to request the image to be generated
+13. Ask the Image Generation API to generate the image
+14. Display a loader while the image is being generated
+15. Display the image in the page when it is generated
+16. Submit your project in the submission form
 
 >You should find your group in the [Discord](https://discord.gg/encodeclub) AI Bootcamp Channel
 >>If you can't find your group, please contact the program manager through Discord or email
 
 ## Next steps
 
-TODO
+* Generating images with AI
+* Running models locally
+* Using Stable Diffusion WebUI
+* Image generation models
+* Prompting techniques for image generation
