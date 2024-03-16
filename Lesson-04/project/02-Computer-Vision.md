@@ -13,7 +13,9 @@
    * This command will install the `openai` [API Package](https://github.com/openai/openai-python) in your environment
 
 4. Create a new Python file
+
    * Create a new file in your favorite code editor or simply run `touch <filename>.py` in your terminal (Linux/MacOS) or `type nul > <filename>.py` in your terminal (Windows)
+
      * Remember to replace `<filename>` with the name of your file
 
 5. Import the `openai` module in your file
@@ -72,19 +74,23 @@
    )
    ```
 
-   * The `model` parameter is the name of the model that you want to use to analyze the image 
+   * The `model` parameter is the name of the model that you want to use to analyze the image
+
      * The models available to use from OpenAI API are listed in the [Models](https://platform.openai.com/docs/models/overview) API documentation
+
    * The `messages` parameter is a list of messages that you want to send to the model
+
      * You can provide an image either by passing a link to the image in the `image_url` parameter or by encoding the image as a base64 string within the same parameter. Check the [Vision](https://platform.openai.com/docs/guides/vision) guide for more information
+
    * The `max_tokens` parameter is the maximum number of tokens to generate in the response
 
 8. Print the response
-   
+
    ```python
    print(response.choices[0].message.content)
    ```
 
-9.  Run the file
+9. Run the file
 
     ```bash
     # Linux/MacOS
@@ -99,7 +105,7 @@
 10. Check the output
 
     * You should see the response from the model being printed in your terminal
-    
+
     * Example of response
 
     ```text
