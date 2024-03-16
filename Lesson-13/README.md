@@ -131,11 +131,32 @@ TODO
   * Versatile model for digital art, drawings, anime and painting [GhostMix](https://civitai.com/models/36520?modelVersionId=76907)
     * Requires the use of LoRAs for perfect results
     * Not very good for photorealistic images, or even to generate images of "common" persons or scenes
+  * Versatile high resolution model [JuggernautXL](https://civitai.com/models/133005/juggernaut-xl)
+    * Good generalist model that makes good use of light/shadow effects
 * Choosing models
   * Model file extensions
     * `ckpt` files are models where python can load serialized data, but they are dangerous since they can execute arbitrary code
     * `safetensors` files are not affected by the vulnerability of `ckpt` files, and are preferred whenever available
   * LoRAs (Low-Rank Adaptation)
+    * LoRAs are a set of techniques used to adapt a model to a specific characteristic or dataset
+    * Some models include this inside the checkpoint, increasing the quality of the generated images but also decreasing the compatibility with other LoRAs that could be used in conjunction with the model
+  * VAEs (Variational autoencoders)
+    * Some models require a VAE to be used in conjunction with them to properly generate images
+      * The VAE encodes images into a latent space that the model uses during training
+      * At generation time, the model decodes points from the latent space back into images
+      * Without the matching VAE, the model can’t properly reconstruct the images
+    * If a checkpoint says it requires a certain VAE, you need to use that VAE to get proper image generations, otherwise the results will be very poor
+  * Model categories
+    * `Base` models are the most common and versatile models, and they are the best choice for using as base for fine-tuning
+    * `XL` models are high-resolution models that can generate images with more details, but they are also slower to process and require more VRAM
+    * `Anime` models are specialized in generating anime-style images
+    * `Cartoon` models are specialized in generating cartoon-style images
+    * `Art` models are specialized in generating digital art, drawings, paintings, and other artistic styles
+    * `Photorealistic` models are specialized in generating images that look like real photographs
+    * `Portrait` models are specialized in generating images of people
+    * `Hybrid` models are a mix of two or more of the previous categories, and they are the best choice for tasks that require a mix of styles or variety in the generated images
+    * [Model Classification](https://civitai.com/articles/1939/an-attempt-at-classification-of-models-sd-v15) article
+    * [Model Comparison](https://civitai.com/articles/2044/standardized-prompts-for-efficient-model-testing-a-possible-civitai-test) article
 
 ## Next steps
 
