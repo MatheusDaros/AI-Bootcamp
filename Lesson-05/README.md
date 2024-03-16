@@ -1,4 +1,4 @@
-# Lesson 05: Building AI applications
+# Lesson 05: Building AI Applications
 
 In this lesson, we will learn how to build AI applications using web technologies and AI models. We will start by understanding what is a web application and how to build a simple web page.
 

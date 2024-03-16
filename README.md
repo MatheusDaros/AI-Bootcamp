@@ -12,6 +12,12 @@ At the completion of the bootcamp, students will have an overview understanding 
 
 ## Curriculum
 
+The bootcamp content is divided in:
+
+* Four weeks of hands-on lessons, each with classes from Monday to Thursday (four lessons per week) and a weekend project
+* Onde special week with four days of guest lectures and workshops
+* A final week of project building
+
 ### Week 1
 
 * Machine Learning intro
@@ -63,14 +69,14 @@ At the completion of the bootcamp, students will have an overview understanding 
 
 * Projects week
 
-## Bootcamp material
+## Bootcamp Material
 
 The bootcamp material is available inside this repository. The material is organized in folders, with one lesson for each day of the bootcamp. Each folder contains the lesson material, containing the hands-on exercises and steps to follow during the lesson.
 
 >Note: Each folder contains a `README.md` file with the instructions for the day. Students should clone the repository and prepare all of the required software and tools **before the lesson time**, so that they may follow the lessons and complete the exercises in parallel with the instructor.
 >>Each lesson requires a handful of software and tools to be installed in the student's computer. The `README.md` file of each day contains the list of required software and tools, and the installation and configuration steps could take minutes, if not hours to complete, depending on the student's device.
 
-## Hands-on lessons
+## Hands-on Lessons
 
 Students should prepare their own development environment to follow the lessons, and each day they will learn by repeating the steps of the instructor and applying the concepts at real-world projects.
 
