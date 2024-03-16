@@ -27,7 +27,7 @@ Prior to diving into this lesson, it is recommended to have a basic understandin
 
 ## Review of Lesson 06
 
-* Running models 
+* Running models
 * Capabilities of the Vercel NextJS AI SDK
 * Generative AI Tools
 * Creating the frontend code
