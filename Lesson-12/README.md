@@ -74,7 +74,7 @@ The training of the model involves optimizing a loss function that measures the 
 
 ### Generating Images with DALL·E using Python
 
-* Practical exercise
+* Practical exercises
   * Exercise 1: [Generate Images with DALL·E](./project/00-Generate-Images-DALL-E.md)
     * Code and run [Image-Generation.py](./project/Image-Generation.py) to generate an image from a text prompt
   * Exercise 2: [Generate Image Variations with DALL·E](./project/01-Generate-Image-Variations.md)
