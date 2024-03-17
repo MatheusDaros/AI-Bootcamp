@@ -8,7 +8,7 @@ We're going to test what kind of terms and instructions models are able to proce
 
 Due to the random nature of the denoising diffusion process, we're going to notice how difficult it is to get consistent results across several generations, or even to guide specific elements on arrangements in the images generated, like poses, layouts, scales and such details. To address this, we're going to learn how to use a ControlNet to guide the diffusion process and to control the generation of images in a more precise way.
 
-## Pre-requisites
+## Prerequisites
 
 * Learn how to use a shell/terminal/console/bash in your device
   * Get familiar with basic commands like `cd`, `ls` and `mkdir`
@@ -135,7 +135,7 @@ Due to the random nature of the denoising diffusion process, we're going to noti
   * Exercise 3: Experiment with [Consistent Portrait Generation](./project/02-Generate-Portrait.md) using the ControlNet to generate eight portrait pictures of the same fictional character
   * Exercise 4: Generate a [QR Code Art](./project/03-Generate-QRCode.md) to a website using the ControlNet
 
-## Next steps
+## Next Steps
 
 * Experimenting with more ControlNet features
 * Overview on video generation

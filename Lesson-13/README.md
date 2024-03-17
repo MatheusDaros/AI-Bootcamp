@@ -8,7 +8,7 @@ While we use the Stable Diffusion WebUI, we're going to learn about some technic
 
 By the end of this lesson, we'll explore some of the types of models and checkpoints publicly available for us to download from public hubs, and we're going to test what are the limitations and capabilities of some of these models.
 
-## Pre-requisites
+## Prerequisites
 
 * Learn how to use a shell/terminal/console/bash in your device
   * Get familiar with basic commands like `cd`, `ls` and `mkdir`
@@ -140,7 +140,7 @@ By the end of this lesson, we'll explore some of the types of models and checkpo
   * Exercise 3: [Generate a portrait picture](./project/02-Generate-Portrait.md) and inpaint the generated face
   * Exercise 4: [Generate a picture from a sketch](./project/03-Generate-Sketch.md)
 
-## Using Checkpoints
+## Using Model Checkpoints
 
 * Downloading models
   * From [Hugging Face](https://huggingface.co/models?pipeline_tag=text-to-image&library=diffusers&sort=downloads) (filter for "Diffusers" under "Library")
@@ -181,7 +181,7 @@ By the end of this lesson, we'll explore some of the types of models and checkpo
     * [Model Classification](https://civitai.com/articles/1939/an-attempt-at-classification-of-models-sd-v15) article
     * [Model Comparison](https://civitai.com/articles/2044/standardized-prompts-for-efficient-model-testing-a-possible-civitai-test) article
 
-## Next steps
+## Next Steps
 
 * Testing different models and checkpoints
 * Exploring more about the Stable Diffusion WebUI

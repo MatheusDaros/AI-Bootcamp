@@ -6,7 +6,7 @@ We are going to learn about the Stable Diffusion process used in AI image genera
 
 We'll study how the transformers architecture that we used in the text generation models can be used similarly to run image generation models. We're going to learn about noising and denoising processes and how they have been adapted in the last years to build clever image generation algorithms.
 
-## Pre-requisites
+## Prerequisites
 
 * Learn how to use a shell/terminal/console/bash in your device
   * Get familiar with basic commands like `cd`, `ls` and `mkdir`
@@ -60,7 +60,7 @@ Starting from a completely unintelligible image, in each step it predicts and ad
 
 This approach allows the model to generate highly detailed and contextually relevant images from textual descriptions or partial images, leveraging the transformer's ability to handle complex dependencies and relationships, just like GPT models do with text.
 
-### How it works
+### How it Works
 
 Stable diffusion is a process used in AI image generation, particularly in models like Diffusion Models and Denoising Diffusion Probabilistic Models (DDPM).
 
@@ -100,7 +100,7 @@ The training of the model involves optimizing a loss function that measures the 
     * Mask
   * Variations
 
-### Generating Images with DALL·E using Python
+### Generating Images with DALL·E Using Python
 
 * Practical exercises
   * Exercise 1: [Generate Images with DALL·E](./project/00-Generate-Images-DALL-E.md)
@@ -108,7 +108,7 @@ The training of the model involves optimizing a loss function that measures the 
   * Exercise 2: [Generate Image Variations with DALL·E](./project/01-Generate-Image-Variations.md)
     * Code and run [Image-Generation-Variations.py](./project/Image-Generation-Variations.py) to generate variations of an image
 
-## Weekend project
+## Weekend Project
 
 For consolidating the knowledge acquired in this week, the students should complete the following project:
 
@@ -132,7 +132,7 @@ For consolidating the knowledge acquired in this week, the students should compl
 >You should find your group in the [Discord](https://discord.gg/encodeclub) AI Bootcamp Channel
 >>If you can't find your group, please contact the program manager through Discord or email
 
-## Next steps
+## Next Steps
 
 * Generating images with AI
 * Running models locally

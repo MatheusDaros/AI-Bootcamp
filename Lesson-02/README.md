@@ -6,7 +6,7 @@ We will get practical insights on how Machine Learning models works and what the
 
 For this lesson, you should have a basic understanding on how to use developer tools in your device. You should also have at least a very basic understanding of the python programming language syntax.
 
-## Pre-requisites
+## Prerequisites
 
 * Learn how to use a shell/terminal/console/bash in your device
   * Get familiar with basic commands like `cd`, `ls` and `mkdir`
@@ -71,7 +71,7 @@ For this lesson, you should have a basic understanding on how to use developer t
     * This simple technical detail, aligned with the right market/investment conditions in the last years, has made possible for the Generative AI boom that we are experiencing now (as 2024)
 * To understand how transformers work, we will use samples from the [Hugging Face tutorials](https://huggingface.co/docs/transformers/index), that makes it simple and straightforward to start using these tools and techniques without the need to understand the deep technical details of the models beforehand
 
-## Introduction to transformers
+## Introduction to Transformers
 
 Instead of going through the deep technical details of transformers, we will use frameworks, tools and libraries that abstract away most of the complexities for the hard computational, mathematical and statistical work that is required to make these algorithms work.
 
@@ -93,7 +93,7 @@ In fact, we're going to use pre-made models and shortcuts that makes it as simpl
 * Working with sample `datasets`
 * Following a tutorial for a _NLP_ pipeline
 
-## Getting started with Transformers
+## Getting Started with Transformers
 
 Hugging Face's Transformers library can abstract most of the complexities of using Machine Learning and other AI techniques, making it simple to use and apply these models to real-world problems.
 
@@ -112,7 +112,7 @@ The only concepts you need to fully understand when interacting with this librar
   * Exercise 3: [Using a Text Generation pipeline](./project/02-Text-Generation.md)
     * Code and run [TextGeneration.py](./project/TextGeneration.py) in this exercise
 
-## Next steps
+## Next Steps
 
 * What is a _pre-trained_ model?
 * What are these _tokens_ and what is _encoding_/_decoding_?

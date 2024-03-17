@@ -1,10 +1,10 @@
-# Lesson 11: Exploring more AI Models
+# Lesson 11: Exploring More AI Models
 
 In this lesson we will dive deeper into the realm of AI models, exploring a variety of text generation, code generation, and image generation models. We will compare different models such as GPT, Llama, Claude, Mistral, and Gemma to understand their strengths and weaknesses in generating text.
 
 We will overview the image generation techniques involving multi-modal models, neural network-based models, and transformers-based models, understanding their advantages and applications.
 
-## Pre-requisites
+## Prerequisites
 
 * Learn how to use a shell/terminal/console/bash in your device
   * Get familiar with basic commands like `cd`, `ls` and `mkdir`
@@ -116,13 +116,13 @@ We will overview the image generation techniques involving multi-modal models, n
   * Installation
   * Usage
 
-### Using Diffusion models with Python
+### Using Diffusion Models with Python
 
 * Practical exercise
   * Exercise 3: [Generate Images with Stable Diffusion](./project/02-Generate-Images-Diffusion.md)
     * Code and run [Diffusion.py](./project/Diffusion.py) to generate an image from a text prompt
 
-## Next steps
+## Next Steps
 
 * Generating images with AI
 * Image generation models

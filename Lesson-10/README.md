@@ -6,7 +6,7 @@ We are going to use OpenAI Platform to create and test an assistants, managing t
 
 We are also going to learn and experiment with RAG techniques by running a local GPT model using the NVidia Chat with RTX tool. We are going to feed a local dataset to it and ask questions about information that is present in it. We are going to discover how GPTs can return information about things not present in their training data by providing the correct contextual information and instructions to retrieve it.
 
-## Pre-requisites
+## Prerequisites
 
 * Learn how to use a shell/terminal/console/bash in your device
   * Get familiar with basic commands like `cd`, `ls` and `mkdir`
@@ -35,7 +35,7 @@ We are also going to learn and experiment with RAG techniques by running a local
 * Overview of GPT training
 * Fine-tuning GPT-2
 
-## Overcoming the limitations of GPTs
+## Overcoming the Limitations of GPTs
 
 * What GPTs can do "out of the box"
 * Giving instructions to GPTs
@@ -57,13 +57,13 @@ We are also going to learn and experiment with RAG techniques by running a local
 * Retrieving information from the web
 * Retrieving information from files
 
-## Building and testing an Assistant with OpenAI APIs
+## Building and Testing an Assistant with OpenAI APIs
 
 * Practical exercises
   * Exercise 1: [Creating a simple assistant](./project/00-Create-Assistant.md) with instructions to tell engaging pirate stories
   * Exercise 2: [Creating a message thread](./project/01-Create-Message-Thread.md) with the assistant to ask for a pirate story about finding a treasure with a treasure map
 
-## Retrieving information
+## Retrieving Information
 
 * What is RAG (Retrieval-Augmented Generation)
 * Managing context size
@@ -84,7 +84,7 @@ We are also going to learn and experiment with RAG techniques by running a local
   * Exercise 3: Create an assistant and [Provide a File](./project/02-RAG-Assistant.md) for it to retrieve information from, and then test it with a message thread
   * Exercise 4: [Feed a local dataset](./project/03-RAG-With-Local-Dataset.md) to the NVidia's Chat with RTX tool and test it with a message
 
-## Next steps
+## Next Steps
 
 * Comparing models
 * Other models

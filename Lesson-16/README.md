@@ -4,7 +4,7 @@ In this final lesson we're going to wrap all the major concepts we've learned so
 
 By the end of this lesson you should be well prepared for starting to ideate and plan your final project, and you should be able to start prototyping your ideas by using the tools and replicating the techniques we used in all the lessons within this bootcamp.
 
-## Pre-requisites
+## Prerequisites
 
 * Complete all the exercises from the previous lessons
 * Prepare a Text Generation API in your device
@@ -24,7 +24,7 @@ By the end of this lesson you should be well prepared for starting to ideate and
 * Using the Vision Process WebUI
 * Processing image detection and classification tasks
 
-## Implementing Many AI Tasks in One Application
+## Implementing Many AI Tasks in Applications
 
 * Computer Vision for processing input image
 * Text generation for chat

@@ -10,7 +10,7 @@ We're going to see an overview on how the same versatile Transformes architectur
 
 Finally, we're going to learn how to install and use the Vision Process WebUI to run computer vision tasks in our own devices.
 
-## Pre-requisites
+## Prerequisites
 
 * Learn how to use a shell/terminal/console/bash in your device
   * Get familiar with basic commands like `cd`, `ls` and `mkdir`
@@ -128,7 +128,7 @@ Finally, we're going to learn how to install and use the Vision Process WebUI to
   * Exercise 3: Run the [Classification](./project/02-Image-Classification.md) task in an image
   * Exercise 4: Run the [Object Detection](./project/03-Object-Detection.md) task in an image
 
-## Next steps
+## Next Steps
 
 * Experimenting with more Computer Vision models
 * Using the Vision Process WebUI for more computer vision tasks

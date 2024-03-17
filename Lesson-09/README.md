@@ -8,7 +8,7 @@ We're going to study more about the training process of GPTs, and how models can
 
 To consolidate our learning on how GPTs work, we'll experiment with fine-tuning a simple GPT-2 model to generate text based on the information present in a local dataset.
 
-## Pre-requisites
+## Prerequisites
 
 * Learn how to use a shell/terminal/console/bash in your device
   * Get familiar with basic commands like `cd`, `ls` and `mkdir`
@@ -36,7 +36,7 @@ To consolidate our learning on how GPTs work, we'll experiment with fine-tuning 
 * Testing prompts to improve the quality and precision of generation
 * Building an AI application
 
-## Running GPT models
+## Running GPT Models
 
 * Model loaders
   * Hardware requirements
@@ -66,7 +66,7 @@ To consolidate our learning on how GPTs work, we'll experiment with fine-tuning 
   * Using batches
 * Using LoRAs
 
-## Overview of GPT training
+## Overview of GPT Training
 
 * Training
   * Architecture
@@ -98,7 +98,7 @@ To consolidate our learning on how GPTs work, we'll experiment with fine-tuning 
   * Exercise 1: [Train GPT-2 Small](./project/00-Train-GPT2-Small.md) to generate text with a dataset of food recipes
   * Exercise 2: [Train GPT-2 Medium](./project/01-Train-GPT2-Medium.md) to generate text with a dataset of movie scripts
 
-## Next steps
+## Next Steps
 
 * Overcoming the limitations of GPTs
 * Understanding what a GPT assistant is

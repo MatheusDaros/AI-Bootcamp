@@ -6,7 +6,7 @@ We're going to explore how AI tools can help developers to generate code snippet
 
 By the end of this lesson we're going to learn that all of the AI APIs we've been using from OpenAI and similar companies can be run in our own devices, and we're going to learn in practice how to do that for text generation tasks using a developer tool called Text Generation WebUI.
 
-## Pre-requisites
+## Prerequisites
 
 * Learn how to use a shell/terminal/console/bash in your device
   * Get familiar with basic commands like `cd`, `ls` and `mkdir`
@@ -48,7 +48,7 @@ By the end of this lesson we're going to learn that all of the AI APIs we've bee
 * Vercel NextJS AI SDK
 * Calling OpenAI text generations APIs inside the application
 
-## Adding features to the Frontend
+## Adding Features to the Frontend
 
 Last lesson we've seen how to use the Vercel NextJS AI SDK to create a simple web application that requests ChatGPT model to generate text remotely using API calls.
 
@@ -62,7 +62,7 @@ Let's explore more on the capabilities of the Vercel NextJS AI SDK and add more 
   * Exercise 2: [Generating audio instructions for the recipes](./project/01-Generating-Audio.md) to understand how to use OpenAI APIs for text-to-speech
     * Edit the project created in the last exercise of previous lesson to add the new features
 
-## Generating frontend code with AI
+## Generating Frontend Code with AI
 
 To speed up the process of creating the frontend code for our web application, we can use Generative AI Tools to generate the code for us.
 
@@ -78,7 +78,7 @@ These tools can greatly help developers to create the frontend code for their we
 
 > Be advised that the generated code may require severe adjustments and improvements to work properly. Do never rely blindly on AI generated code.
 
-## Running models locally
+## Running Models Locally
 
 As we've seen previously in this bootcamp, there are many libraries and tools that allow us to run GPT models in our own devices.
 
@@ -140,7 +140,7 @@ We are going to use the Text Generation WebUI tool to run Generative AI tasks in
   * Exercise 4: [Downloading and running a GPT model](./project/03-Running-GPT-Model.md)
   * Exercise 5: [Using chat completion](./project/04-Chat-Completion.md)
 
-## Next steps
+## Next Steps
 
 * Using the Text Generation WebUI
 * Loading and running models

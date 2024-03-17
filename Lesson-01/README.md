@@ -2,7 +2,7 @@
 
 In this lesson, we will introduce the basic concepts of AI, its capabilities and limitations, while debunking some myths and misconceptions about it. We will also discuss practical uses of AI with an example of using ChatGPT for performing text-to-text tasks.
 
-## Pre-requisites
+## Prerequisites
 
 * Nothing special
   * Just be curious and willing to learn
@@ -56,7 +56,7 @@ In this lesson, we will introduce the basic concepts of AI, its capabilities and
     * Limits
     * Sequences and series
 
-## Learning practical AI applications
+## Learning Practical AI Applications
 
 * Pre-requisites
   * A computer or similar device
@@ -83,7 +83,7 @@ In this lesson, we will introduce the basic concepts of AI, its capabilities and
 * Does it means that the computer is _thinking_?
 * Does it means that the computer is _conscious_?
 
-## Capabilities and limitations of AI
+## Capabilities and Limitations of AI
 
 * [The Chinese Room](https://en.wikipedia.org/wiki/Chinese_room) philosophical experiment presented by John Searle in 1980
 * Weak AI vs Strong AI
@@ -94,7 +94,7 @@ In this lesson, we will introduce the basic concepts of AI, its capabilities and
 * Meta consciousness
   * Claude-3 Opus [needle-in-the-haystack experiment](https://medium.com/@ignacio.serranofigueroa/on-the-verge-of-agi-97556c35692e)
 
-## Practical uses of AI
+## Practical Uses of AI
 
 * Dealing with text inputs
   * What is _Natural Language Processing_ (NLP)
@@ -118,7 +118,7 @@ In this lesson, we will introduce the basic concepts of AI, its capabilities and
   * Integrations
 * Possibilities with Robotics
 
-## Getting started with AI for text-to-text tasks
+## Getting Started with AI for Text-to-Text Tasks
 
 * Using [Open AI Platform](https://platform.openai.com/)
   * [Docs](https://platform.openai.com/docs/introduction)
@@ -130,7 +130,7 @@ In this lesson, we will introduce the basic concepts of AI, its capabilities and
 * Does it sound like a person?
 * Does it sound intelligent?
 
-## Next steps
+## Next Steps
 
 * Understanding what is _Machine Learning_
 * Understanding what is happening when we submit a prompt to _ChatGPT_

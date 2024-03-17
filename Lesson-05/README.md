@@ -6,7 +6,7 @@ Then, we will learn how to use a JavaScript framework to build a more complex we
 
 Finally, we will learn how to use Vercel NextJS AI SDK to build an AI application by using its many helpful features and tools that make the development process easier and faster for beginners.
 
-## Pre-requisites
+## Prerequisites
 
 * Learn how to use a shell/terminal/console/bash in your device
   * Get familiar with basic commands like `cd`, `ls` and `mkdir`
@@ -44,7 +44,7 @@ Finally, we will learn how to use Vercel NextJS AI SDK to build an AI applicatio
 * HTML, CSS and JavaScript
 * Opening a web page in a browser
 
-## Building my first web page
+## Building a Simple Web Page
 
 * Practical exercises
   * Exercise 1: [Creating a simple index.html file](./project/00-Index-HTML-Example.md) to understand what is a Web Application
@@ -52,7 +52,7 @@ Finally, we will learn how to use Vercel NextJS AI SDK to build an AI applicatio
   * Exercise 2: [Generating a simple page with AI](./project/01-Web-Page-With-AI.md) to understand how ChatGPT can help us to code a simple web page
     * Code [WebPageWithAI.html](./project/WebPageWithAI.html) in this exercise and interact with it in your browser
 
-## Using a Javascript Framework
+## Using a Javascript Frameworks
 
 * What is a JavaScript Framework
   * A `JavaScript` framework is a collection of pre-written code that provides frameworks, libraries, and design patterns to facilitate web application development. JavaScript frameworks are designed to simplify common tasks in web development, such as DOM (Document Object Model) manipulation, page routing, state management, asynchronous API calls, form validation. They also provide an organized and standardized architecture for applications, facilitating maintenance and scalability
@@ -65,19 +65,18 @@ Finally, we will learn how to use Vercel NextJS AI SDK to build an AI applicatio
     * `Scalability and Performance Optimization`: features such as server-side rendering, on-demand loading and caching mechanisms, which optimize the application's performance and resource usage
 * What frameworks are most used nowadays
   * Currently four frameworks are widely known in the development industry, they are:
-    * [Next.js](https://nextjs.org/docs), is a React framework that makes it easy to build modern web applications. It offers hybrid rendering, dynamic routing, and static pre-rendering to improve application performance and scalability. With native TypeScript support and deep integration with the Vercel platform
+    * [Next.js](https://nextjs.org/docs), is a React framework that makes it easy to build modern web applications. It offers hybrid rendering, dynamic routing, and static pre-rendering to improve application performance and scalability. with native TypeScript support and deep integration with the Vercel platform
     * [Vue.js](https://vuejs.org/guide/introduction), known for its simplicity and ease of learning, offers a component-based approach and has a rich collection of plugins and extensions that facilitate the development of scalable and responsive applications
     * [Angular](https://angular.io/docs), used for building large-scale and enterprise web applications, offers a robust and comprehensive framework that includes powerful features such as dependency injection, page routing, and state management. It has a module-based architecture
-    * [Express.js](https://expressjs.com/), a minimalist and flexible Node.js framework designed for building RESTful web applications and APIs, offers a lightweight and simple framework that simplifies the development of web servers in Node.js
 * Using React.js library
   * [React.js](https://react.dev/learn) is an open source library that introduces the concept of component-based development, where the user interface is divided into reusable and independent components. Each component represents a specific part of the user interface and can contain its own logic and internal state. Its main characteristic refers to the declarative approach to creating user interfaces
-    * Difference between a library and a framework: a library offers specific functionality that can be used as needed; control is inverted, that is, developers call library functions when necessary and have the freedom to decide how and where to use them in their code. A framework provides a more comprehensive structure that guides the entire development of the application. [React.js](https://react.dev/learn) is considered a library because of its modular approach and the fact that developers can choose how to integrate it
+    * [React.js](https://react.dev/learn) is considered a library (and not a framework, like many sources insists to call) because of its modular approach (by design), and the fact that developers can choose what to pick and import from it separately when building a project
 * NextJS React framework
   * [Next.js](https://nextjs.org/docs) is a React framework that simplifies the development of modern web applications by offering features such as hybrid rendering, dynamic routing, and static pre-rendering. Its philosophy is centered on efficiency and scalability, providing a robust framework for rapid construction and simplified deployment
 * Vercel NextJS AI SDK
   * [The Vercel Next.js AI SDK](https://sdk.vercel.ai/docs) is an extension to the Vercel platform that adds artificial intelligence (AI) capabilities to Next.js. It offers AI features for development assistance, such as code completion, intelligent component suggestions, and integrations with AI APIs, simplifying the process of building AI-powered applications.These features help developers write more efficient code, identify common errors, and speed up the development process
 
-## Building an application using Vercel NextJS AI SDK
+## Building an Application Using Vercel NextJS AI SDK
 
 * Practical exercises
   * Exercise 3: [Creating a simple web application with AI](./project/02-Vercel-NextJS-AI-SDK.md) to understand how to use Vercel NextJS AI SDK
@@ -85,7 +84,7 @@ Finally, we will learn how to use Vercel NextJS AI SDK to build an AI applicatio
   * Exercise 4: Add features by creating a [Chef GPT Page](./project/03-Chef-GPT-Page.md) to explore what we can do with NextJS
     * Edit the project created in the previous exercise to add the new features
 
-## Next steps
+## Next Steps
 
 * Adding more features
 * Implementing more AI Generation features

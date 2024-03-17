@@ -4,9 +4,9 @@ In this lesson, we will delve into the practical application of Generative AI by
 
 By abstracting away complexities and providing a streamlined workflow, this tool empowers us to leverage the power of Generative AI more effectively.
 
-Prior to diving into this lesson, it is recommended to have a basic understanding of developer tools and a rudimentary grasp of Python programming syntax. With these prerequisites in place, we can explore the capabilities of Text Generation WebUI and harness its potential to address real-world challenges through AI-driven text generation.
+Prior to diving into this lesson, it is recommended to have a basic understanding of developer tools and a rudimentary grasp of Python programming syntax. with these prerequisites in place, we can explore the capabilities of Text Generation WebUI and harness its potential to address real-world challenges through AI-driven text generation.
 
-## Pre-requisites
+## Prerequisites
 
 * Learn how to use a shell/terminal/console/bash in your device
   * Get familiar with basic commands like `cd`, `ls` and `mkdir`
@@ -32,7 +32,7 @@ Prior to diving into this lesson, it is recommended to have a basic understandin
 * Generative AI Tools
 * Creating the frontend code
 
-## Exploring different models
+## Exploring Different Models
 
 In the last lesson we've seen how to use Text Generation WebUI application to run GPT models in our own devices for processing text generation tasks.
 
@@ -45,7 +45,7 @@ Today we're going to explore more of the many features of this tool and see how 
 * Finding good instruction-following models
 * Running different tasks
 
-## Chatting with a local GPT model
+## Chatting with a Local GPT Model
 
 * Practical exercises
   * Exercise 1: [Using Chat Text Generation](./project/00-Chat-Text-Generation.md)
@@ -53,7 +53,7 @@ Today we're going to explore more of the many features of this tool and see how 
   * Exercise 3: [Using Chat-Instruct Text Generation](./project/02-Chat-Instruct-Text-Generation.md)
   * Exercise 4: [Using the Notebook mode](./project/03-Notebook-Mode.md)
 
-## More features
+## More Features
 
 * Using [Extensions](https://github.com/oobabooga/text-generation-webui/wiki/07-%E2%80%90-Extensions#built-in-extensions)
 * Using the [API flag](https://github.com/oobabooga/text-generation-webui/wiki/12-%E2%80%90-OpenAI-API)
@@ -68,7 +68,7 @@ By using the built-in OpenAI API Extension from Text Generation WebUI, we can no
 * Practical exercises
   * Exercise 5: [Using the Text Generation WebUI API](./project/04-Using-API.md) as a replacement for OpenAI APIs in a python script
 
-## Next steps
+## Next Steps
 
 * Exploring more features of Text Generation WebUI
 * Experimenting with local GPTs

@@ -10,7 +10,7 @@ We will also use the OpenAI APIs to run GPTs for text-to-text tasks, by invoking
 
 For this lesson, you should have a basic understanding on how to use developer tools in your device. You should also have at least a very basic understanding of the python programming language syntax. You should set up an account in the OpenAI Platform, and have at least 5 USD credits in your account to run the API commands in the OpenAI exercise.
 
-## Pre-requisites
+## Prerequisites
 
 * Learn how to use a shell/terminal/console/bash in your device
   * Get familiar with basic commands like `cd`, `ls` and `mkdir`
@@ -58,7 +58,7 @@ For this lesson, you should have a basic understanding on how to use developer t
   * GPTs don't _learn_ or _improve_ after the training phase, no matter how many times they process similar _inputs_ and _outputs_
     * GPTs can be _fine-tuned_ to process specific _inputs_ and _outputs_ after the training phase, but this is a different process from the training phase and it's not a _learning_ process, it's just a _tweaking_ process
 
-### Applications using GPTs
+### GPT Applications
 
 Some examples of applications using GPTs:
 
@@ -73,7 +73,7 @@ All of these applications use many different techniques and models to process ma
 
 There are many discussions about evolving these applications for reaching [AGI](https://en.wikipedia.org/wiki/Artificial_general_intelligence) (Artificial General Intelligence) capabilities using GPTs and similar models. As far as it seems (by early 2024), this is a very complex and long-term goal that is not yet feasible with the current state of the art in AI and Machine Learning (or might never be at all).
 
-### How GPTs works
+### How GPTs Work
 
 * Model training
   * GPTs are pre-trained models (hence the name) that are trained in large and diverse dataset of texts for computing _patterns_ and _probabilities_ between the contents present in the training data
@@ -160,7 +160,7 @@ To better understand the capabilities of GPTs, let's highlight some of the most 
   * This means that GPTs can't provide real-time information about anything at all, like news, events, weather, stock prices, sports results, and such
     * It is certainly possible to _feed_ GPTs with real-time information, but this is a different process from the training phase and it's not a _learning_ process, it's just passing data to it with hope that it will give it back to you correctly
 
-### Use cases of GPTs
+### Use Cases of GPTs
 
 Some examples of practical tasks that GPTs can accomplish with these forementioned applications:
 
@@ -205,7 +205,7 @@ Some examples of practical tasks that GPTs can accomplish with these foremention
   * 3D models
 * Tools and extensions
 
-### Practical exercises with GPTs
+### Practical Exercises with GPTs
 
 We can use the Transformers Text Generation Pipeline to run GPTs for text-to-text tasks, just like we have done at Lesson 2.
 
@@ -217,7 +217,7 @@ These same tasks can be accomplished using OpenAI APIs, by invoking a remote exe
   * Exercise 2: [Using a Text Completion API from OpenAI](./project/01-OpenAI-Text-Completion.md) to run a GPT for text completion
     * Code and run [OpenAITextCompletion.py](./project/OpenAITextCompletion.py) in this exercise
 
-## Next steps
+## Next Steps
 
 * OpenAI APIs
 * Handling requests

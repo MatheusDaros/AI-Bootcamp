@@ -6,7 +6,7 @@ During the lesson, we will perform practical exercises with a local API in our N
 
 We will also analyze the quality and accuracy of text generation based in different prompt techniques, identifying the ways that GPT models are most effectively prompted and those where they require more attention. Finally, we will create an example application using NextJS and a local API, consolidating the concepts learned during the weeks and preparing for more advanced AI projects in the following days.
 
-## Pre-requisites
+## Prerequisites
 
 * Learn how to use a shell/terminal/console/bash in your device
   * Get familiar with basic commands like `cd`, `ls` and `mkdir`
@@ -33,7 +33,7 @@ We will also analyze the quality and accuracy of text generation based in differ
 * Interacting with a local GPT model
 * Using the Text Generation WebUI API as an alternative to OpenAI APIs
 
-## Building applications using local AI services
+## Building Applications Using Local AI Services
 
 In the last lesson we've seen how to use Text Generation WebUI application to run GPT models in our own devices for processing text generation tasks.
 
@@ -43,12 +43,12 @@ Now that we have this capability, we can use it inside applications we're runnin
 
 Later on, when deploying our applications to the cloud, we can use the same technique to serve the text generation tasks from a cloud service, exposing the API server to the internet, authenticating our own users with our own logic, and getting rid of OpenAI's API calls entirely.
 
-## Using a local API Chat Completion tasks
+## Using a Local API Chat Completion Tasks
 
 * Practical exercises
   * Exercise 1: [Replacing OpenAI's Chat Completion API with a local API](./project/00-Chat-Completion.md) in our `Chef GPT` NextJS application
 
-## Exploring AI possibilities with local APIs
+## Exploring AI Possibilities with Local APIs
 
 Now that we've seen how to easily create web application using modern web development frameworks, and now that we have a local API to serve text generation tasks, we can put these concepts together and start creating applications to explore more and more of what AI can do.
 
@@ -56,26 +56,26 @@ Since the number of tokens passed/generated from AI Tasks in OpenAI API calls is
 
 But now that we have a local environment for running these tasks at marginal costs (like electricity and hardware costs), we can start exploring in depths what we can do with these models.
 
-## Testing prompts
+## Testing Prompts
 
 * Practical exercises
   * Exercise 2: [Testing prompts formats and techniques](./project/01-Testing-Prompts.md) for text generation tasks
   * Exercise 3: [Building a prompt to fact-check statements](./project/02-Fact-Checking.md)
   * Exercise 4: [Building a prompt to generate stories](./project/03-Story-Generation.md)
 
-## Text generation quality and precision
+## Text Generation Quality and Precision
 
 * What GPTs are usually good for
 * What GPTs are usually not so good for
 * Getting the best of LLMs
 * Using LLMs for creative writing
 
-## Creating an application for telling stories
+## Creating an Application for Story Telling
 
 * Practical exercises
   * Exercise 5: [Building a story telling application](./project/04-Story-Telling.md) using NextJS and a local API for text generation tasks
 
-## Weekend project
+## Weekend Project
 
 For consolidating the knowledge acquired in this week, the students should complete the following project:
 
@@ -98,7 +98,7 @@ For consolidating the knowledge acquired in this week, the students should compl
 >You should find your group in the [Discord](https://discord.gg/encodeclub) AI Bootcamp Channel
 >>If you can't find your group, please contact the program manager through Discord or email
 
-## Next steps
+## Next Steps
 
 * Deep dive on GPTs
 * Models and hardware requirements

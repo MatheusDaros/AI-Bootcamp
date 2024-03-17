@@ -8,7 +8,7 @@ In future lessons we will run some of these models in our own devices, but for n
 
 We will expand in the Text Generation topic by studying how different `prompt` techniques can be used to control and tweak the output of the Generative AI models.
 
-## Pre-requisites
+## Prerequisites
 
 * Learn how to use a shell/terminal/console/bash in your device
   * Get familiar with basic commands like `cd`, `ls` and `mkdir`
@@ -52,7 +52,7 @@ We will expand in the Text Generation topic by studying how different `prompt` t
 
 * Interacting with APIs over HTTP
 
-  * APIs are a fundamental tool for accessing and manipulating resources provided by web services. The 'requests' library is most commonly used with Python. With the HTTP library installed, it is possible to construct HTTP requests, specifying the request method (GET, POST, PUT, DELETE, etc.), the API endpoint URL. After sending an HTTP request, the API will process the request and return a response. This response can contain the requested data in the response body, as well as additional metadata such as HTTP status codes and response headers
+  * APIs are a fundamental tool for accessing and manipulating resources provided by web services. The 'requests' library is most commonly used with Python. with the HTTP library installed, it is possible to construct HTTP requests, specifying the request method (GET, POST, PUT, DELETE, etc.), the API endpoint URL. After sending an HTTP request, the API will process the request and return a response. This response can contain the requested data in the response body, as well as additional metadata such as HTTP status codes and response headers
 
   * All of this work is carried away in a remote server, and the results are sent back to whomever asked it over the internet. This way you can execute heavy tasks with access to sensitive data without handling any of it in your device
 
@@ -104,7 +104,7 @@ We will expand in the Text Generation topic by studying how different `prompt` t
       * Using `high` will enable "high res" mode, which first allows the model to see the low res image and then creates detailed crops of input images as 512px squares based on the input image size
         * Each of the detailed crops uses twice the token budget (65 tokens) for a total of 129 tokens
 
-## Implementing OpenAI APIs calls
+## Implementing OpenAI APIs Calls
 
 * The [OpenAI Python API library](https://github.com/openai/openai-python)
 * Environment setup
@@ -122,7 +122,7 @@ We will expand in the Text Generation topic by studying how different `prompt` t
   * Exercise 3: [Using AI for computer vision tasks](./project/02-Computer-Vision.md) to evaluate the performance and capabilities of the computer vision models
     * Code and run [ComputerVision.py](./project/ComputerVision.py) in this exercise
 
-## Introduction to prompt engineering
+## Introduction to Prompt Engineering
 
 * Why prompts are important
   * As we've seen in previous lessons, the prompt is a key element to control the output of the Generative AI models
@@ -147,7 +147,7 @@ We will expand in the Text Generation topic by studying how different `prompt` t
   * Constraints Setting: Specifying any limitations or constraints for the response, such as word count, format, or specific points to include or avoid
   * Iterative Refinement: Revising and refining the prompt based on the AI’s initial response to steer it in the desired direction
 
-## Testing prompts
+## Testing Prompts
 
 * Practical exercises
   * Exercise 4: [Testing prompts for text completion tasks](./project/03-Testing-Prompts.md) to evaluate the performance and capabilities of different prompts
@@ -155,7 +155,7 @@ We will expand in the Text Generation topic by studying how different `prompt` t
   * Exercise 5: Building [Chef GPT script](./project/04-Chef-GPT.md) to suggest recipes and cooking tips based in a pre-configured prompt
     * Code and run [ChefGPT.py](./project/ChefGPT.py) in this exercise
 
-## Weekend project
+## Weekend Project
 
 For consolidating the knowledge acquired in this week, the students should complete the following project:
 
@@ -185,7 +185,7 @@ For consolidating the knowledge acquired in this week, the students should compl
 >You should find your group in the [Discord](https://discord.gg/encodeclub) AI Bootcamp Channel
 >>If you can't find your group, please contact the program manager through Discord or email
 
-## Next steps
+## Next Steps
 
 * Exploring other API Calls
 * Exploring other providers
