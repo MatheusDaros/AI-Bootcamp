@@ -138,7 +138,6 @@ We are going to use the Text Generation WebUI tool to run Generative AI tasks in
 * Practical exercises
   * Exercise 3: Learning how to use the [Text Generation WebUI](./project/02-Text-Generation-WebUI.md)
   * Exercise 4: [Downloading and running a GPT model](./project/03-Running-GPT-Model.md)
-  * Exercise 5: [Using chat completion](./project/04-Chat-Completion.md)
 
 ## Next Steps
 

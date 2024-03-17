@@ -24,6 +24,7 @@ Prior to diving into this lesson, it is recommended to have a basic understandin
 * Learn how to use `git` commands to clone repositories
   * Docs: [Git](https://git-scm.com/doc)
 * Install and run [Text Generation WebUI](https://github.com/oobabooga/text-generation-webui?tab=readme-ov-file#how-to-install) in your device
+* Download a compatible GPT model and place in the correct `models` folder for Text Generation WebUI
 
 ## Review of Lesson 06
 
@@ -65,7 +66,7 @@ Now that we have a tool to run GPT models in our own devices, we can run the `Te
 
 By using the built-in OpenAI API Extension from Text Generation WebUI, we can now replace the OpenAI APIs calls inside our scripts and applications to call this local API.
 
-* Practical exercises
+* Practical exercise
   * Exercise 5: [Using the Text Generation WebUI API](./project/04-Using-API.md) as a replacement for OpenAI APIs in a python script
 
 ## Next Steps
