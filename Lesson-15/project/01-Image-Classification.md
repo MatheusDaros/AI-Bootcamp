@@ -1,0 +1,1 @@
+# Running a Zero-shot Image Classification Pipeline

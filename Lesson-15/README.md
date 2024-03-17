@@ -125,8 +125,8 @@ Finally, we're going to learn how to install and use the Vision Process WebUI to
 ## Running CV Tasks with Vision Process WebUI
 
 * Practical exercises
-  * Exercise 3: Run the [Classification](./project/02-Image-Classification.md) task in an image
-  * Exercise 4: Run the [Object Detection](./project/03-Object-Detection.md) task in an image
+  * Exercise 3: Run the [Classification](./project/02-Image-Classification-WebUI.md) task in an image
+  * Exercise 4: Run the [Object Detection](./project/03-Object-Detection-WebUI.md) task in an image
 
 ## Next Steps
 
