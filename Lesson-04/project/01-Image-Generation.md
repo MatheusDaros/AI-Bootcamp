@@ -53,10 +53,9 @@
 
    ```python
    response = client.images.generate(
-       model="dall-e-3",
-       prompt="a white siamese cat",
-       size="1024x1024",
-       quality="standard",
+       model="dall-e-2",
+       prompt="a delicious burrito",
+       size="512x512",
        n=1,
     )
    ```
@@ -71,22 +70,22 @@
    * The `n` parameter specifies the number of images to generate
 
 8. Print the URL of the generated image
-   
+
    ```python
    print(response.data[0].url)
    ```
 
-9.  Run the file
+9. Run the file
 
-    ```bash
-    # Linux/MacOS
-    python <filename>.py
-    ```
+   ```bash
+   # Linux/MacOS
+   python <filename>.py
+   ```
 
-    ```bash
-    # Windows
-    py <filename>.py
-    ```
+   ```bash
+   # Windows
+   py <filename>.py
+   ```
 
 10. Check the output
 
