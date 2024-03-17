@@ -15,4 +15,3 @@
 6. Ask again the assistant to generate a story about `Ahab` and `Moby Dick`
 
 7. Make questions about specific things in the book to experiment with the RAG capabilities
-
