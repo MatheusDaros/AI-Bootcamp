@@ -12,15 +12,13 @@
 
    * This command will install the `openai` [API Package](https://github.com/openai/openai-python) in your environment
 
-4. Write a code to call chat completions api using `gpt-3.5-turbo` vs `gpt-4` vs `gpt-4-0125-preview`
-
-5. Create a new Python file
+4. Create a new Python file
 
    * Create a new file in your favorite code editor or simply run `touch <filename>.py` in your terminal (Linux/MacOS) or `type nul > <filename>.py` in your terminal (Windows)
 
    * Remember to replace `<filename>` with the name of your file
 
-6. Import the `openai` module in your file
+5. Import the `openai` module in your file
 
    ```python
     from openai import OpenAI
@@ -30,7 +28,7 @@
 
    * To use this library correctly, all you need to do is to understand well the [API parameters](https://platform.openai.com/docs) that you want to consume
 
-7. Create a new `client` instance
+6. Create a new `client` instance
 
    ```python
     client = OpenAI()
@@ -52,7 +50,7 @@
 
    * Have caution if you prefer to hardcode your key in this file, since this could lead yo you inadvertently sharing your key with others
 
-8. Write a variable with the message to test in the loop:
+7. Write a variable with the `prompt` to test in the loop:
 
    ```python
    messages = [
@@ -61,11 +59,15 @@
            "content": "Say this is a test",
        }
    ]
+   ```
 
+8. Print the `prompt` message in the console:
+
+   ```python
    print(f"Prompt:\n{messages[0]['content']}\n")
    ```
 
-9. Do and array with the gpt's models:
+9. Do and array with the GPT's models:
 
    ```python
    models = ["gpt-3.5-turbo", "gpt-4", "gpt-4-0125-preview"]

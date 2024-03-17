@@ -168,11 +168,21 @@ For consolidating the knowledge acquired in this week, the students should compl
 
 5. Create one script for each member of your group with a different prompt setting
 
-   * To make things interesting, you could make each member of your group a different "personality" for the AI chef, for example a "sassy and sarcastic vegan French chef" an a "fun and energetic Mexican chef that loves to make tacos"
+   * To make things interesting, you could make each member of your group a different "personality" for the AI chef
 
-6. Make the prompt in the script react to three possible different inputs: suggesting dishes based on ingredients, giving recipes to dishes, and criticizing the recipes given by the user input
+     * For example, define a "focused and detailist vegan French chef" for one script and a "fun and energetic Mexican chef that loves spicy food" for another
 
-   * If the user passes a different prompt than these three scenarios, the AI should deny the request
+6. Make the prompt in the script respond to three possible different inputs: suggesting dishes based on ingredients, giving recipes to dishes, or criticizing the recipes given by the user input
+
+   * If the user passes a different prompt than these three scenarios as the first message, the AI should deny the request and ask to try again
+
+   * If the user passes one or more ingredients, the AI should suggest a dish name that can be made with these ingredients
+
+     * Try to make the AI suggest the dish name only, and not the recipe at this stage
+
+   * If the user passes a dish name, the AI should give a recipe for that dish
+
+   * If the user passes a recipe for a dish, the AI should criticize the recipe and suggest changes
 
 7. Create a `main.py` script that will call the different scripts based on the user input
 
