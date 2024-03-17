@@ -74,8 +74,8 @@ We will overview the image generation techniques involving multi-modal models, n
 
 ### Image Generation Examples
 
-* [DALL·E](https://labs.openai.com/) with [ChatGPT](https://chat.openai.com/)
-* [Designer](https://www.bing.com/images/create) (formerly known as Bing Image Creator)
+* [DALL·E-2 and DALL·E-3](https://labs.openai.com/) with [ChatGPT](https://chat.openai.com/)
+* [DALL·E-3](https://labs.openai.com/) with [Designer](https://www.bing.com/images/create) (formerly known as Bing Image Creator)
 * [Midjourney](https://www.midjourney.com/showcase)
 * [DreamStudio](https://beta.dreamstudio.ai/generate)
 * [Image-FX](https://aitestkitchen.withgoogle.com/tools/image-fx)
