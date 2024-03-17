@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple Chat Interface</title>
+  <style>
+    .chat-container {
+      width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .chat-output {
+      height: 300px;
+      overflow-y: scroll;
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+    .chat-input {
+      width: 100%;
+      padding: 5px;
+      margin-bottom: 10px;
+    }
+    .chat-button {
+      padding: 5px 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="chat-container">
+    <div class="chat-output" id="chatOutput"></div>
+    <input type="text" class="chat-input" id="chatInput" placeholder="Type your message...">
+    <button class="chat-button" id="generateButton">Generate</button>
+  </div>
+
+  <script>
+    const chatOutput = document.getElementById('chatOutput');
+    const chatInput = document.getElementById('chatInput');
+    const generateButton = document.getElementById('generateButton');
+
+    generateButton.addEventListener('click', function() {
+      const message = chatInput.value;
+      if (message.trim() !== '') {
+        // Append the message to the chat output
+        const messageElement = document.createElement('p');
+        messageElement.textContent = message;
+        chatOutput.appendChild(messageElement);
+
+        // Send the message to a specified URL
+        const url = 'https://example.com/api/message'; // Replace with your desired URL
+        fetch(url, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({ message: message })
+        })
+        .then(response => {
+          // Handle the response if needed
+          console.log('Message sent successfully');
+        })
+        .catch(error => {
+          // Handle any errors
+          console.error('Error sending message:', error);
+        });
+
+        // Clear the input field
+        chatInput.value = '';
+      }
+    });
+  </script>
+</body>
+</html>

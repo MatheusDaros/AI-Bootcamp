@@ -57,11 +57,11 @@ Finally, we will learn how to use Vercel NextJS AI SDK to build an AI applicatio
 * What is a JavaScript Framework
   * A `JavaScript` framework is a collection of pre-written code that provides frameworks, libraries, and design patterns to facilitate web application development. JavaScript frameworks are designed to simplify common tasks in web development, such as DOM (Document Object Model) manipulation, page routing, state management, asynchronous API calls, form validation. They also provide an organized and standardized architecture for applications, facilitating maintenance and scalability
 * How to use Frameworks
-  * To start using the framework, you need to configure the project environment and install the dependencies. After this initial step, begins the application structure, routes, components and business logic are defined using the framework's APIs and conventions. Frameworks solve development problems such as: 
+  * To start using the framework, you need to configure the project environment and install the dependencies. After this initial step, begins the application structure, routes, components and business logic are defined using the framework's APIs and conventions. Frameworks solve development problems such as:
     * `Complexity Abstraction`: which results in greater concentration on application logic and less on low-level implementation details
     * `Standardization of Practices`: has best practices and standardized coding conventions, ensuring that the project has consistency and maintainability
     * `Efficiency and Productivity`: by providing reusable components, libraries and utilities, frameworks eliminate the need to reinvent the wheel for common features and functionality
-    * `Enhanced Developer Experience`: they offer features such as real-time module reloading, code splitting, and comprehensive bug reporting that streamline the development workflow and accelerate iteration cycles 
+    * `Enhanced Developer Experience`: they offer features such as real-time module reloading, code splitting, and comprehensive bug reporting that streamline the development workflow and accelerate iteration cycles
     * `Scalability and Performance Optimization`: features such as server-side rendering, on-demand loading and caching mechanisms, which optimize the application's performance and resource usage
 * What frameworks are most used nowadays
   * Currently four frameworks are widely known in the development industry, they are:
