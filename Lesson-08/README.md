@@ -45,7 +45,7 @@ Later on, when deploying our applications to the cloud, we can use the same tech
 
 ## Using a Local API Chat Completion Tasks
 
-* Practical exercises
+* Practical exercise
   * Exercise 1: [Replacing OpenAI's Chat Completion API with a local API](./project/00-Chat-Completion.md) in our `Chef GPT` NextJS application
 
 ## Exploring AI Possibilities with Local APIs
