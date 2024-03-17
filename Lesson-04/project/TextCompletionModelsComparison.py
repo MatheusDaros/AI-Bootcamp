@@ -9,10 +9,12 @@ messages = [
     }
 ]
 
+print(f"Prompt:\n{messages[0]['content']}\n")
+
 models = ["gpt-3.5-turbo", "gpt-4", "gpt-4-0125-preview"]
 
 for model in models:
-    print(f"\nGenerating chat completion with {model}:\n")
+    print(f"\n---\nGenerating chat completion with {model}:\n")
     stream = client.chat.completions.create(
         model=model,
         messages=messages,
@@ -20,5 +22,3 @@ for model in models:
     )
     for chunk in stream:
         print(chunk.choices[0].delta.content or "", end="")
-        
-    print("\n\n---\n")

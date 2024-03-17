@@ -116,7 +116,7 @@ We will expand in the Text Generation topic by studying how different `prompt` t
 
 * Practical exercises
   * Exercise 1: [Experimenting models for text completion tasks](./project/00-Text-Completion-Models.md) to evaluate their performance and capabilities
-    * Code and run [TextCompletionModels.py](./project/TextCompletionModels.py) in this exercise
+    * Code and run [TextCompletionModelsTest.py](./project/TextCompletionModelsTest.py), [TextCompletionModelsComparison.py](./project/TextCompletionModelsComparison.py) and [TextCompletionModelsCutoff.py](./project/TextCompletionModelsCutoff.py) in this exercise
   * Exercise 2: [Generating images with AI](./project/01-Image-Generation.md) to evaluate the performance and capabilities of the image generation models
     * Code and run [ImageGeneration.py](./project/ImageGeneration.py) in this exercise
   * Exercise 3: [Using AI for computer vision tasks](./project/02-Computer-Vision.md) to evaluate the performance and capabilities of the computer vision models

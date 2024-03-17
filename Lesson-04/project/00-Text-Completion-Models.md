@@ -58,9 +58,11 @@
    messages = [
        {
            "role": "user",
-           "content": "Say this is a testSay this is a test",
+           "content": "Say this is a test",
        }
    ]
+
+   print(f"Prompt:\n{messages[0]['content']}\n")
    ```
 
 9. Do and array with the gpt's models:
@@ -73,7 +75,7 @@
 
     ```python
     for model in models:
-    print(f"\nGenerating chat completion with {model}:\n")
+    print(f"\n---\nGenerating chat completion with {model}:\n")
     stream = client.chat.completions.create(
         model=model,
         messages=messages,
@@ -81,7 +83,6 @@
     )
     for chunk in stream:
         print(chunk.choices[0].delta.content or "", end="")
-    print("\n\n---\n")
     ```
 
     * The for loop will iterate each element of models that you've put in the array, and will and configure a stream to that model
