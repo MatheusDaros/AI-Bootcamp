@@ -290,7 +290,7 @@ export async function POST(req: Request) {
    npm run dev
    ```
 
-   * Open the app in your browser and click the 'Random Recipe' button
+   * Open the app in your browser at http://localhost:3000/ and click the 'Random Recipe' button
 
    * Observe the AI's response
 
