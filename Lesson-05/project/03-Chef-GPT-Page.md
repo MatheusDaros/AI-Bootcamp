@@ -23,7 +23,7 @@ In this exercise, we will enhance our chat application to function as a virtual 
 </div>
 ```
 
-4. Extract `append` and `isLoading` from the [`useChat`]('https://sdk.vercel.ai/docs/api-reference/use-chat') hook provided by Vercel AI SDK. We'll use these in the upcoming steps:
+4. Extract `append` and `isLoading` from the [useChat hook]('https://sdk.vercel.ai/docs/api-reference/use-chat') provided by Vercel AI SDK. We'll use these in the upcoming steps:
 
 ```typescript
 const { messages, input, handleInputChange, handleSubmit, isLoading, append } = useChat();
