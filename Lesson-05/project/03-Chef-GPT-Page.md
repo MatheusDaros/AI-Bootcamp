@@ -4,13 +4,13 @@ In this exercise, we will enhance our chat application to function as a virtual 
 
 1. Open the 'page.tsx' file
 
-2. First of all we need to set the height of our chat container to 100% of the screen height by adding "h-screen" in our outer div. This will avoid overlaping the new elements we will add to the code:
+2. First, set the chat container's height to 100% of the screen by adding "h-screen" to the outer div. This prevents new elements from overlapping:
 
 ```typescript
  <div className="flex flex-col w-full h-screen max-w-md py-24 mx-auto stretch">
 ```
 
-3. Then we will need to wrap our chat messages into a div container to control the overflow, height and scroll when messages are generated:
+3. Next, wrap the chat messages in a div container to manage overflow, height, and scrolling as messages are generated:
 
 ```typescript
 <div className="overflow-auto h-[88%] w-full">
@@ -23,13 +23,13 @@ In this exercise, we will enhance our chat application to function as a virtual 
 </div>
 ```
 
-4. Let's destruct `append` and `isLoading` from the [`useChat`]('https://sdk.vercel.ai/docs/api-reference/use-chat') hook provided by Vercel AI SDK. We will use these them in the next steps:
+4. Extract `append` and `isLoading` from the [`useChat`]('https://sdk.vercel.ai/docs/api-reference/use-chat') hook provided by Vercel AI SDK. We'll use these in the upcoming steps:
 
 ```typescript
 const { messages, input, handleInputChange, handleSubmit, isLoading, append } = useChat();
 ```
 
-5. Now we can use `isLoading` to control wether or not display a loading element when messages are being generated. Add this code inside the div that we created to contain the chat messages in step 3:
+5. Next, use `isLoading` to decide if a loading element should be displayed while messages are being generated. Add this code inside the div that we created to contain the chat messages in step 3:
 
 ```typescript
 {
@@ -41,7 +41,7 @@ const { messages, input, handleInputChange, handleSubmit, isLoading, append } = 
 }
 ```
 
-6. Let's add some styles to make the messages look like chat bubbles. Refactor our messages element to the following code:
+6. Next, add styles to give the messages a chat bubble appearance. Update the messages element with the following code:
 
 ```typescript
 {
@@ -113,13 +113,13 @@ export default function Chat() {
 }
 ```
 
-8. At this point the page is looking good, but when there are many messages, the user needs to scroll the page manually to see the new messages. Let's solve it by adding an automatic scroll:
+8. At this point, the page looks good. However, when there are many messages, the user must manually scroll to see new messages. Let's address this by adding automatic scrolling:
 
   * Import useEffect and useRef from the 'react' package at the top of the code (after "useChat" import). These are two functions from React that allow us to, respectively, perform side effects in functional components and access the properties of a DOM element:
 
 `import { useEffect, useRef } from "react";`
   
-  * Now lets create a reference for the messages container and scroll the page when new messages are generated:
+  * Create a reference for the messages container and scroll the page when new messages appear:
 
 ```typescript
   const messagesContainerRef = useRef<HTMLDivElement>(null);
@@ -132,15 +132,15 @@ export default function Chat() {
   }, [messages]);
 ```
 
-  * Pass the reference to the messages container that we created in step 3:
+  * Attach the reference to the messages container created in step 3:
 
 ```typescript
  <div className="overflow-auto h-[88%] w-full" ref={messagesContainerRef}>
 ```
 
-9. Let's customize the page a bit more by adding a button that make the AI return a random recipe:
+9. Let's further customize the page by adding a button that prompts the AI to return a random recipe:
 
-  * First we need to create a container to use in the bottom of our page. We can do that wraping our form with a div and moving some classes from the form to the div container:
+  * First, create a container at the bottom of our page. Do this by wrapping our form with a div and moving some classes from the form to the div container:
 
 ```typescript
 <div className="fixed bottom-0 w-full max-w-md">
@@ -155,7 +155,7 @@ export default function Chat() {
 </div>
 ```
 
-  * Then lets add a button in inside the container we just created to ask for a random recipe. We can do that by using the append function from the useChat hook that destructed in step 4. We will call this function when the user clicks in the button with the following code:
+  * Next, add a button inside the container we just created to request a random recipe. Use the `append` function from the `useChat` hook, which we extracted in step 4. Call this function when the user clicks the button with the following code:
 
 ```typescript
 <div className="flex flex-col justify-center items-center">
@@ -170,7 +170,7 @@ export default function Chat() {
 </div>
 ```
 
-  * We can use the same `isLoading` value from step 5 to disable the button and the input. This prevents the user from spamming clicks or messages when a response is already being generated. The final code should look like this:
+  * We can use the same `isLoading` value from step 5 to disable the button and the input. This prevents the user from sending multiple clicks or messages while a response is being generated. The final code should look like this:
 
 ```typescript
 "use client";
@@ -252,7 +252,7 @@ export default function Chat() {
 
    * Now, let's make the AI act like a chef
 
-   * Replace the code that creates chat completions in the 'route.tsx' file inside the 'src/app/api/chat' folder
+   * Replace the code that creates chat completions in the 'route.tsx' file inside the 'src/app/api/chat' folder:
 
    ```typescript
    // rest of the code
