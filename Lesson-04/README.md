@@ -34,7 +34,7 @@ We will expand in the Text Generation topic by studying how different `prompt` t
 ## Review of Lesson 03
 
 * What are GPTs
-* How GPTs works
+* How GPTs work
 * Capabilities and limitations
 * Use cases
 * Applications using GPTs
@@ -45,19 +45,19 @@ We will expand in the Text Generation topic by studying how different `prompt` t
 
 * How APIs work
 
-  * Instead of running executions in your own device, an API call can run these executions in a remote server, over the internet
-    * This is useful when the execution requires a lot of computational power, or when the execution requires a lot of data that is not available in your device
+  * Instead of running executions in your own device, an API call can run these operations in a remote server, over the internet
+    * This is useful when the execution requires a lot of computational power, or when the task requires a lot of data that is not available on your device
     * Sometimes you need to process sensitive data, like credentials or personal information, and you don't want to expose this data to the `client side`
       * In these cases, you can run the execution in a `remote server` and only send the results to the `client`
 
 * Interacting with APIs over HTTP
 
-  * APIs are a fundamental tool for accessing and manipulating resources provided by web services. The 'requests' library is most commonly used with Python. with the HTTP library installed, it is possible to construct HTTP requests, specifying the request method (GET, POST, PUT, DELETE, etc.), the API endpoint URL. After sending an HTTP request, the API will process the request and return a response. This response can contain the requested data in the response body, as well as additional metadata such as HTTP status codes and response headers
+  * APIs are a fundamental tool for accessing and manipulating resources provided by web services. The 'requests' library is most commonly used with Python. With the HTTP library installed, it is possible to construct HTTP requests, specifying the request method (GET, POST, PUT, DELETE, etc.), the API endpoint URL. After sending an HTTP request, the API will process the request and return a response. This response can contain the requested data in the response body, as well as additional metadata such as HTTP status codes and response headers
 
-  * All of this work is carried away in a remote server, and the results are sent back to whomever asked it over the internet. This way you can execute heavy tasks with access to sensitive data without handling any of it in your device
+  * All of this work is carried out on a remote server, and the results are sent back to whomever asked it over the internet. This way you can execute heavy tasks with access to sensitive data without handling any of it in your device
 
   * The library will provide methods that will be used to construct and send HTTP requests to the API endpoints.
-    For example, a request from the GET method: `response = requests.get('https://api.example.com/data')`
+    For example, a request using the GET method: `response = requests.get('https://api.example.com/data')`
     To access the response:
     `print(response.text)`
     It is important to mention that some APIs require authentication, in these cases credentials will need to be included in the request; in Python, for example:
@@ -74,18 +74,18 @@ We will expand in the Text Generation topic by studying how different `prompt` t
 * OpenAI API
   * The OpenAI API provides access to a variety of powerful artificial intelligence models that are trained on large datasets, including text generation, image generation, and natural language recognition models. Developers can integrate AI capabilities into their applications, websites, and systems by accessing models through specific API endpoints
   * Since the use of this computation is billed, OpenAI needs to identify and authorize (or not) each person/agent doing requests to the API
-    * This is done through assign a unique secret key or set of keys, which are unique to each user and must be included in every request made to the API
+    * This is done by assigning a unique secret key or set of keys, which are unique to each user and must be included in every request made to the API
   * Authentication to the OpenAI API is done through the use of an API key. Each user is assigned a unique API key that must be included in every request made to the API. The API key is usually passed as an HTTP header in the request or as a query parameter
   * Each request made to the API will result in costs, that is, each computation performed on the OpenAI API is charged to the user. Costs may vary based on the type of model used, the size of the request and the response, and the amount of compute power and resources used
 * Endpoints
-  * Each endpoint available in the OpenAI API offers specific functionality to meet the needs of developers
+  * Each endpoint available in the OpenAI API offers specific functionality to meet developers' needs
   * There is not a single endpoint that can be used to access all the models and capabilities of the OpenAI services
     * Instead, there are several endpoints, each one providing access to a specific model or set of models, and each one with its own set of capabilities and requirements
   * The most common endpoints are `chat`, for text generation tasks, `audio`, for speech recognition and creation, `images`, for image generation and helpers for passing images to chat completion endpoints, and  `fine_tuning`, for creating and managing fine tuning jobs and models
     * There are many other useful endpoints for things like creating assistants, moderating text content, calculating text embeddings, and much more
     * For a full list of features, check the "Capabilities" section of the [OpenAI Platform Documentation](https://platform.openai.com/docs/overview) and the "Endpoints" section of the [API Reference](https://platform.openai.com/docs/api-reference/introduction)
 * Text Generation
-  * The `chat` endpoint in the OpenAI API allows users to request text generation based on provided input, which is useful for text autocompletion, generating content for writing, and language translation
+  * The `chat` endpoint in the OpenAI API allows users to request text generation based on the provided input, which is useful for text autocompletion, content generation, and language translation
   * The [Chat Completions](https://platform.openai.com/docs/guides/text-generation/chat-completions-api) tasks require passing at least a `model definition` and a `message` in the `request body`
     * In the body you can pass many other parameters like model configurations for things like `temperature` and `max_tokens` and requests options for things like `stream` and `user`
   * The response object will contain the generated text inside an object called `choices`, as well as additional metadata such as the `model` used, the `system_fingerprint` of the GPT version, and the `usage` statistics of the API request
@@ -133,7 +133,7 @@ We will expand in the Text Generation topic by studying how different `prompt` t
   * Each model has its own _text space functions_ and _prompting_ capabilities, so it is common to find prompts that work well for one model but not for another
   * Some models require specific structures and/or codes to be passed in the prompts to work properly
   * Some models are meant to be prompted with a text to complete, others with image bytes, other with code snippets, others with step by step instructions, and so on
-    * Due to this vast variety of requirements, it's almost impossible to find a one-size-fits-all prompt guide
+    * Due to this vast variety of requirements, it is almost impossible to find a one-size-fits-all prompt guide
 * General recommendations for prompt techniques
   * Specificity: Clearly defining the question or task
   * Contextual Clues: Providing relevant background information
@@ -161,7 +161,7 @@ For consolidating the knowledge acquired in this week, the students should compl
 
 1. Create a github repository for your project
 2. Add all members of your group
-3. Create a README.md file with the description of your project
+3. Create a README.md file that describes your project
 4. Extend the `Chef GPT script` with a prompt to give some sort of "personality" to your AI chef
 
    * For example, you could make your chef a "young and spirited Indian cook that loves to make Biryani" or a "wise and experienced Italian chef that loves to make pasta"
@@ -172,7 +172,7 @@ For consolidating the knowledge acquired in this week, the students should compl
 
      * For example, define a "focused and detailist vegan French chef" for one script and a "fun and energetic Mexican chef that loves spicy food" for another
 
-6. Make the prompt in the script respond to three possible different inputs: suggesting dishes based on ingredients, giving recipes to dishes, or criticizing the recipes given by the user input
+6. Make the prompt in the script respond to three different possible inputs: suggesting dishes based on ingredients, giving recipes to dishes, or criticizing the recipes given by the user input
 
    * If the user passes a different prompt than these three scenarios as the first message, the AI should deny the request and ask to try again
 
@@ -186,7 +186,7 @@ For consolidating the knowledge acquired in this week, the students should compl
 
 7. Create a `main.py` script that will call the different scripts based on the user input
 
-8. Experiment passing a list of ingredients for one script, then ask a recipe for that dish to another script, and then criticize the recipe given by the last script with a third script
+8. Experiment passing a list of ingredients for one script, then ask another script for a recipe for that dish, and then criticize the recipe given by the last script with a third script
 
 9. Create a report with the results of the experiment and the different outputs of the AI chefs
 

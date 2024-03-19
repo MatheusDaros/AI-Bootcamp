@@ -15,7 +15,7 @@ In this lesson, we will introduce the basic concepts of AI, its capabilities and
   * First formal mention of AI was in 1956 by John McCarthy
   * First decades of AI were focused on rule-based systems
     * AI was seen as a way to _automate_ tasks that required human intelligence
-  * By early 2000s, AI applications became more common, specially in digital environments
+  * By early 2000s, AI applications became more common, especially in digital environments
     * AIs for marketing, customer service, and other digital tasks
     * AIs for search engines, recommendation systems, and other digital services
     * AIs for games, simulations, and other digital entertainment
@@ -63,7 +63,7 @@ In this lesson, we will introduce the basic concepts of AI, its capabilities and
   * Internet connection
   * Dedication
   * Time
-* Everything else we will pick down the road in this bootcamp
+* Everything else will be covered as we progress through this bootcamp
 
 ## AI Bootcamp
 
@@ -79,9 +79,9 @@ In this lesson, we will introduce the basic concepts of AI, its capabilities and
 
 >“_A computer program is said to learn from experience E with respect to some class of tasks `T` and performance measure `P`, if its performance at tasks in `T`, as measured by `P`, improves with experience `E`._” Tom M Mitchell et al. 
 
-* Does it means that the computer is _learning_?
-* Does it means that the computer is _thinking_?
-* Does it means that the computer is _conscious_?
+* Does it mean that the computer is _learning_?
+* Does it mean that the computer is _thinking_?
+* Does it mean that the computer is _conscious_?
 
 ## Capabilities and Limitations of AI
 
