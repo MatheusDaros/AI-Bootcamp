@@ -2,9 +2,9 @@
 
 In this lesson, we will introduce the basic concepts of machine learning, transformers and LLMs to better understand how Generative AI works, their capabilities and limitations.
 
-We will get practical insights on how Machine Learning models works and what they can do by using the Hugging Face's Transformers library to run pre-trained models for many AI tasks. Using this library, we will abstract away most of the complexities of using Machine Learning and other AI techniques, making it simple and quick to use and apply these models to real-world problems.
+We will get practical insights on how Machine Learning models work and what they can do by using the Hugging Face's Transformers library to run pre-trained models for many AI tasks. Using this library, we will abstract away most of the complexities of using Machine Learning and other AI techniques, making it simple and quick to use and apply these models to real-world problems.
 
-For this lesson, you should have a basic understanding on how to use developer tools in your device. You should also have at least a very basic understanding of the python programming language syntax.
+For this lesson, you should have a basic understanding of how to use developer tools on your device. You should also have at least a very basic understanding of the python programming language syntax.
 
 ## Prerequisites
 
@@ -68,12 +68,12 @@ For this lesson, you should have a basic understanding on how to use developer t
   * Neural Networks like [CNNs](https://en.wikipedia.org/wiki/Convolutional_neural_network) and [RNNs](https://en.wikipedia.org/wiki/Recurrent_neural_network) have been used for powering many AI applications for things like image and text recognition and generation, computer vision, and many others
   * Currently (as of March 2024), the most advanced form of Deep Learning is the [Transformers](https://en.wikipedia.org/wiki/Transformer_(machine_learning_model)) architecture, which is a type of neural network that has been used to power many AI applications, including the GPT models
     * Different from traditional neural networks, transformers are able to process data in parallel, which makes them much faster and more efficient than traditional neural networks
-    * This simple technical detail, aligned with the right market/investment conditions in the last years, has made possible for the Generative AI boom that we are experiencing now (as 2024)
+    * This simple technical detail, aligned with the right market/investment conditions in the last years, has made the Generative AI boom that we are experiencing now (as of 2024) possible
 * To understand how transformers work, we will use samples from the [Hugging Face tutorials](https://huggingface.co/docs/transformers/index), that makes it simple and straightforward to start using these tools and techniques without the need to understand the deep technical details of the models beforehand
 
 ## Introduction to Transformers
 
-Instead of going through the deep technical details of transformers, we will use frameworks, tools and libraries that abstract away most of the complexities for the hard computational, mathematical and statistical work that is required to make these algorithms work.
+Instead of going through the deep technical details of transformers, we will use frameworks, tools and libraries that abstract away complexities of the computational, mathematical, and statistical work.
 
 In fact, we're going to use pre-made models and shortcuts that makes it as simple as just calling a function to execute tasks over data being passed as parameter.
 
@@ -101,9 +101,9 @@ The only concepts you need to fully understand when interacting with this librar
 
 * Using [Transformers](https://github.com/huggingface/transformers) Library from Hugging Face
 * Using the [Pipelines](https://huggingface.co/docs/transformers/main_classes/pipelines) API for running pre-trained tasks
-  * Running these tasks requires almost no previous knowledge in AI or Machine Learning or even programming at all, thanks to the Hugging Face's [Philosophy](https://huggingface.co/docs/transformers/main/en/philosophy)
+  * Running these tasks requires almost no previous knowledge in AI or Machine Learning or even programming at all, thanks to Hugging Face's [Philosophy](https://huggingface.co/docs/transformers/main/en/philosophy)
 * Generating text by running LLMs with [Generate](https://huggingface.co/docs/transformers/main/en/model_doc/phi#transformers.PhiForCausalLM.generate) API
-  * [Text generation with LLMs](https://huggingface.co/docs/transformers/main/en/llm_tutorial#generation-with-llms) make use of _Autoregressive generation_ to iteratively infer outputs from a given input from a model
+  * [Text generation with LLMs](https://huggingface.co/docs/transformers/main/en/llm_tutorial#generation-with-llms) uses _Autoregressive generation_ to iteratively infer outputs from a given input from a model
 * Practical exercises
   * Exercise 1: [Installing Hugging Face's Transformers](./project/00-Install-Transformers.md)
   * Exercise 2: [Using a Sentiment Analysis pipeline](./project/01-Sentiment-Analysis-Example.md)

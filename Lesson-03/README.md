@@ -1,21 +1,21 @@
 # Lesson 03: Introduction to GPTs
 
-In this lesson we will advance to the introduction of GPTs, the Generative Pre-trained Transformers, and how they work.
+In this lesson, we will delve into the introduction of GPTs, the Generative Pre-trained Transformers, and how they work.
 
 We will have a better overview of how transformers are used to train and compute outputs from models, and we will evaluate in depth the capabilities and limitations of current GPT applications.
 
-We will exercise more on using the Hugging Face's Transformers library to run pre-trained models for text-to-text tasks with an LLM, but this time using sampling methods and tweaking the model configurations to understand more on the maths and logics behind the models.
+We will practice more with using the Hugging Face Transformers library to run pre-trained models for text-to-text tasks with an LLM, but this time using sampling methods and tweaking the model configurations to understand more about the mathematics and logic behind the models.
 
 We will also use the OpenAI APIs to run GPTs for text-to-text tasks, by invoking a remote execution of a server that runs the GPTs for us.
 
-For this lesson, you should have a basic understanding on how to use developer tools in your device. You should also have at least a very basic understanding of the python programming language syntax. You should set up an account in the OpenAI Platform, and have at least 5 USD credits in your account to run the API commands in the OpenAI exercise.
+For this lesson, you should have a basic understanding of how to use developer tools on your device. You should also have at least a very basic understanding of the python programming language syntax. You should set up an account in the OpenAI Platform, and have at least 5 USD credits in your account to run the API commands in the OpenAI exercise.
 
 ## Prerequisites
 
-* Learn how to use a shell/terminal/console/bash in your device
+* Learn how to use a shell/terminal/console/bash on your device
   * Get familiar with basic commands like `cd`, `ls` and `mkdir`
-  * Learn how to execute packages, scripts and commands in your device
-* Install python tools in your device
+  * Learn how to execute packages, scripts and commands on your device
+* Install python tools on your device
   * [Python](https://www.python.org/downloads/)
   * [Pip](https://pip.pypa.io/en/stable/installation/)
 * Learn how to use `python` and `pip` commands
@@ -23,7 +23,7 @@ For this lesson, you should have a basic understanding on how to use developer t
   * Docs: [Pip](https://pip.pypa.io/en/stable/)
 * Learn how to use `venv` to create and manage virtual environments
   * Docs: [Python venv](https://docs.python.org/3/library/venv.html)
-* Install `git` CLI in your device
+* Install `git` CLI on your device
   * [Git](https://git-scm.com/downloads)
 * Learn how to use `git` commands to clone repositories
   * Docs: [Git](https://git-scm.com/doc)
@@ -69,7 +69,7 @@ Some examples of applications using GPTs:
 * [Pi](https://pi.ai/talk)
 * [Grok](https://grok.x.ai/)
 
-All of these applications use many different techniques and models to process many _modalities_ of tasks, but all of them incur in the same limitations and capabilities of GPTs, in different degrees and manifestations.
+All of these applications use many different techniques and models to process various types of tasks, but they all share the same limitations and capabilities of GPTs, to varying degrees and in different ways.
 
 There are many discussions about evolving these applications for reaching [AGI](https://en.wikipedia.org/wiki/Artificial_general_intelligence) (Artificial General Intelligence) capabilities using GPTs and similar models. As far as it seems (by early 2024), this is a very complex and long-term goal that is not yet feasible with the current state of the art in AI and Machine Learning (or might never be at all).
 
@@ -108,14 +108,14 @@ There are many discussions about evolving these applications for reaching [AGI](
   * If the GPTs trained in random internet text were not adjusted, they would merely regurgitate random internet texts, giving responses completely irrelevant, inaccurate, or even nonsensical.
   * To save space in the `context` while tweaking the accuracy of the outputs, the `fine tuning` process can be used to _guide_ the model to generate more _meaningful_ outputs
   * In the `fine tuning` process, the model is trained to prioritize reliable sources and accurate information, reducing the likelihood of generating answers based on misinformation or low-quality internet texts
-  * These processes often includes incorporating human feedback to correct errors and biases in the model's responses. This iterative process helps in aligning the model's outputs with human values and expectations
+  * These processes often include incorporating human feedback to correct errors and biases in the model's responses. This iterative process helps in aligning the model's outputs with human values and expectations
   * Another common practice is to apply targeted training, that involves fine-tuning the model on a specific dataset that is relevant to the desired application
     * This targeted approach helps the model learn context and nuances pertinent to particular topics or industries.
 * RAG
   * The `RAG` (Retrieval-Augmented Generation) process is a technique that combines a language model's generative abilities with an external information retrieval system
   * Instead of passing all the context for a question in the prompt, the RAG first identifies relevant information from a large database, then incorporates this data into the language model's query
   * This method significantly expands the model's precision and accuracy, particularly for queries requiring specific information
-  * This is more efficient than passing all the information in the prompt, and also is much simpler than fine-tuning the model with the new data
+  * This is more efficient than passing all the information in the prompt, and is also much simpler than fine-tuning the model with the new data
 
 ### Limitations of GPTs
 
@@ -126,14 +126,14 @@ To better understand the capabilities of GPTs, let's highlight some of the most 
   * If the training data contains texts like "_I am a chatbot_" and "_My name is ChatGPT_" frequently associated with these questions, the GPT will generate outputs like "_I am a chatbot_" and "_My name is ChatGPT_" when asked
   * If the training data is some amount of text where these questions are frequently associated with other words and phrases, the GPT will generate outputs based on these associations
     * For example, a GPT trained in the Don Quixote book might generate outputs like "_I am Don Quixote_" and "_My name is Alonso Quijano_" when asked these questions
-  * There are some techniques like `Fine Tuning`, `HFRL` (Human Feedback Reinforcement Learning), `Prompt Engineering`, `RAG` (Retrieval-Augmented Generation)  and `Control Codes` that can be used to _guide_ the GPTs to generate more probably _meaningful_ outputs, but these are not _learning_ processes, they are just _tweaking_ processes
+  * There are some techniques like `Fine Tuning`, `HFRL` (Human Feedback Reinforcement Learning), `Prompt Engineering`, `RAG` (Retrieval-Augmented Generation)  and `Control Codes` that can be used to _guide_ the GPTs to generate more _meaningful_ outputs, but these are not _learning_ processes, they are just _tweaking_ processes
   * Ultimately, there's no current technique that can make a GPT to actually _understand_ and _reason_ about the _inputs_ and _outputs_ they're dealing with, like a human mind would do
 * Sensitivity to input
   * GPTs are very sensitive to the _inputs_ they're dealing with, and they can generate very different _outputs_ based on very small changes in the inputs _phrasing_ (or `prompting`)
   * Asking the same question in different word orders, or even using different languages, can lead to very different outputs, some times even conflicting or entirely unrelated
     * For example, asking "_what is the capital of France_" and "_France's capital is_" can lead to very different outputs, depending on the model training
     * This happens because even if the `semantic` meaning of these questions are almost the same in these two phrasings, the `syntactic` meaning is different, and GPTs are very sensitive to these differences
-    * In practice, every _character_ different in a `prompt` can move the coordinates in the _text space_ function that computes the output value over that input, regardless if that character changes or not the _semantic_ meaning of the `prompt`
+    * In practice, every _character_ difference in a `prompt` can move the coordinates in the _text space_ function that computes the output value over that input, regardless if that character changes or not the _semantic_ meaning of the `prompt`
       * As a loose metaphor, we could imagine a function `f(x)` that gives possibly very different outputs if we give `x = 1`, `x = 1.00000001` or `x = 1.000000000000...001`, even if the `semantic` meaning of these inputs are almost the same
 * Inconsistency
   * GPTs sometimes may be very inconsistent in generating outputs for the same inputs, even if the _inputs_ are the same
@@ -154,7 +154,7 @@ To better understand the capabilities of GPTs, let's highlight some of the most 
 * Bias and toxicity
   * GPTs can generate outputs that are biased and toxic based on the _inputs_ they're dealing with, specially when the information in the _training data_ are biased and toxic
   * Techniques like `Fine Tuning` and `HFRL` (Human Feedback Reinforcement Learning) can help to mitigate this effect by tweaking the responses to be as _helpful_, _harmless_ and _honest_ as possible
-    * But also consider that even human feedback and direct overseeing of the training data can't guarantee that the GPTs will generate outputs that are not biased and toxic, since the very terms of _helpfulness_, _harmlessness_ and _honesty_ can be very subjective, depending on many social, cultural, contextual and personal factors
+    * But also consider that even human feedback and direct overseeing of the training data can't guarantee that the GPTs will generate outputs that are not biased and toxic, since the definitions of _helpfulness_, _harmlessness_ and _honesty_ can be very subjective, depending on many social, cultural, contextual and personal factors
 * No (native) access to Real-Time information
   * Since GPTs don't _learn_ or _improve_ after the training phase, they can't access any information that happen after their training, unless explicitly _fed_ with this information in the _inputs_ or with some technique like `RAG` (Retrieval-Augmented Generation) or similar
   * This means that GPTs can't provide real-time information about anything at all, like news, events, weather, stock prices, sports results, and such
@@ -162,7 +162,7 @@ To better understand the capabilities of GPTs, let's highlight some of the most 
 
 ### Use Cases of GPTs
 
-Some examples of practical tasks that GPTs can accomplish with these forementioned applications:
+Some examples of practical tasks that GPTs can accomplish with these aforementioned applications:
 
 * Writing
   * Articles
@@ -207,7 +207,7 @@ Some examples of practical tasks that GPTs can accomplish with these foremention
 
 ### Practical Exercises with GPTs
 
-We can use the Transformers Text Generation Pipeline to run GPTs for text-to-text tasks, just like we have done at Lesson 2.
+We can use the Transformers Text Generation Pipeline to run GPTs for text-to-text tasks, just like we have done in Lesson 2.
 
 These same tasks can be accomplished using OpenAI APIs, by invoking a remote execution of a server that runs the GPTs for us.
 
