@@ -69,7 +69,7 @@ Some examples of applications using GPTs:
 * [Pi](https://pi.ai/talk)
 * [Grok](https://grok.x.ai/)
 
-All of these applications use many different techniques and models to process various types of tasks, but they all share the same limitations and capabilities of GPTs, to varying degrees and in different ways.
+All of these applications use many different techniques and models to process various types of tasks (also known as modalities), but they all share the same limitations and capabilities of GPTs, to varying degrees and in different ways.
 
 There are many discussions about evolving these applications for reaching [AGI](https://en.wikipedia.org/wiki/Artificial_general_intelligence) (Artificial General Intelligence) capabilities using GPTs and similar models. As far as it seems (by early 2024), this is a very complex and long-term goal that is not yet feasible with the current state of the art in AI and Machine Learning (or might never be at all).
 
@@ -154,7 +154,7 @@ To better understand the capabilities of GPTs, let's highlight some of the most 
 * Bias and toxicity
   * GPTs can generate outputs that are biased and toxic based on the _inputs_ they're dealing with, specially when the information in the _training data_ are biased and toxic
   * Techniques like `Fine Tuning` and `HFRL` (Human Feedback Reinforcement Learning) can help to mitigate this effect by tweaking the responses to be as _helpful_, _harmless_ and _honest_ as possible
-    * But also consider that even human feedback and direct overseeing of the training data can't guarantee that the GPTs will generate outputs that are not biased and toxic, since the definitions of _helpfulness_, _harmlessness_ and _honesty_ can be very subjective, depending on many social, cultural, contextual and personal factors
+    * But also consider that even human feedback and direct overseeing of the training data can't guarantee that the GPTs will generate outputs that are not biased and toxic, since the very definitions of _helpfulness_, _harmlessness_ and _honesty_ can be very subjective, depending on many social, cultural, contextual and personal factors
 * No (native) access to Real-Time information
   * Since GPTs don't _learn_ or _improve_ after the training phase, they can't access any information that happen after their training, unless explicitly _fed_ with this information in the _inputs_ or with some technique like `RAG` (Retrieval-Augmented Generation) or similar
   * This means that GPTs can't provide real-time information about anything at all, like news, events, weather, stock prices, sports results, and such
