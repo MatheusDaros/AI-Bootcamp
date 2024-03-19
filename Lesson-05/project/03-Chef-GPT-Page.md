@@ -131,7 +131,7 @@ Follow the instructions below step by step to complete creating the Chef GPT app
 
 8. Add an automated scroll to the chat container
 
-   * The man functionalities should be working correctly at this point, but when there are many messages, the user must manually scroll to see new entries added
+   * The main functionalities should be working correctly at this point, but when there are many messages, the user must manually scroll to see new entries added
 
    * This can be fixed by adding automatic scrolling
 
@@ -168,7 +168,7 @@ Follow the instructions below step by step to complete creating the Chef GPT app
 
    ```typescript
    <div className="fixed bottom-0 w-full max-w-md">
-     <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className="flex justify-center">
        <input
          className="w-[95%] p-2 mb-8 border border-gray-300 rounded shadow-xl text-black"
          value={input}
@@ -179,7 +179,7 @@ Follow the instructions below step by step to complete creating the Chef GPT app
    </div>
    ```
 
-   * Add a button inside the container we just created to request a random recipe
+   * Add a button inside the at the top of the container we just created to request a random recipe
 
    * Use the `append` function from the `useChat` hook from step 4
 
@@ -282,7 +282,7 @@ Follow the instructions below step by step to complete creating the Chef GPT app
 
 10. Set up the AI to act as a chef by using system role definitions in the messages sent to the AI
 
-    * Modify the code that requests the chat completions from OpenAI API in the `route.tsx` file inside the `src/app/api/chat` folder to include a `system` message before the thread of messages in the chat
+    * Modify the code that requests the chat completions from OpenAI API in the `route.ts` file inside the `src/app/api/chat` folder to include a `system` message before the thread of messages in the chat
 
     ```typescript
     messages: [
