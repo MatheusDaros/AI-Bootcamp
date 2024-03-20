@@ -12,7 +12,7 @@
 
 6. Configure the `Command for chat-instruct mode`
 
-   * The `Chat-instruct` mode is useful for managing how each character will behave in the chat buy giving specific instructions on how to respond the prompts
+   * The `Chat-instruct` mode is useful for managing how each character will behave in the chat by giving specific instructions on how to respond the prompts
 
    * Put the following command:
 
