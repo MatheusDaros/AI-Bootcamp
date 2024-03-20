@@ -16,4 +16,4 @@
 
 3. Pick the answer you found most useful and use it as a starting point for your HTML file
 
-4. Open the [index.html](./index.html) file that is located in this folder in you browser, and see how it looks like and how the page works
+4. Open the [index.html](./index.html) file that is located in this folder in your browser, and see how it looks like and how the page works
