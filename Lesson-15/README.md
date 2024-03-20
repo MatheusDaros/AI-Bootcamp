@@ -6,7 +6,7 @@ We're going to explore how models can be fine-tuned and enhanced using LoRAs and
 
 By the second half of this lesson we're going to explore more on the idea of extracting information from images, and we're going to learn about a technique called "Computer Vision" and how it can be used to process text from images.
 
-We're going to see an overview on how the same versatile Transformes architecture we've been seeing before for text and image generation can be used again for image processing tasks. We're going to experiment using transformers to run Zero-shot detection and classification tasks to better understand what computer vision can do.
+We're going to see an overview on how the same versatile Transformers architecture we've been seeing before for text and image generation can be used again for image processing tasks. We're going to experiment using transformers to run Zero-shot detection and classification tasks to better understand what computer vision can do.
 
 Finally, we're going to learn how to install and use the Vision Process WebUI to run computer vision tasks in our own devices.
 

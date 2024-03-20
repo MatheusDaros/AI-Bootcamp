@@ -15,7 +15,7 @@ At the completion of the bootcamp, students will have an overview understanding 
 The bootcamp content is divided in:
 
 * Four weeks of hands-on lessons, each with classes from Monday to Thursday (four lessons per week) and a weekend project
-* Onde special week with four days of guest lectures and workshops
+* One special week with four days of guest lectures and workshops
 * A final week of project building
 
 ### Week 1
