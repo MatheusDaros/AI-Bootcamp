@@ -100,11 +100,11 @@ By the end of this lesson, we'll explore some of the types of models and checkpo
       * `DPM` (Diffusion Probabilistic Model): This is the basic version of the diffusion model, that uses a Markov chain to model the diffusion process, where each step of the chain adds a small amount of noise to the image
         * The model is trained to reverse this process, starting from a noisy image and gradually denoising it to produce a clear image
       * `DPM-2` (Diffusion Probabilistic Model 2): This is an improvement over the basic DPM that uses a non-Markovian process, which means that each step of the diffusion process depends not only on the current state but also on the previous states
-        * This allows the model to capture more complex dependencies in the data and generate more realistic images.
+        * This allows the model to capture more complex dependencies in the data and generate more realistic images
       * `DPM++` (Diffusion Probabilistic Model Plus): This is a further improvement over DPM-2 that introduces a new parameterization of the diffusion process that makes the model easier to train and more flexible
         * This allows it to generate even more realistic images and handle a wider range of data distributions
     * `UniPC` (Unified Predictor-Corrector Framework): a training-free framework designed for the fast sampling of diffusion models, which consists of a corrector (UniC) and a predictor (UniP) that share a unified analytical form and support arbitrary orders
-      * UniPC is by designed model-agnostic, supporting pixel-space/latent-space DPMs on unconditional/conditional sampling
+      * UniPC is by design model-agnostic, supporting pixel-space/latent-space DPMs on unconditional/conditional sampling
         * It can also be applied to both noise prediction model and data prediction model
       * Compared with previous methods, UniPC converges faster thanks to the increased order of accuracy
   * Comparing sampling methods
@@ -118,7 +118,7 @@ By the end of this lesson, we'll explore some of the types of models and checkpo
   * The seed value used to generate the initial random tensor in the latent space
   * This value can be used to reproduce the same or very similar images from the same prompt and settings
   * Using variational seeds can produce interesting results, as if you were exploring a subset of the latent space between two defined seeds
-    * This can produce some sort of "blending" effect between two images, and the sequencial generations in the middle can look like a "gradual transformation" from one image to the other
+    * This can produce some sort of "blending" effect between two images, and the sequential generations in the middle can look like a "gradual transformation" from one image to the other
 * Built-in extensions
   * Restore faces: a set of scripts and tools that can replace distorted faces in images with more realistic ones
   * Tiling: a technique to change the borders of the image being generated so that it can be repeated seamlessly in a grid
