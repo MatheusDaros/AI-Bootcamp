@@ -179,7 +179,7 @@ Follow the instructions below step by step to complete creating the Chef GPT app
    </div>
    ```
 
-   * Add a button inside the at the top of the container we just created to request a random recipe
+   * Add a button inside the container at the top of the page we just created to request a random recipe
 
    * Use the `append` function from the `useChat` hook from step 4
 
