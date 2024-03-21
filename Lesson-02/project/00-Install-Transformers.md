@@ -2,7 +2,7 @@
 
 1. Setup a `Virtual Environment` for the project
    * [Tutorial](https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments/)
-   * Run `python -m venv venv/` (Linux/MacOS) or `py -m venv venv/` (Windows) to create a virtual environment in your project's folder
+   * Run `python -m venv venv/` (Linux/MacOS) or `py -m venv venv/` (Windows) to create a virtual environment on your project's folder
 2. Activate the virtual environment
    * venv [docs](https://docs.python.org/3/library/venv.html)
    * Run `source venv/bin/activate` or `. venv/bin/activate` (Linux/MacOS) or `source venv/scripts/activate` (Windows) to activate the virtual environment

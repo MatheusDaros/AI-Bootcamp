@@ -4,19 +4,19 @@
 
 2. Make sure that your `venv` is activated
 
-3. Run the following code in your terminal:
+3. Run the following code on your terminal:
 
    ```bash
    pip install openai
    ```
 
-   * This command will install the `openai` [API Package](https://github.com/openai/openai-python) in your environment
+   * This command will install the `openai` [API Package](https://github.com/openai/openai-python) on your environment
 
 4. Create a new Python file
-   * Create a new file in your favorite code editor or simply run `touch <filename>.py` in your terminal (Linux/MacOS) or `type nul > <filename>.py` in your terminal (Windows)
+   * Create a new file on your favorite code editor or simply run `touch <filename>.py` on your terminal (Linux/MacOS) or `type nul > <filename>.py` on your terminal (Windows)
      * Remember to replace `<filename>` with the name of your file
 
-5. Import the `openai` module in your file
+5. Import the `openai` module on your file
 
    ```python
    from openai import OpenAI
@@ -90,7 +90,7 @@
 
 10. Check the output
 
-    * You should see the response from the model being printed in your terminal line by line
+    * You should see the response from the model being printed on your terminal line by line
 
     * Example of response
 
@@ -103,7 +103,7 @@
     
     4. Layer on the fillings: Start with a protein like turkey, roast beef, or grilled chicken, then add cheese, vegetables, and any extras like avocado or bacon.
     
-    5. Add some crunch: Consider adding toppings like lettuce, spinach, cucumber, or pickles for a satisfying crunch in your sandwich.
+    5. Add some crunch: Consider adding toppings like lettuce, spinach, cucumber, or pickles for a satisfying crunch on your sandwich.
     
     6. Season and season: Don't forget to season your sandwich with salt, pepper, and any additional herbs or spices that complement your fillings.
     

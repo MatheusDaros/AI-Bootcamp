@@ -23,7 +23,7 @@
     $env:OPENAI_API_KEY="your-api-key-here"
     ```
 
-8. Check if you have the variable set up correctly by running the following command in your terminal:
+8. Check if you have the variable set up correctly by running the following command on your terminal:
 
     ```bash
     # Linux/MacOS/Bash on Windows
@@ -40,7 +40,7 @@
     echo $env:OPENAI_API_KEY
     ```
 
-9. To check if the key is set up correctly without revealing your key in your terminal, you can display it partially by running the following command:
+9. To check if the key is set up correctly without revealing your key on your terminal, you can display it partially by running the following command:
 
     ```bash
     # Linux/MacOS/Git Bash on Windows

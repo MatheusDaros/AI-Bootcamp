@@ -6,16 +6,16 @@ We're going to explore how models can be fine-tuned and enhanced using LoRAs and
 
 By the second half of this lesson we're going to explore more on the idea of extracting information from images, and we're going to learn about a technique called "Computer Vision" and how it can be used to process text from images.
 
-We're going to see an overview on how the same versatile Transformes architecture we've been seeing before for text and image generation can be used again for image processing tasks. We're going to experiment using transformers to run Zero-shot detection and classification tasks to better understand what computer vision can do.
+We're going to see an overview on how the same versatile Transformers architecture we've been seeing before for text and image generation can be used again for image processing tasks. We're going to experiment using transformers to run Zero-shot detection and classification tasks to better understand what computer vision can do.
 
-Finally, we're going to learn how to install and use the Vision Process WebUI to run computer vision tasks in our own devices.
+Finally, we're going to learn how to install and use the Vision Process WebUI to run computer vision tasks on our own devices.
 
 ## Prerequisites
 
-* Learn how to use a shell/terminal/console/bash in your device
+* Learn how to use a shell/terminal/console/bash on your device
   * Get familiar with basic commands like `cd`, `ls` and `mkdir`
-  * Learn how to execute packages, scripts and commands in your device
-* Install python tools in your device
+  * Learn how to execute packages, scripts and commands on your device
+* Install python tools on your device
   * [Python](https://www.python.org/downloads/)
   * [Pip](https://pip.pypa.io/en/stable/installation/)
 * Learn how to use `python` and `pip` commands
@@ -23,15 +23,15 @@ Finally, we're going to learn how to install and use the Vision Process WebUI to
   * Docs: [Pip](https://pip.pypa.io/en/stable/)
 * Learn how to use `venv` to create and manage virtual environments
   * Docs: [Python venv](https://docs.python.org/3/library/venv.html)
-* Install `git` CLI in your device
+* Install `git` CLI on your device
   * [Git](https://git-scm.com/downloads)
 * Learn how to use `git` commands to clone repositories
   * Docs: [Git](https://git-scm.com/doc)
-* Install [Stable Diffusion WebUI](https://github.com/AUTOMATIC1111/stable-diffusion-webui) in your device and all the correct dependencies for your hardware
+* Install [Stable Diffusion WebUI](https://github.com/AUTOMATIC1111/stable-diffusion-webui) on your device and all the correct dependencies for your hardware
 * Install [EbSynth](https://github.com/s9roll7/ebsynth_utility) extension in Stable Diffusion WebUI and all the correct dependencies
 * Install [Dreambooth](https://github.com/d8ahazard/sd_dreambooth_extension) extension in Stable Diffusion WebUI and all the correct dependencies
-* Install the [Transformers](https://huggingface.co/docs/transformers/main/en/installation) library in your environment
-* Install [Vision Process WebUI](https://github.com/isLinXu/vision-process-webui) in your device and all the correct dependencies for your hardware
+* Install the [Transformers](https://huggingface.co/docs/transformers/main/en/installation) library on your environment
+* Install [Vision Process WebUI](https://github.com/isLinXu/vision-process-webui) on your device and all the correct dependencies for your hardware
 
 ## Review of Lesson 14
 
@@ -86,7 +86,7 @@ Finally, we're going to learn how to install and use the Vision Process WebUI to
   * This model uses a convolutional neural network (CNN) backbone to extract a feature map from the input image, and then this map is then flattened and passed through a series of transformer encoders and decoders to produce the final output
   * The encoder processes the feature map to capture the relationships between different parts of the image, and the decoder takes in a fixed number of learned positional embeddings called "object queries" and decodes them in parallel to predict both the classes and bounding boxes of the objects
 
-## Compute Vision Models
+## Computer Vision Models
 
 * Computer Vision (CV)
 * Model training

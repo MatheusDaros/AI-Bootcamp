@@ -4,14 +4,14 @@ In this lesson, we will learn about the image generation models and how to use t
 
 We are going to learn about the Stable Diffusion process used in AI image generation, particularly using the DALI·E model provided by OpenAI. We are going to learn how to use the OpenAI Image Generation APIs to generate images from text prompts and from other images.
 
-We'll study how the transformers architecture that we used in the text generation models can be used similarly to run image generation models. We're going to learn about noising and denoising processes and how they have been adapted in the last years to build clever image generation algorithms.
+We'll study how the transformers architecture, which we used in the text generation models, can also be used to run image generation models. We're going to learn about noising and denoising processes and how they have been adapted in the last years to build clever image generation algorithms.
 
 ## Prerequisites
 
-* Learn how to use a shell/terminal/console/bash in your device
+* Learn how to use a shell/terminal/console/bash on your device
   * Get familiar with basic commands like `cd`, `ls` and `mkdir`
-  * Learn how to execute packages, scripts and commands in your device
-* Install python tools in your device
+  * Learn how to execute packages, scripts and commands on your device
+* Install python tools on your device
   * [Python](https://www.python.org/downloads/)
   * [Pip](https://pip.pypa.io/en/stable/installation/)
 * Learn how to use `python` and `pip` commands
@@ -19,7 +19,7 @@ We'll study how the transformers architecture that we used in the text generatio
   * Docs: [Pip](https://pip.pypa.io/en/stable/)
 * Learn how to use `venv` to create and manage virtual environments
   * Docs: [Python venv](https://docs.python.org/3/library/venv.html)
-* Install `git` CLI in your device
+* Install `git` CLI on your device
   * [Git](https://git-scm.com/downloads)
 * Learn how to use `git` commands to clone repositories
   * Docs: [Git](https://git-scm.com/doc)
@@ -58,7 +58,7 @@ The same way that a GPT can infer tokens related to other tokens, an image gener
 
 Starting from a completely unintelligible image, in each step it predicts and adds details, eventually decoding the latent representation into a more coherent detailed image.
 
-This approach allows the model to generate highly detailed and contextually relevant images from textual descriptions or partial images, leveraging the transformer's ability to handle complex dependencies and relationships, just like GPT models do with text.
+This approach allows the model to generate highly detailed and contextually relevant images from textual descriptions or partial images. It leverages the transformer's ability to handle complex dependencies and relationships, just like GPT models do with text.
 
 ### How it Works
 
@@ -80,7 +80,7 @@ The process involves two main steps: forward diffusion and backward denoising:
   * The backward process is iterative, starting from pure noise and gradually reducing the noise level until it reconstructs an image that corresponds to the initial data distribution
   * The output is a sample that resembles a natural image from the dataset it was trained on, or if text conditioning is used, an image that corresponds to the text description.
 
-The training of the model involves optimizing a loss function that measures the difference between the predicted noise and the actual noise added during the forward diffusion process
+Training the model involves optimizing a loss function that measures the difference between the predicted noise and the actual noise added during the forward diffusion process
 
 * After training, the model can generate new images by starting from a random Gaussian noise image and iteratively denoising it using the learned denoising process
 
@@ -116,7 +116,7 @@ For consolidating the knowledge acquired in this week, the students should compl
 2. Add all members of your group
 3. Create a README.md file with the description of your project
 4. Create a new application from scratch using NextJS
-5. Create an assistant in OpenAI that is able to suggest and describe a painting based in a short description from the user
+5. Create an assistant in OpenAI that is able to suggest and describe a painting based on a short description from the user
 6. Configure the assistant prompt to be efficient at answering strictly painting descriptions
 7. Create a page for the user to pick an option from a selection of painting themes
 8. Include a button to send a message to the assistant for it to generate a painting description with the selected theme

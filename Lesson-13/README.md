@@ -1,19 +1,19 @@
 # Lesson 13: Running Stable Diffusion Model Locally
 
-In this lesson, we will explore more about AI Image Generation with Stable Diffusion models by running models locally in our own devices.
+In this lesson, we will explore more about AI Image Generation with Stable Diffusion models by running these models locally on our own devices.
 
-We're going to use different models and techniques for text-to-image generation tasks using the Stable Diffusion WebUI tool, which is capable of handling many of the complex tasks to run these models while providing a simple and intuitive interface for us to interact with.
+We're going to use different models and techniques for text-to-image generation tasks. We'll use the Stable Diffusion WebUI tool, which can handle many complex tasks needed to run these models and provides a simple, intuitive interface for interaction.
 
-While we use the Stable Diffusion WebUI, we're going to learn about some technical details of how stable diffusion models work, the possible configurations and parameters to better run these models in our hardware, the many sampling and denoising algorithms that can be used to generate images, and how to use the API to run these models in a more programmatic way.
+While we use the Stable Diffusion WebUI, we'll learn about some technical details of how stable diffusion models workand the possible configurations and parameters to optimize these models for our hardware. We'll also learn about the various sampling and denoising algorithms that can be used to generate images, and how to use the API for a more programmatic approach.
 
-By the end of this lesson, we'll explore some of the types of models and checkpoints publicly available for us to download from public hubs, and we're going to test what are the limitations and capabilities of some of these models.
+By the end of this lesson, we'll explore various types of models and checkpoints publicly available to download from public hubs. We'll also test the limitations and capabilities of some of these models.
 
 ## Prerequisites
 
-* Learn how to use a shell/terminal/console/bash in your device
+* Learn how to use a shell/terminal/console/bash on your device
   * Get familiar with basic commands like `cd`, `ls` and `mkdir`
-  * Learn how to execute packages, scripts and commands in your device
-* Install python tools in your device
+  * Learn how to execute packages, scripts and commands on your device
+* Install python tools on your device
   * [Python](https://www.python.org/downloads/)
   * [Pip](https://pip.pypa.io/en/stable/installation/)
 * Learn how to use `python` and `pip` commands
@@ -21,11 +21,11 @@ By the end of this lesson, we'll explore some of the types of models and checkpo
   * Docs: [Pip](https://pip.pypa.io/en/stable/)
 * Learn how to use `venv` to create and manage virtual environments
   * Docs: [Python venv](https://docs.python.org/3/library/venv.html)
-* Install `git` CLI in your device
+* Install `git` CLI on your device
   * [Git](https://git-scm.com/downloads)
 * Learn how to use `git` commands to clone repositories
   * Docs: [Git](https://git-scm.com/doc)
-* Install [Stable Diffusion WebUI](https://github.com/AUTOMATIC1111/stable-diffusion-webui) in your device and all the correct dependencies for your hardware
+* Install [Stable Diffusion WebUI](https://github.com/AUTOMATIC1111/stable-diffusion-webui) on your device and all the correct dependencies for your hardware
 
 ## Review of Lesson 12
 
@@ -64,19 +64,19 @@ By the end of this lesson, we'll explore some of the types of models and checkpo
       * The term "ema-only" refers to the fact that the model uses only the Exponential Moving Average (EMA) of the weights, which is a technique used to stabilize the training of the model
       * The "full" version has all the weights, including the EMA and the non-EMA, and thus uses more VRAM to be processed, but also provides more flexibility for fine-tuning
     * Pruned means that the model has been pruned to remove unnecessary/irrelevant weights, which makes it smaller and faster to process with almost negligible losses of performance/precision
-  * To summarize, you can use the starting model to generate images, but consider changing it before attempting to fine-tuning anything
+  * To summarize, you can use the starting model to generate images, but consider changing it before attempting to fine-tune anything
 * Passing a prompt
   * Similar to the `Text Generation WebUI`, you can pass a prompt to the model to generate an image
-  * We're going to see more about this in practice a later on
+  * We're going to see more about this in practice later on
 * Configuring the image generation options
   * Width and height: The size of the output image
     * For example, you can set the width to 512 and the height to 384 to generate a 4:3 aspect ratio image, or for portrait images, you can set the width to 512 and the height to 768 for a 2:3 aspect ratio
   * Batch size: Number of images to be generated each time
-    * This consumes more VRAM, but it's often much more practical to generate multiple images at once and discard the ones that are not satisfactory, instead of generating them one by one again and again until you have a good result
+    * This consumes more VRAM, but it's often much more practical to generate multiple images at once and discard unsatisfactory ones, rather than generating them one by one repeatedly until you achieve a good result
 * Configuring the sampling options
   * Sampling steps: The fixed number of steps to sample the image
     * Generally, the more steps, the more detailed the image will be, but also the longer it will take to generate
-    * At some point, adding more steps will not make a noticeable difference in the image quality, or could even start to make it worse in some algorithms
+    * At some point, adding more steps will not make a noticeable difference in the image quality, and could even start to degrade it in some algorithms
   * Sampling method: What algorithm to use to sample the image on each step
     * Old-School ODE solvers: ODEs (Ordinary Differential Equation) solvers are numerical methods used to solve differential equations, which are mathematical equations that relate some function with its derivatives
       * `Euler`: The simplest possible solver, which approximates the solution of an ODE by using finite differences to approximate the derivative
@@ -86,7 +86,7 @@ By the end of this lesson, we'll explore some of the types of models and checkpo
       * Methods with the notation `a` (ancestral) in the name like `Euler a`, `DPM2 a`, `DPM++ 2S a` and `DPM++ 2S a Karras` all fall in this category
       * These models are generally faster to process, but they can produce more noisy results, and the outputs may vary a lot from one run to another
     * `Karras` noise schedule: A method developed by Tero Karras, the creator of the StyleGAN model, to add noise to the image at each sampling step
-      * The key insight from Karras et al. was that by carefully controlling this noise input, one could significantly improve the variety and realism of the generated images without compromising the overall image quality
+      * The key insight from Karras et al. was that carefully controlling this noise input could significantly improve the variety and realism of the generated images without compromising overall image quality
       * To implement the Karras noise schedule in practice, one typically initializes the noise scaling factors (also called noise strengths) and learns them during the training process
         * The network then adjusts these factors dynamically, determining the right amount of noise to add at each level of detail in the generated images
       * This method is generally slower to process, but it produces more consistent and less noisy results, and the outputs are more predictable from one run to another
@@ -112,13 +112,13 @@ By the end of this lesson, we'll explore some of the types of models and checkpo
 * Classifier Free Guidance (`CFG`) scale
   * This option can control how closely the model should follow your text prompt during the sampling steps
   * Lower values (close to 1) allows for more freedom, while higher values (above 10) are more restrictive and can interfere with the quality
-  * Stable Diffusion may ignore completely your prompt if the CFG value is too low, or sometimes the color of the images may become too saturated when this parameter is too high
+  * Stable Diffusion may completely ignore your prompt if the CFG value is too low, or the color of the images may become overly saturated when this parameter is too high
     * [Comparison Article](https://www.artstation.com/blogs/kaddoura/pBPo/stable-diffusion-samplers)
 * Seed
   * The seed value used to generate the initial random tensor in the latent space
   * This value can be used to reproduce the same or very similar images from the same prompt and settings
   * Using variational seeds can produce interesting results, as if you were exploring a subset of the latent space between two defined seeds
-    * This can produce some sort of "blending" effect between two images, and the sequencial generations in the middle can look like a "gradual transformation" from one image to the other
+    * This can produce a sort of "blending" effect between two images, and the sequential generations in the middle can appear as a "gradual transformation" from one image to the other
 * Built-in extensions
   * Restore faces: a set of scripts and tools that can replace distorted faces in images with more realistic ones
   * Tiling: a technique to change the borders of the image being generated so that it can be repeated seamlessly in a grid
@@ -126,11 +126,11 @@ By the end of this lesson, we'll explore some of the types of models and checkpo
     * Generating images in higher resolutions can be quite challenging for the majority of models, and the results are often not as good as the ones in lower resolutions
     * Because of that, you can keep the image generation process with a native resolution of 512 pixels, and then the high resolution fix can be used to improve the quality of the images generated in higher resolutions
 * Other tabs
-  * Not only the Stable Diffusion WebUI can generate images from texts, but it can also perform many other image generation tasks
+  * Not only can the Stable Diffusion WebUI generate images from texts, but it can also perform many other image generation tasks
   * Image to Image: Generate images from other images
   * Sketch: Generate images from crude drawings or from edited/annotated images
   * Inpainting: Generate images to replace areas of other bigger images
-* CLIP (Contrastive Language-Image Pretraining): tool for extracting a possible prompt that describes an image
+* CLIP (Contrastive Language-Image Pretraining): a tool for extracting a potential prompt that describes an image
 
 ## Using Stable Diffusion WebUI API
 
@@ -185,7 +185,7 @@ By the end of this lesson, we'll explore some of the types of models and checkpo
 
 * Testing different models and checkpoints
 * Exploring more about the Stable Diffusion WebUI
-* Tweaking configurations and parameters for running models in your device
+* Tweaking configurations and parameters for running models on your device
 * Prompting techniques for image generation
 * Using Extensions in Stable Diffusion WebUI
 * Using a ControlNet to guide the diffusion process

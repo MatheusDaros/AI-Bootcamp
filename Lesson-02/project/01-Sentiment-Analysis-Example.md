@@ -1,7 +1,7 @@
 # Running a Sentiment Analysis pipeline example
 
 1. Create a new Python file
-   * Create a new file in your favorite code editor or simply run `touch <filename>.py` in your terminal (Linux/MacOS) or `type nul > <filename>.py` in your terminal (Windows)
+   * Create a new file on your favorite code editor or simply run `touch <filename>.py` on your terminal (Linux/MacOS) or `type nul > <filename>.py` on your terminal (Windows)
      * Remember to replace `<filename>` with the name of your file
 2. Import the `pipeline` module from the `transformers` package
    * Add the following line to your file using your favorite code editor:

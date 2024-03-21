@@ -2,16 +2,16 @@
 
 In this lesson, we will learn how to extend the capabilities of GPTs by using assistants and retrieval-augmented generation (RAG) tools.
 
-We are going to use OpenAI Platform to create and test an assistants, managing threads and messages, and using the augmentation jobs with it. We are going to learn the practical applications of assistants and how these can be used to consistently respond to structured text generation tasks for many different threads from many users.
+We are going to use OpenAI Platform to create and test an assistant, managing threads and messages, and using the augmentation jobs with it. We are going to learn the practical applications of assistants and how these can be used to consistently respond to structured text generation tasks for many different threads from many users.
 
 We are also going to learn and experiment with RAG techniques by running a local GPT model using the NVidia Chat with RTX tool. We are going to feed a local dataset to it and ask questions about information that is present in it. We are going to discover how GPTs can return information about things not present in their training data by providing the correct contextual information and instructions to retrieve it.
 
 ## Prerequisites
 
-* Learn how to use a shell/terminal/console/bash in your device
+* Learn how to use a shell/terminal/console/bash on your device
   * Get familiar with basic commands like `cd`, `ls` and `mkdir`
-  * Learn how to execute packages, scripts and commands in your device
-* Install python tools in your device
+  * Learn how to execute packages, scripts and commands on your device
+* Install python tools on your device
   * [Python](https://www.python.org/downloads/)
   * [Pip](https://pip.pypa.io/en/stable/installation/)
 * Learn how to use `python` and `pip` commands
@@ -19,7 +19,7 @@ We are also going to learn and experiment with RAG techniques by running a local
   * Docs: [Pip](https://pip.pypa.io/en/stable/)
 * Learn how to use `venv` to create and manage virtual environments
   * Docs: [Python venv](https://docs.python.org/3/library/venv.html)
-* Install `git` CLI in your device
+* Install `git` CLI on your device
   * [Git](https://git-scm.com/downloads)
 * Learn how to use `git` commands to clone repositories
   * Docs: [Git](https://git-scm.com/doc)
@@ -31,7 +31,7 @@ We are also going to learn and experiment with RAG techniques by running a local
 ## Review of Lesson 09
 
 * Types of models
-* Hardware requirements and tweaking models to run in your hardware
+* Hardware requirements and tweaking models to run on your hardware
 * Overview of GPT training
 * Fine-tuning GPT-2
 
@@ -82,7 +82,7 @@ We are also going to learn and experiment with RAG techniques by running a local
 
 * Practical exercises
   * Exercise 3: Create an assistant and [Provide a File](./project/02-RAG-Assistant.md) for it to retrieve information from, and then test it with a message thread
-  * Exercise 4: [Feed a local dataset](./project/03-RAG-With-Local-Dataset.md) to the NVidia's Chat with RTX tool and test it with a message
+  * Exercise 4: [Feed a local dataset](./project/03-RAG-With-Local-Dataset.md) to NVidia's Chat with RTX tool and test it with a message
 
 ## Next Steps
 

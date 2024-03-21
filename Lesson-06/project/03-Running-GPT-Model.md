@@ -12,7 +12,7 @@
 
      * Place all the `.json`, `.bin`, `.model` (and others) files downloaded for the model in the same folder
 
-   * If you already have models in your device, you can specify the path to this folder by running the script with the `--model-dir /path/to/your/models` flag
+   * If you already have models on your device, you can specify the path to this folder by running the script with the `--model-dir /path/to/your/models` flag
 
      * For example, for using your cached models in the Hugging Face Hub directory, you can run the script with the `--model-dir` flag and passing  `~/.cache/huggingface/hub` as argument
 

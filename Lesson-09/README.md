@@ -2,18 +2,18 @@
 
 In this lesson we'll dive into some of the technical details behind loading GPTs and how the inference process works. We'll experiment with many different parameters that can increase the performance and compatibility of models depending on the hardware we're using, and we'll evaluate how different models behave in these configurations.
 
-We will experiment and learn about many different models types and the major differences between them in terms of precision, performance and hardware requirements.
+We will experiment and learn about many different model types and the major differences between them in terms of precision, performance and hardware requirements.
 
 We're going to study more about the training process of GPTs, and how models can be enhanced with datasets and LoRAs to perform better at certain tasks.
 
-To consolidate our learning on how GPTs work, we'll experiment with fine-tuning a simple GPT-2 model to generate text based on the information present in a local dataset.
+To consolidate our learning about how GPTs work, we'll experiment with fine-tuning a simple GPT-2 model to generate text based on the information present in a local dataset.
 
 ## Prerequisites
 
-* Learn how to use a shell/terminal/console/bash in your device
+* Learn how to use the shell/terminal/console/bash on your device
   * Get familiar with basic commands like `cd`, `ls` and `mkdir`
-  * Learn how to execute packages, scripts and commands in your device
-* Install python tools in your device
+  * Learn how to execute packages, scripts and commands on your device
+* Install python tools on your device
   * [Python](https://www.python.org/downloads/)
   * [Pip](https://pip.pypa.io/en/stable/installation/)
 * Learn how to use `python` and `pip` commands
@@ -21,12 +21,12 @@ To consolidate our learning on how GPTs work, we'll experiment with fine-tuning 
   * Docs: [Pip](https://pip.pypa.io/en/stable/)
 * Learn how to use `venv` to create and manage virtual environments
   * Docs: [Python venv](https://docs.python.org/3/library/venv.html)
-* Install `git` CLI in your device
+* Install `git` CLI on your device
   * [Git](https://git-scm.com/downloads)
 * Learn how to use `git` commands to clone repositories
   * Docs: [Git](https://git-scm.com/doc)
-* Install and run [Text Generation WebUI](https://github.com/oobabooga/text-generation-webui?tab=readme-ov-file#how-to-install) in your device
-* Install the latest [TensorFlow](https://www.tensorflow.org/install) (version 2.5.1 or above) in your environment
+* Install and run [Text Generation WebUI](https://github.com/oobabooga/text-generation-webui?tab=readme-ov-file#how-to-install) on your device
+* Install the latest [TensorFlow](https://www.tensorflow.org/install) (version 2.5.1 or above) on your environment
 
 ## Review of Lesson 08
 
@@ -53,7 +53,7 @@ To consolidate our learning on how GPTs work, we'll experiment with fine-tuning 
     * CPUs
     * Using GPU VRAM
     * Using CPU RAM
-* Tweaking GPT model to run in your hardware
+* Tweaking GPT model to run on your hardware
   * Quantization
   * CPU Offloading
   * GPU VRAM usage limits
