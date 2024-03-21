@@ -1,6 +1,6 @@
 # Building a prompt to fact-check statements
 
-1. Prepare the prompt with a fist message and ask the AI to hold before receiving the next message
+1. Prepare the prompt with a first message and ask the AI to hold before receiving the next message
 
    * This kind of instruction can help the models to handle context limitations and priorities in the toning of the response
 

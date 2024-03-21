@@ -5,12 +5,12 @@
    * Run `python -m venv venv/` (Linux/MacOS) or `py -m venv venv/` (Windows) to create a virtual environment on your project's folder
 2. Activate the virtual environment
    * venv [docs](https://docs.python.org/3/library/venv.html)
-   * Run `source venv/bin/activate` or `. venv/bin/activate` (Linux/MacOS) or `source venv/scripts/activate` (Windows) to activate the virtual environment
+   * Run `source venv/bin/activate` or `. venv/bin/activate` (Linux/MacOS) or `venv/Scripts/activate` (Windows) to activate the virtual environment
 3. Install the `transformers` package with `pip`
    * pip [docs](https://pip.pypa.io/en/stable/)
    * Run `pip install transformers` to install the `transformers` package
 4. Install one of the Machine Learning frameworks compatible with `transformers`
-   * Run `pip install 'transformers[torch]'`, `pip install 'transformers[tf-cpu]'` or `pip install 'transformers[flax]'` to install `PyTorch`, `TensorFlow 2.0` or `Flax` respectively
+   * Run `pip install 'transformers[torch]'` or `pip install 'transformers[tf-cpu]'` or `pip install 'transformers[flax]'` to install `PyTorch`, `TensorFlow 2.0` or `Flax` respectively
 5. Test if your installation was successful
    * Run `python -c "from transformers import pipeline; print(pipeline('sentiment-analysis')('I love you'))"` to test if the installation was successful
      * You should get an output similar to this: `[{'label': 'POSITIVE', 'score': 0.9998704791069031}]`

@@ -52,7 +52,7 @@ Finally, we will learn how to use Vercel NextJS AI SDK to build an AI applicatio
   * Exercise 2: [Generating a simple page with AI](./project/01-Web-Page-With-AI.md) to understand how ChatGPT can help us to code a simple web page
     * Code [WebPageWithAI.html](./project/WebPageWithAI.html) in this exercise and interact with it on your browser
 
-## Using a Javascript Frameworks
+## Using Javascript Frameworks
 
 * What is a JavaScript Framework
   * A `JavaScript` framework is a collection of pre-written code that provides frameworks, libraries, and design patterns to facilitate web application development. JavaScript frameworks are designed to simplify common tasks in web development, such as DOM (Document Object Model) manipulation, page routing, state management, asynchronous API calls and form validation. They also provide an organized and standardized architecture for applications, facilitating maintenance and scalability
@@ -65,7 +65,7 @@ Finally, we will learn how to use Vercel NextJS AI SDK to build an AI applicatio
     * `Scalability and Performance Optimization`: features such as server-side rendering, on-demand loading and caching mechanisms, which optimize the application's performance and resource usage
 * What frameworks are most used nowadays
   * Currently, four frameworks are widely known in the development industry. They are:
-    * [Next.js](https://nextjs.org/docs), is a React framework that makes it easy to build modern web applications. It offers hybrid rendering, dynamic routing, and static pre-rendering to improve application performance and scalability. with native TypeScript support and deep integration with the Vercel platform
+    * [Next.js](https://nextjs.org/docs), is a React framework that makes it easy to build modern web applications. It offers hybrid rendering, dynamic routing, and static pre-rendering to improve application performance and scalability. With native TypeScript support and deep integration with the Vercel platform
     * [Vue.js](https://vuejs.org/guide/introduction), known for its simplicity and ease of learning, offers a component-based approach and has a rich collection of plugins and extensions that facilitate the development of scalable and responsive applications
     * [Angular](https://angular.io/docs), used for building large-scale and enterprise web applications, offers a robust and comprehensive framework that includes powerful features such as dependency injection, page routing, and state management. It has a module-based architecture
 * Using React.js library

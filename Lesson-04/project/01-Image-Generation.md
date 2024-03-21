@@ -2,7 +2,7 @@
 
 1. Make sure that you have set up your keys correctly with the exercise `01-OpenAI-Key.md` from Lesson 01
 
-2. Make sure that your `venv` is activates
+2. Make sure that your `venv` is activated
 
 3. Run the following code on your terminal:
 

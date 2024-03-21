@@ -34,7 +34,7 @@
     client = OpenAI()
     ```
 
-   * By default, this will try yo use the `OPENAI_API_KEY` environment variable to create this client
+   * By default, this will try to use the `OPENAI_API_KEY` environment variable to create this client
 
    * You can customize the logic by doing an explicit definition like this:
 

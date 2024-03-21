@@ -92,7 +92,7 @@ We will overview the image generation techniques involving multi-modal models, n
   * DALL·E is a variant of the GPT-3 transformer model developed by OpenAI that leverages the concept of unsupervised learning where the model learns to generate images from text descriptions
     * DALL·E uses a technique called "transformer language models" to generate images from text descriptions, by learning the relationship between the two from a large dataset
 * Neural Network based Models
-  * The same way that Neural Networks can be used to process text outputs based in their training data, they can be used to build image generation models
+  * The same way that Neural Networks can be used to process text outputs based on their training data, they can be used to build image generation models
   * Some examples are the use of Generative Adversarial Networks (`GANs`), Variational Autoencoders (`VAEs`), Convolutional Neural Networks (`CNNs`) and Recurrent Neural Networks (`RNNs`)
 * Transformers based models
   * Similar to what we saw with Text Generation GPTs, the Transformers architecture can be used to generate images from text descriptions, mapping the relationship between the tokens in the prompt to the images being generated

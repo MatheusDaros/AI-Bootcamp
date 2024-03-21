@@ -51,7 +51,7 @@ Due to the random nature of the denoising diffusion process, we're going to noti
   * Structure: Specify as clearly as possible what are the major defining elements in the image
     * Subject: "Generate an image of {object}" where {object} is the name of the object/element you want to generate
       * Be as specific as possible, and consider if this word is well represented in the training data
-      * Sometimes it's better to use a more general terms than specific ones
+      * Sometimes it's better to use a more general term than specific ones
       * If desired, add an action: "Generate an image of {object} {action}", for example "standing", "running", "flying", etc.
     * Specify form, quantity and adjectives: "Generate an image of {quantity} {quality} {adjective} {object}"
       * Not all models are trained to handle these kind of prompts
@@ -77,7 +77,7 @@ Due to the random nature of the denoising diffusion process, we're going to noti
     * For example, for living creatures you can include negative prompts like: deformed, ugly, too many fingers, too many limbs
       * For objects, you can include more generalist terms like: duplicated, blurry, pixelated, low quality, out of frame, cropped
       * For faces, depending in the pose and the close-up, you can include negative prompts like: poorly rendered face, deformed, disfigured, long neck, ugly
-      * For landscapes, you can include negative prompts like: blurry, pixelated, out of frame, cropped, text, watermark, low quality, poorly drawn, pixelated
+      * For landscapes, you can include negative prompts like: blurry, pixelated, out of frame, cropped, text, watermark, low quality, poorly drawn
 * Prompt examples
   * [Prompt Templates](https://github.com/Dalabad/stable-diffusion-prompt-templates) repository
   * [Prompt Presets](https://openart.ai/presets) from OpenArt
@@ -139,5 +139,5 @@ Due to the random nature of the denoising diffusion process, we're going to noti
 
 * Experimenting with more ControlNet features
 * Overview on video generation
-* Fine-tuning sable diffusion models
+* Fine-tuning stable diffusion models
 * Introduction to Computer Vision

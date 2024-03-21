@@ -81,7 +81,7 @@
      ```
 
      ```text
-     As an expert in personal finance, you have been asked to write a comprehensive guide on creating and sticking to a budget. In 800 words, cover the following points: a) The importance of budgeting and its benefits b) How to assess one's current financial situation and set realistic goals c) Steps to create a budget, including identifying income, categorizing expenses, and allocating funds d) Tips for tracking expenses and staying accountable e) Strategies for cutting costs and finding additional sources of income f) How to adjust a budget when faced with unexpected expenses or life changes Use clear, concise language and provide practical examples to make the guide accessible and actionable for readers at various stages of their financial journey.
+     As an expert in personal finance, you have been asked to write a comprehensive guide on creating and sticking to a budget. In 800 words, cover the following points: a) The importance of budgeting and its benefits b) How to assess one's current financial situation and set realistic goals c) Steps to create a budget, including identifying income, categorizing expenses, and allocating funds d) Tips for tracking expenses and staying accountable e) Strategies for cutting costs and finding additional sources of income f) How to adjust a budget when faced with unexpected expenses or life changes. Use clear, concise language and provide practical examples to make the guide accessible and actionable for readers at various stages of their financial journey.
      ```
 
      ```text
