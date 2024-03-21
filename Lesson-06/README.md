@@ -1,4 +1,4 @@
-# Lesson 06: Using GPT Models on your Own Device
+# Lesson 06: Using GPT Models on Your Own Device
 
 In this lesson we're going to learn and practice more on building applications with the NextJS framework and using the Vercel NextJS AI SDK to perform AI text Generation tasks.
 
