@@ -179,7 +179,7 @@
 
     * Notice that text has a input of 112 tokens using the OpenAI GPT encoding algorithm
 
-      * You can check the number of tokens in a text passed to ChatGPT using the [Tokenizer](https://platform.openai.com/tokenizer) tool 
+      * You can check the number of tokens in a text passed to ChatGPT using the [Tokenizer](https://platform.openai.com/tokenizer) tool
 
     * Costs for `gpt-3.5-turbo`:
 
