@@ -1,6 +1,6 @@
 # Simple text to text curl example
 
-Run this in your terminal:
+Run this on your terminal:
 
 ```bash
 curl https://api.openai.com/v1/chat/completions \

@@ -164,7 +164,7 @@ Follow the instructions below step by step to complete creating the Chef GPT app
 
    * Create a container at the bottom of your page
 
-   * Wrap the `form` element with a `div` and move some classes from the `form` to the `div` container:
+   * Wrap the `form` element with a `div` and move some classes from the `input` to the `div` container:
 
    ```typescript
    <div className="fixed bottom-0 w-full max-w-md">
@@ -179,7 +179,7 @@ Follow the instructions below step by step to complete creating the Chef GPT app
    </div>
    ```
 
-   * Add a button inside the container at the top of the page we just created to request a random recipe
+   * Add a button to request a random recipe. This button should be placed above the form, inside the container we just created.
 
    * Use the `append` function from the `useChat` hook from step 4
 
@@ -305,7 +305,7 @@ Follow the instructions below step by step to complete creating the Chef GPT app
     npm run dev
     ```
 
-    * Open the app in your browser at <http://localhost:3000/> and click the 'Random Recipe' button
+    * Open the app on your browser at <http://localhost:3000/> and click the 'Random Recipe' button
 
     * Observe the AI's response
 

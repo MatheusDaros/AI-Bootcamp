@@ -10,10 +10,10 @@ We will expand in the Text Generation topic by studying how different `prompt` t
 
 ## Prerequisites
 
-* Learn how to use a shell/terminal/console/bash in your device
+* Learn how to use a shell/terminal/console/bash on your device
   * Get familiar with basic commands like `cd`, `ls` and `mkdir`
-  * Learn how to execute packages, scripts and commands in your device
-* Install python tools in your device
+  * Learn how to execute packages, scripts and commands on your device
+* Install python tools on your device
   * [Python](https://www.python.org/downloads/)
   * [Pip](https://pip.pypa.io/en/stable/installation/)
 * Learn how to use `python` and `pip` commands
@@ -21,7 +21,7 @@ We will expand in the Text Generation topic by studying how different `prompt` t
   * Docs: [Pip](https://pip.pypa.io/en/stable/)
 * Learn how to use `venv` to create and manage virtual environments
   * Docs: [Python venv](https://docs.python.org/3/library/venv.html)
-* Install `git` CLI in your device
+* Install `git` CLI on your device
   * [Git](https://git-scm.com/downloads)
 * Learn how to use `git` commands to clone repositories
   * Docs: [Git](https://git-scm.com/doc)
@@ -45,7 +45,7 @@ We will expand in the Text Generation topic by studying how different `prompt` t
 
 * How APIs work
 
-  * Instead of running executions in your own device, an API call can run these operations in a remote server, over the internet
+  * Instead of running executions on your own device, an API call can run these operations in a remote server, over the internet
     * This is useful when the execution requires a lot of computational power, or when the task requires a lot of data that is not available on your device
     * Sometimes you need to process sensitive data, like credentials or personal information, and you don't want to expose this data to the `client side`
       * In these cases, you can run the execution in a `remote server` and only send the results to the `client`
@@ -54,7 +54,7 @@ We will expand in the Text Generation topic by studying how different `prompt` t
 
   * APIs are a fundamental tool for accessing and manipulating resources provided by web services. The 'requests' library is most commonly used with Python. With the HTTP library installed, it is possible to construct HTTP requests, specifying the request method (GET, POST, PUT, DELETE, etc.), the API endpoint URL. After sending an HTTP request, the API will process the request and return a response. This response can contain the requested data in the response body, as well as additional metadata such as HTTP status codes and response headers
 
-  * All of this work is carried out on a remote server, and the results are sent back to whomever asked it over the internet. This way you can execute heavy tasks with access to sensitive data without handling any of it in your device
+  * All of this work is carried out on a remote server, and the results are sent back to whomever asked it over the internet. This way you can execute heavy tasks with access to sensitive data without handling any of it on your device
 
   * The library will provide methods that will be used to construct and send HTTP requests to the API endpoints.
     For example, a request using the GET method: `response = requests.get('https://api.example.com/data')`
@@ -200,4 +200,4 @@ For consolidating the knowledge acquired in this week, the students should compl
 * Exploring other API Calls
 * Exploring other providers
 * Creating Frontend applications for your AI tasks
-* Running models in your own hardware
+* Running models on your own hardware

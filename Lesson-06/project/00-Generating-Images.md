@@ -1,6 +1,6 @@
 # Extending the Chef GPT App with Image Generation
 
-1. Open the Chef GPT page we created in the last lesson in your IDE
+1. Open the Chef GPT page we created in the last lesson on your IDE
 
 2. Create a button to generate images for the dishes
 

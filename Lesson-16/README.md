@@ -7,9 +7,9 @@ By the end of this lesson you should be well prepared for starting to ideate and
 ## Prerequisites
 
 * Complete all the exercises from the previous lessons
-* Prepare a Text Generation API in your device
-* Prepare an Image Generation API in your device
-* Prepare a Computer Vision API in your device
+* Prepare a Text Generation API on your device
+* Prepare an Image Generation API on your device
+* Prepare a Computer Vision API on your device
 
 ## Review of Lesson 15
 

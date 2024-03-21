@@ -6,7 +6,7 @@
     >Note: bitsandbytes relies on CUDA, which is exclusively available for Nvidia GPUs. Please note that installation instructions for Windows and MacOS differ from the general instructions. For detailed guidelines on installing bitsandbytes on Windows and MacOS, refer to the official documentation [here](https://huggingface.co/docs/bitsandbytes/installation)
 
 2. Create a new Python file
-   * Create a new file in your favorite code editor or simply run `touch <filename>.py` in your terminal (Linux/MacOS) or `type nul > <filename>.py` in your terminal (Windows)
+   * Create a new file on your favorite code editor or simply run `touch <filename>.py` on your terminal (Linux/MacOS) or `type nul > <filename>.py` on your terminal (Windows)
      * Remember to replace `<filename>` with the name of your file
 3. Import the `AutoModelForCausalLM`, `BitsAndBytesConfig`, and `AutoTokenizer` modules from the `transformers` package
    * Add the following line to your file using your favorite code editor:
@@ -40,7 +40,7 @@
 7. Create a new instance of the LLM model in a variable using a `pre-trained model call` function
    * We're going to use the `mistralai/Mistral-7B-v0.1` model, that will be automatically downloaded from the Hugging Face's model hub
    * We're going to use [4-bit dynamic quantization](https://huggingface.co/docs/transformers/main/en/main_classes/quantization) to make the model run faster and use less memory, while sacrificing a little bit of accuracy
-   * You can run with the `device_map="auto"` option to use more of your GPU(s) if you have one or many available in your device
+   * You can run with the `device_map="auto"` option to use more of your GPU(s) if you have one or many available on your device
 
     ```python
     model = AutoModelForCausalLM.from_pretrained("mistralai/Mistral-7B-v0.1", quantization_config=quantization_config, device_map="auto", low_cpu_mem_usage=True)
@@ -80,10 +80,10 @@
 
 12. Expect a considerable load time if you're running this command for the first time, as the `mistralai/Mistral-7B-v0.1` model will be downloaded from the Hugging Face's model hub
 
-    * The model is almost 15GB in size, so make sure you have enough disk space available in your device and a stable internet connection
-    * The model will be downloaded to the `~/.cache/huggingface/transformers` directory in your device and will be available for future runs of the same script without downloading it again
+    * The model is almost 15GB in size, so make sure you have enough disk space available on your device and a stable internet connection
+    * The model will be downloaded to the `~/.cache/huggingface/transformers` directory on your device and will be available for future runs of the same script without downloading it again
 
-13. If you get an "Out Of Memory" error, try to tweak the quantization parameters to make the computation fit in your device's memory
+13. If you get an "Out Of Memory" error, try to tweak the quantization parameters to make the computation fit on your device's memory
     * If all else fails, you can also try to run the script in a cloud-based environment with more resources available
 
 14. If your script ran correctly, you should get an output like this:

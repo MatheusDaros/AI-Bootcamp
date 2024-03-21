@@ -49,4 +49,4 @@ function sendMessage() {
 }
 ```
 
-* Now, when you open chat.html in your browser and type a message in the input field, you can click the "Send" button to send the message to the provided API URL. Note that you need to replace the API URL with your own.
+* Now, when you open chat.html on your browser and type a message in the input field, you can click the "Send" button to send the message to the provided API URL. Note that you need to replace the API URL with your own.

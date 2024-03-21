@@ -123,7 +123,7 @@
 
 12. Run the application: Now that everything is set up, you can start your application
 
-    * In your terminal, run the following command:
+    * On your terminal, run the following command:
 
     `npm run dev`
 

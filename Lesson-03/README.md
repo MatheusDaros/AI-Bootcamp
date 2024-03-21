@@ -8,7 +8,7 @@ We will practice more with using the Hugging Face Transformers library to run pr
 
 We will also use the OpenAI APIs to run GPTs for text-to-text tasks, by invoking a remote execution of a server that runs the GPTs for us.
 
-For this lesson, you should have a basic understanding of how to use developer tools on your device. You should also have at least a very basic understanding of the python programming language syntax. You should set up an account in the OpenAI Platform, and have at least 5 USD credits in your account to run the API commands in the OpenAI exercise.
+For this lesson, you should have a basic understanding of how to use developer tools on your device. You should also have at least a very basic understanding of the python programming language syntax. You should set up an account in the OpenAI Platform, and have at least 5 USD credits on your account to run the API commands in the OpenAI exercise.
 
 ## Prerequisites
 

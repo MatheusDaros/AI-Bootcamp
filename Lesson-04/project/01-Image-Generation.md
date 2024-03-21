@@ -4,19 +4,19 @@
 
 2. Make sure that your `venv` is activated
 
-3. Run the following code in your terminal:
+3. Run the following code on your terminal:
 
    ```bash
    pip install openai
    ```
 
-   * This command will install the `openai` [API Package](https://github.com/openai/openai-python) in your environment
+   * This command will install the `openai` [API Package](https://github.com/openai/openai-python) on your environment
 
 4. Create a new Python file
-   * Create a new file in your favorite code editor or simply run `touch <filename>.py` in your terminal (Linux/MacOS) or `type nul > <filename>.py` in your terminal (Windows)
+   * Create a new file on your favorite code editor or simply run `touch <filename>.py` on your terminal (Linux/MacOS) or `type nul > <filename>.py` on your terminal (Windows)
      * Remember to replace `<filename>` with the name of your file
 
-5. Import the `openai` module in your file
+5. Import the `openai` module on your file
 
    ```python
    from openai import OpenAI
@@ -89,7 +89,7 @@
 
 10. Check the output
 
-    * You should see the URL of the generated image printed in your terminal
+    * You should see the URL of the generated image printed on your terminal
 
     * Copy the URL and paste it into your browser to view the generated image
 

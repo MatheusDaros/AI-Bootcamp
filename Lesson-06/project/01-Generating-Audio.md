@@ -1,6 +1,6 @@
 # Extending the Chef GPT App with Text to Speech
 
-1. Open the Chef GPT page we created in the last exercise in your IDE
+1. Open the Chef GPT page we created in the last exercise on your IDE
 
 2. Create a button to generate audio instructions for the recipes
 

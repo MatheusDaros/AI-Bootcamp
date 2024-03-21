@@ -79,7 +79,7 @@
 
    * Experiment by adding these elements to your page
 
-     * After adding each one, save your file and reload the page in your browser to see what it does
+     * After adding each one, save your file and reload the page on your browser to see what it does
 
      * This is a great way to learn in practice how different HTML tags work
 

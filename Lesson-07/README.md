@@ -4,14 +4,14 @@ In this lesson, we will delve into the practical application of Generative AI by
 
 By abstracting away complexities and providing a streamlined workflow, this tool empowers us to leverage the power of Generative AI more effectively.
 
-Prior to diving into this lesson, it is recommended to have a basic understanding of developer tools and a rudimentary grasp of Python programming syntax. with these prerequisites in place, we can explore the capabilities of Text Generation WebUI and harness its potential to address real-world challenges through AI-driven text generation.
+Prior to diving into this lesson, it is recommended to have a basic understanding of developer tools and a rudimentary grasp of Python programming syntax. With these prerequisites in place, we can explore the capabilities of Text Generation WebUI and harness its potential to address real-world challenges through AI-driven text generation.
 
 ## Prerequisites
 
-* Learn how to use a shell/terminal/console/bash in your device
+* Learn how to use a shell/terminal/console/bash on your device
   * Get familiar with basic commands like `cd`, `ls` and `mkdir`
-  * Learn how to execute packages, scripts and commands in your device
-* Install python tools in your device
+  * Learn how to execute packages, scripts and commands on your device
+* Install python tools on your device
   * [Python](https://www.python.org/downloads/)
   * [Pip](https://pip.pypa.io/en/stable/installation/)
 * Learn how to use `python` and `pip` commands
@@ -19,11 +19,11 @@ Prior to diving into this lesson, it is recommended to have a basic understandin
   * Docs: [Pip](https://pip.pypa.io/en/stable/)
 * Learn how to use `venv` to create and manage virtual environments
   * Docs: [Python venv](https://docs.python.org/3/library/venv.html)
-* Install `git` CLI in your device
+* Install `git` CLI on your device
   * [Git](https://git-scm.com/downloads)
 * Learn how to use `git` commands to clone repositories
   * Docs: [Git](https://git-scm.com/doc)
-* Install and run [Text Generation WebUI](https://github.com/oobabooga/text-generation-webui?tab=readme-ov-file#how-to-install) in your device
+* Install and run [Text Generation WebUI](https://github.com/oobabooga/text-generation-webui?tab=readme-ov-file#how-to-install) on your device
 * Download a compatible GPT model and place in the correct `models` folder for Text Generation WebUI
 
 ## Review of Lesson 06
@@ -35,9 +35,9 @@ Prior to diving into this lesson, it is recommended to have a basic understandin
 
 ## Exploring Different Models
 
-In the last lesson we've seen how to use Text Generation WebUI application to run GPT models in our own devices for processing text generation tasks.
+In the last lesson we saw how to use Text Generation WebUI application to run GPT models in our own devices for processing text generation tasks.
 
-Today we're going to explore more of the many features of this tool and see how we can use it to run different models and tasks.
+Today, we're going to explore more of the many features of this tool and see how we can use it to run different models and tasks.
 
 * Downloading Models using the [Model Hub](https://github.com/oobabooga/text-generation-webui/wiki/04-%E2%80%90-Model-Tab#download-model-or-lora) from Hugging Face
 * Model configurations
@@ -62,9 +62,9 @@ Today we're going to explore more of the many features of this tool and see how 
 
 ## Replacing the OpenAI APIs
 
-Now that we have a tool to run GPT models in our own devices, we can run the `Text Generation` tasks services and serve these with a local API.
+Now that we have a tool to run GPT models on our own devices, we can run the `Text Generation` tasks services and serve them with a local API.
 
-By using the built-in OpenAI API Extension from Text Generation WebUI, we can now replace the OpenAI APIs calls inside our scripts and applications to call this local API.
+By using the built-in OpenAI API Extension from Text Generation WebUI, we can now replace the calls to OpenAI APIs inside our scripts and applications with calls to this local API.
 
 * Practical exercise
   * Exercise 5: [Using the Text Generation WebUI API](./project/04-Using-API.md) as a replacement for OpenAI APIs in a python script

@@ -12,7 +12,7 @@ At the completion of the bootcamp, students will have an overview understanding 
 
 ## Curriculum
 
-The bootcamp content is divided in:
+The bootcamp content is divided into:
 
 * Four weeks of hands-on lessons, each with classes from Monday to Thursday (four lessons per week) and a weekend project
 * One special week with four days of guest lectures and workshops
@@ -31,11 +31,11 @@ The bootcamp content is divided in:
 
 * Building a simple chat app with React and Vercel
 * Generating frontend with AI
-* Running LLMs in your own hardware
+* Running LLMs on your own hardware
 * Tweaking configs for your hardware
 * Text generation WebUI
 * Prompt techniques
-* Building and AI joke generator
+* Building an AI joke generator
 
 ### Week 3
 
@@ -51,7 +51,7 @@ The bootcamp content is divided in:
 
 ### Week 4
 
-* Running diffusion models in your own hardware
+* Running diffusion models on your own hardware
 * Tweaking configs for your hardware
 * Image generation WebUI
 * Prompt techniques
@@ -80,12 +80,12 @@ The bootcamp material is available inside this repository. The material is organ
 
 Students should prepare their own development environment to follow the lessons, and each day they will learn by repeating the steps of the instructor and applying the concepts at real-world projects.
 
->Node: The lessons will be recorded and available for later review at a slower pace, if needed.
+>Note: The lessons will be recorded and available for later review at a slower pace, if needed.
 >>The recorded material **must not** be shared with anyone outside the bootcamp.
 
 Students will be able to ask questions and get help from the instructors and mentors at any time during the lessons, and also at the dedicated channels at the bootcamp's Discord server.
 
-Students should work alongside peers on group projects, sharing their discoveries and learning from each other, and assisting each other for completing the given challenges of each project.
+Students should work alongside peers on group projects, sharing their discoveries and learning from each other, and assisting each other in completing the given challenges of each project.
 
 ## Special Week of Guest Lectures and Workshops
 
