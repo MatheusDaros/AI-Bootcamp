@@ -64,7 +64,7 @@ Finally, we will learn how to use Vercel NextJS AI SDK to build an AI applicatio
     * `Enhanced Developer Experience`: they offer features such as real-time module reloading, code splitting, and comprehensive bug reporting that streamline the development workflow and accelerate iteration cycles
     * `Scalability and Performance Optimization`: features such as server-side rendering, on-demand loading and caching mechanisms, which optimize the application's performance and resource usage
 * What frameworks are most used nowadays
-  * Currently, four frameworks are widely known in the development industry. They are:
+  * Currently, three frameworks are widely known in the development industry. They are:
     * [Next.js](https://nextjs.org/docs), is a React framework that makes it easy to build modern web applications. It offers hybrid rendering, dynamic routing, and static pre-rendering to improve application performance and scalability. With native TypeScript support and deep integration with the Vercel platform
     * [Vue.js](https://vuejs.org/guide/introduction), known for its simplicity and ease of learning, offers a component-based approach and has a rich collection of plugins and extensions that facilitate the development of scalable and responsive applications
     * [Angular](https://angular.io/docs), used for building large-scale and enterprise web applications, offers a robust and comprehensive framework that includes powerful features such as dependency injection, page routing, and state management. It has a module-based architecture

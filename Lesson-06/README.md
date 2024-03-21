@@ -76,7 +76,7 @@ Another very helpful tool is [MakeReal](https://makereal.tldraw.com/) from TLDra
 
 These tools can greatly help developers to create the frontend code for their web applications, and they can be used to generate the code for the exercises of this lesson.
 
-> Be advised that the generated code may require severe adjustments and improvements to work properly. Never rely blindly on AI-generated code.
+> Be advised that the generated code may require severe adjustments and improvements to work properly. Do never rely blindly on AI-generated code.
 
 ## Running Models Locally
 
