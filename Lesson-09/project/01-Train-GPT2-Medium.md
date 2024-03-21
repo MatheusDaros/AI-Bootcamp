@@ -18,6 +18,6 @@
 
    * Use the sample data (`"new-sample.txt"`) in the notebook to train the model
 
-5. Fine-tune the model until t reaches a `loss` under `2.0`
+5. Fine-tune the model until it reaches a `loss` under `2.0`
 
 6. Generate some text from the new pre-trained model

@@ -6,7 +6,7 @@
 
 3. Run the following code on your terminal:
 
-   ```text
+   ```bash
    pip install openai
    ```
 
@@ -34,7 +34,7 @@
     client = OpenAI()
     ```
 
-   * By default, this will try yo use the `OPENAI_API_KEY` environment variable to create this client
+   * By default, this will try to use the `OPENAI_API_KEY` environment variable to create this client
 
    * You can customize the logic by doing an explicit definition like this:
 
@@ -48,7 +48,7 @@
 
    * Here you can change `api_key` to any value that you want to use
 
-   * Have caution if you prefer to hardcode your key in this file, since this could lead yo you inadvertently sharing your key with others
+   * Have caution if you prefer to hardcode your key in this file, since this could lead to you inadvertently sharing your key with others
 
 7. Receive the `prompt` message from the user and store it in a variable
 
@@ -83,12 +83,12 @@
 
 10. Run the file
 
-    ```text
+    ```bash
     # Linux/MacOS
     python <filename>.py
     ```
 
-    ```text
+    ```bash
     # Windows
     py <filename>.py
     ```

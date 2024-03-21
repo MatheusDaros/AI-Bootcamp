@@ -16,13 +16,13 @@
 
    * Create a new file on your favorite code editor or simply run `touch <filename>.py` on your terminal (Linux/MacOS) or `type nul > <filename>.py` on your terminal (Windows)
 
-     * Remember to replace `<filename>` with the name of your file
+   * Remember to replace `<filename>` with the name of your file
 
 5. Import the `openai` module on your file
 
    ```python
-   from openai import OpenAI
-   ```
+    from openai import OpenAI
+    ```
 
    * This `client` can abstract all of the complexities of consuming the OpenAI API endpoints, like handling the authentication, the request and response formats, synchronous and asynchronous requests, and many other features
 
@@ -31,25 +31,24 @@
 6. Create a new `client` instance
 
    ```python
-   client = OpenAI()
-   ```
+    client = OpenAI()
+    ```
 
    * By default, this will try to use the `OPENAI_API_KEY` environment variable to create this client
 
    * You can customize the logic by doing an explicit definition like this:
 
-     ```python
-     import os
-     from openai import OpenAI
- 
-     client = OpenAI(
-         api_key=os.environ.get("OPENAI_API_KEY"),
-     )
-     ```
+   ```python
+   import os
+   from openai import OpenAI
+   client = OpenAI(
+       api_key=os.environ.get("OPENAI_API_KEY"),
+   )
+   ```
 
-     * Here you can change `api_key` to any value that you want to use
+   * Here you can change `api_key` to any value that you want to use
 
-     * Have caution if you prefer to hardcode your key in this file, since this could lead to you inadvertently sharing your key with others
+   * Have caution if you prefer to hardcode your key in this file, since this could lead to you inadvertently sharing your key with others
 
 7. Call the [Chat Completion](https://platform.openai.com/docs/guides/vision) endpoint in the `client` with the following parameters:
 

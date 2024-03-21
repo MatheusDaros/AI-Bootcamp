@@ -34,7 +34,7 @@
     client = OpenAI()
     ```
 
-   * By default, this will try yo use the `OPENAI_API_KEY` environment variable to create this client
+   * By default, this will try to use the `OPENAI_API_KEY` environment variable to create this client
 
    * You can customize the logic by doing an explicit definition like this:
 
@@ -48,7 +48,7 @@
 
    * Here you can change `api_key` to any value that you want to use
 
-   * Have caution if you prefer to hardcode your key in this file, since this could lead yo you inadvertently sharing your key with others
+   * Have caution if you prefer to hardcode your key in this file, since this could lead to you inadvertently sharing your key with others
 
 7. Write a variable with the `prompt` to test in the loop:
 
@@ -67,7 +67,7 @@
    print(f"Prompt:\n{messages[0]['content']}\n")
    ```
 
-9. Do and array with the GPT's models:
+9. Define an array with the GPT's models:
 
    ```python
    models = ["gpt-3.5-turbo", "gpt-4", "gpt-4-0125-preview"]

@@ -168,7 +168,7 @@ Follow the instructions below step by step to complete creating the Chef GPT app
 
    ```typescript
    <div className="fixed bottom-0 w-full max-w-md">
-     <form onSubmit={handleSubmit} className="flex justify-center">
+    <form onSubmit={handleSubmit} className="flex justify-center">
        <input
          className="w-[95%] p-2 mb-8 border border-gray-300 rounded shadow-xl text-black"
          value={input}
