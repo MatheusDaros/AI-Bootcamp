@@ -77,14 +77,14 @@
 
     ```python
     for model in models:
-    print(f"\n---\nGenerating chat completion with {model}:\n")
-    stream = client.chat.completions.create(
-        model=model,
-        messages=messages,
-        stream=True,
-    )
-    for chunk in stream:
-        print(chunk.choices[0].delta.content or "", end="")
+        print(f"\n---\nGenerating chat completion with {model}:\n")
+        stream = client.chat.completions.create(
+            model=model,
+            messages=messages,
+            stream=True,
+        )
+        for chunk in stream:
+            print(chunk.choices[0].delta.content or "", end="")
     ```
 
     * The for loop will iterate each element of models that you've put in the array, and will and configure a stream to that model
@@ -117,6 +117,12 @@
 
     Mention the large language model based product mentioned in the paragraph above:
     ```
+
+    * Or use this prompt:
+
+      ```text
+      Sarah has 5 brothers. Each of Sarah's brothers has 2 sisters. How many sisters does Sarah have in total?
+      ```
 
 12. Run the file
 
