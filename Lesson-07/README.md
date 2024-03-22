@@ -39,7 +39,7 @@ In the last lesson we saw how to use Text Generation WebUI application to run GP
 
 Today, we're going to explore more of the many features of this tool and see how we can use it to run different models and tasks.
 
-* Downloading Models using the [Model Hub](https://github.com/oobabooga/text-generation-webui/wiki/04-%E2%80%90-Model-Tab#download-model-or-lora) from Hugging Face
+* Downloading Models using the [Model Hub](https://huggingface.co/models) from Hugging Face
 * Model configurations
 * Model loaders
 * Selecting models

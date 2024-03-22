@@ -3,6 +3,7 @@
 1. Load a model fine-tuned for instruction-following tasks
 
 2. Select `Notebook` tab
+   * ![notebook tab](../project/images/notebook_tab.png)
 
 3. Type the instructions in the `Textbox`
 
@@ -20,7 +21,7 @@
 
 8. You can copy any chat history from the `Chat` tab to the `Notebook` by clicking in `Send to Notebook` button in the Hamburger Button
 
-9. Pick our previous chat with the Spanish `Chat-instruct` example and send it to the notebook
+9.  Pick our previous chat with the Spanish `Chat-instruct` example and send it to the notebook
 
 10. Append the following lines in the `Textbox`:
 
@@ -72,7 +73,7 @@
     4. Distribuisci i pomodori concassati in strati sulla     mistura di formaggio.
     5. Spaziando bene, distribuisci il prezzemolo tritato sul     pomodoro.
     6. Disporrai le fette di peperoni sull'insalata di     prezzemolo.
-    7. Raggirizzandoti di sale al gusto.
+    8. Raggirizzandoti di sale al gusto.
     8. Ricoprirai la pizza con l'altra metà dello stampo da     taglio.
     9. Infornate la vostra pizza per circa 15-20 minuti o fino a quando non si sarà ben dorata e croccante.
     ```

@@ -3,10 +3,12 @@
 1. Open the `Parameters` tab
 
    * Make sure that you have a model loaded before proceeding
+   * ![select parameters tab](../project/images/parameters_tab.png)
+  
 
 2. Configure the model inference parameters
 
-   * Set the `max_length` to `512` to limit the length of the generated text
+   * Set the `max_new_tokens` to `512` to limit the length of the generated text
 
    * Set the `temperature` to `0.7` to control the randomness of the generated text
 
@@ -15,9 +17,11 @@
    * Set the `top_p` to `0.9` to control the diversity of the generated text
 
    * Save the parameters in a `preset` for future use
+   * ![save parameters](../project/images/save_parameters.png)
 
-3. Configure the `Character` tab
-
+3. Configure the `Chat Character` tab
+   * ![chat character](../project/images/chat_character.png)
+  
    * Give a name to your assistant
 
      * This is going to be the AI display name in the chat interface

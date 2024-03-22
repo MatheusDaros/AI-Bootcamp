@@ -5,6 +5,9 @@
    * Alternatively, you can use the `Session` tab to mark the `api` checkbox in the `Boolean command-line flags` pane
 
    * The `openai` checkbox must be checked in the `Available extensions` pane for the API to work correctly
+   
+   * After selecting click in `Apply flags/extensions and restart`
+
 
 2. The API will be available at <http://127.0.0.1:5000>
 
@@ -24,6 +27,9 @@
        "top_p": 0.9
      }'
    ```
+   or you can test it in the tab in the documentation at <http://127.0.0.1:5000/docs>:
+   * ![completion](../project/images/completion_test.png)
+
 
 6. You can now adapt your scripts to consume this local API instead of the OpenAI APIs
 
