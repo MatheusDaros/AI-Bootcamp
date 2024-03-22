@@ -3,6 +3,20 @@
 1. Download your favorite GPT model from the [Hugging Face](https://huggingface.co/models?pipeline_tag=text-generation&sort=downloads)
 
    * If you prefer, you can download the model by command line with the command `python download-model.py {organization}/{model-name}`
+   * Or you can download it directly in the Models tab:
+     * First access the Model table:
+      
+         ![find model tab](../project/images/find_model_tab.png)
+      
+     * If it is a `GGUF` model:
+         ![find model tab](../project/images/get_list_of_one_model.png)
+      
+       * Choose witch you want to download:
+           ![find model tab](../project/images/choose_model.png)
+
+     *  Download it :
+         ![find model tab](../project/images/download_model.png)
+
 
 2. Place the model files in the `text-generation-webui/models` directory
 
@@ -22,7 +36,9 @@
 
      * For example, for using the `llama-2-13b-chat.Q4_K_M.gguf` model, you can run the script with the `--model` flag and passing `llama-2-13b-chat.Q4_K_M.gguf` as argument
 
-   * Click in the "reload" button to update the list of models after downloading or placing new models in the `text-generation-webui/models` directory
+   * Click in the "reload" button to update the list of models after downloading or placing new models in the `text-generation-webui/models` directory:
+     * ![find model tab](../project/images/select_model.png)
+                 
 
 4. When selecting a model, the Text Generation WebUI will automatically select a Model Loader suitable for it
 
@@ -32,7 +48,9 @@
 
    * Each Model Loader has different set of configurations and parameters, but most of them allow for selecting options for using CPU, GPU, VRAM and RAM limits, quantization and other helpful configurations
 
-5. After selecting the model and the Model Loader and configuring all parameters, you can click in `Load` to load the model
+5. After selecting the model and the Model Loader and configuring all parameters, you can click in `Load` to load the model:
+   
+   * ![find model tab](../project/images/loda_model.png)
 
    * Check your terminal for any error messages or warnings
 
@@ -41,6 +59,7 @@
    * If all fails, try to use smaller models that require less resources to work properly
 
 6. When the model is successfully loaded, you can start using it in the other tabs of the application
+   * ![find model tab](../project/images/select_chat.png)
 
    * You can use the `Chat`, `Default` and `Notebook` interfaces to run text-to-text tasks in the loaded model
 

@@ -20,7 +20,7 @@
    ./start_linux.sh
    ```
 
-    * Use `start_windows.bat` script for Windows
+    * Use `start_windows.bat` script for Windows in cmd
 
     ```bash
     start_windows.bat
