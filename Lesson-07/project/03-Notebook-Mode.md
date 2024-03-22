@@ -67,13 +67,13 @@
     ### Response:
     Per fare una pizza di pepperoni, avrete bisogno di pasta     da pizza, formaggio fuso, pomodori concassati, prezzemolo tritato e sale al gusto.
     
-    10. Accendi il forno a temperature alte.
-    11. Stendevi la sfoglia per pizza su uno stampo da taglio.
-    12. Ungetevi il fondo della tortilla con del formaggio fuso.
-    13. Distribuisci i pomodori concassati in strati sulla     mistura di formaggio.
-    14. Spaziando bene, distribuisci il prezzemolo tritato sul     pomodoro.
-    15. Disporrai le fette di peperoni sull'insalata di     prezzemolo.
-    16. Raggirizzandoti di sale al gusto.
-    17. Ricoprirai la pizza con l'altra metà dello stampo da     taglio.
-    18. Infornate la vostra pizza per circa 15-20 minuti o fino a quando non si sarà ben dorata e croccante.
+    1. Accendi il forno a temperature alte.
+    2. Stendevi la sfoglia per pizza su uno stampo da taglio.
+    3. Ungetevi il fondo della tortilla con del formaggio fuso.
+    4. Distribuisci i pomodori concassati in strati sulla     mistura di formaggio.
+    5. Spaziando bene, distribuisci il prezzemolo tritato sul     pomodoro.
+    6. Disporrai le fette di peperoni sull'insalata di     prezzemolo.
+    8. Raggirizzandoti di sale al gusto.
+    8. Ricoprirai la pizza con l'altra metà dello stampo da     taglio.
+    9. Infornate la vostra pizza per circa 15-20 minuti o fino a quando non si sarà ben dorata e croccante.
     ```
