@@ -1,10 +1,8 @@
 # Creating an Example Index.html File
 
-1. Open the `index.html` file that is located in this folder in you VS Code; you will use it to write your HTML
+1. Create a new file named `index.html` in a separated folder in your computer
 
-2. Every HTML page has a basic structure with texts and _hypertext markups_ (HTML tags).
-
-   * Here's what it looks like:
+2. Insert some content in the file
 
    ```html
    <!DOCTYPE html>
@@ -17,6 +15,8 @@
    </body>
    </html>
    ```
+
+   * Every HTML page has a basic structure with texts and _hypertext markups_ (HTML tags).
 
    * The `<!DOCTYPE html>` tag is used to tell the browser that the document is an HTML document
      * If this is not included, the browser sometimes might get lost on how to interpret the document
