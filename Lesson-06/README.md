@@ -40,6 +40,9 @@ By the end of this lesson we're going to learn that all of the AI APIs we've bee
   * Using a free plan is enough for this lesson
 * Setup your OpenAI key at [MakeReal](https://makereal.tldraw.com/)
   * Follow [this tutorial](https://tldraw.notion.site/Make-Real-Help-93be8b5273d14f7386e14eb142575e6e) if you have questions
+* Install the [Text Generation WebUI](https://github.com/oobabooga/text-generation-webui?tab=readme-ov-file#how-to-install) tool on your device
+  * Follow the instructions on the repository to install the tool
+  * Make sure you have the necessary dependencies and configurations on your device
 
 ## Review of Lesson 05
 
@@ -130,32 +133,44 @@ We are going to see a developer tool that can help dealing with many of these co
 * Alternatives
   * Using a [Docker container](https://github.com/oobabooga/text-generation-webui/wiki/09-%E2%80%90-Docker)
   * Using a [Google Colab notebook](https://github.com/oobabooga/text-generation-webui?tab=readme-ov-file#google-colab-notebook)
-* A place where the LLMS are always up to date and have instructions for use in the text generation webui:
-  * <https://huggingface.co/TheBloke>
-* A tip for those whose want to use only CPU or GPU:
-  * `AWQ` -> Generally for GPU only
-  * `GGUF` -> Generally for CPU only
+
+## Downloading Models
+
+The Text Generation WebUI tool allows us to download and manage models from many different sources.
+
+* How to [Download Models](https://github.com/oobabooga/text-generation-webui?tab=readme-ov-file#downloading-models)
+  * Using the `Model` interface
+    * Open the WebUI and go to the `Model` tab
+    * Click on the `Download` button
+    * Select the model you want to download
+    * Wait for the download to finish
+    * The model will be available for use in the `Models` tab
+  * Using the command line
+    * Run `python download-model.py <your-model-name>`
+    * Replace `<your-model-name>` with the name of the model you want to download
+      * For example: `python download-model.py "TheBloke/Llama-2-7B-Chat-GGUF"`
+* Some of the most useful accounts to explore and download models from are:
+  * [Tom Jobbins](https://huggingface.co/TheBloke)
+  * [WizardLM](https://huggingface.co/WizardLM)
+  * [EleutherAI](https://huggingface.co/EleutherAI)
+  * [Mistral](https://huggingface.co/mistralai)
+  * [Stability AI](https://huggingface.co/stabilityai)
+  * [OpenAI](https://huggingface.co/openai)
+  * [Google](https://huggingface.co/google)
+  * [Intel](https://huggingface.co/Intel)
+  * [Microsoft](https://huggingface.co/microsoft)
+  * [Meta](https://huggingface.co/meta-llama) and [Facebook](https://huggingface.co/facebook)
+  * [xAI](https://huggingface.co/xai-org)
+  * [ByteDance](https://huggingface.co/ByteDance)
+  * [Salesforce](https://huggingface.co/salesforce)
 * Models sizes that indicates how much data uses and processes:
   * 7B -> It uses 7 billion parameters
   * 13B-> It uses 13 billion parameters
   * 30B-> It uses 30 billion parameters
   * 70B-> It uses 70 billion parameters
     * Some examples in models names:
-      *   Dr_Samantha-`7B`-GGUF
-      *   CodeLlama-`70B`-Python-GPTQ 
-
-The more parameters, the more it can process, but it doesn't necessarily mean it will be better, but there is a chance.
-Also a model with more parameter means that also consumes more resources, this is crucial when you are choosing your model as you need to consider what your hardware can support, bellow is a list with approximately what it can consumes of your RAM or VRAM:
-  <center>
-
-  | Parameters  |CPU (GB RAM)  |	GPU (GB VRAM) |
-  |:---:|:-------------:|:--------------:|
-  |7B |   5 - 10	    |		   6-8       |
-  |13B|   8 - 17		  |		   8-12      |
-  |30B|  16 - 38	    |		 16-24       |
-  |70B|   32-74 	    |		 40-48       |
-  
-  </center>
+      * `Dr_Samantha-7B-GGUF`
+      * `CodeLlama-70B-Python-GPTQ`
 
 ## Using Text Generation WebUI
 
