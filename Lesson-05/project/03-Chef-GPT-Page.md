@@ -6,7 +6,7 @@ Follow the instructions below step by step to complete creating the Chef GPT app
 
 1. Open the `page.tsx` file
 
-2. First, set the chat container's height to 100% of the screen by adding "h-screen" to the outer div
+2. First, set the chat container's height to 100% of the screen by adding `h-screen` to the outer div
 
    * This will prevent the new elements from overlapping
 
@@ -19,14 +19,15 @@ Follow the instructions below step by step to complete creating the Chef GPT app
    * Wrap the chat messages in a div container to manage overflow, height, and scrolling as messages are generated:
 
    ```typescript
-   <div className="overflow-auto h-[88%] w-full">
-     {messages.map((m) => (
-       <div key={m.id} className="whitespace-pre-wrap">
-         {m.role === "user" ? "User: " : "AI: "}
-         {m.content}
-       </div>
-     ))}
-   </div>
+    <div className="flex flex-col w-full h-screen max-w-md py-24 mx-auto stretch">
+      <div className="overflow-auto w-full">
+        {messages.map((m) => (
+          <div key={m.id} className="whitespace-pre-wrap">
+            {m.role === "user" ? "User: " : "AI: "}
+            {m.content}
+          </div>
+        ))}
+      </div>
    ```
 
 4. Extract `append` and `isLoading` from the [useChat hook]('https://sdk.vercel.ai/docs/api-reference/use-chat') provided by Vercel AI SDK
@@ -34,14 +35,14 @@ Follow the instructions below step by step to complete creating the Chef GPT app
    * These are going to be used in the next steps to handle different functionalities of the chat component
 
    ```typescript
-   const { messages, input, handleInputChange, handleSubmit, isLoading, append } = useChat();
+   const { messages, input, isLoading, append, handleInputChange, handleSubmit } = useChat();
    ```
 
 5. Next, create a conditional statement based in the `isLoading` variable to direct what is going to be rendered in this component
 
    * We will define that a loading element should be displayed while messages are being generated
 
-   * Add this code inside the div that we created to contain the chat messages in step 3:
+   * Add this code inside the div that we created to contain the chat messages in step 3, after the `messages.map` function closing bracket:
 
    ```typescript
    {
@@ -52,6 +53,10 @@ Follow the instructions below step by step to complete creating the Chef GPT app
      )
    }
    ```
+
+   * This code will check if `isLoading` is true and, if so, display an animated ellipsis
+
+     * This is a common way to conditionally render parts of the page based on boolean values, since if the value of the boolean is false, the check will short-circuit and the element will not be computed at all; and if the value is true, it will just return the element itself after the `&&` symbol
 
 6. Next, add styles to give the messages a chat bubble appearance
 
@@ -75,6 +80,28 @@ Follow the instructions below step by step to complete creating the Chef GPT app
    }
    ```
 
+   * This is a common way to conditionally apply classes to elements based on the value of a variable
+
+     * In this case, we are applying different classes to the chat bubbles based on the role of the message (user or AI)
+
+     * The classes are defined in the `className` attribute of the `div` element, and the class names are generated based on the role of the message
+
+     * The `whitespace-pre-wrap` class is used to preserve the whitespace and line breaks in the message content
+
+     * The `bg-green-700` and `bg-slate-700` classes are used to set the background color of the chat bubbles, applied to the user and AI messages, respectively
+
+     * The `p-3` class is used to add padding to the chat bubbles
+
+     * The `m-2` class is used to add margin to the chat bubbles
+
+     * The `rounded-lg` class is used to round the corners of the chat bubbles
+
+     * The `User:` and `AI:` texts are added to the chat bubbles to indicate the role of the message sender
+
+     * The `content` of the message is displayed inside the chat bubbles
+
+     * The `key` attribute is used to uniquely identify each chat bubble according to the message `id` received in the API response
+
 7. Check if you have edited all the components correctly
 
    * If you followed the steps until now, the code should look like this:
@@ -88,14 +115,14 @@ Follow the instructions below step by step to complete creating the Chef GPT app
      const {
        messages,
        input,
-       handleInputChange,
-       handleSubmit,
        isLoading,
        append,
+       handleInputChange,
+       handleSubmit,
      } = useChat();
      return (
        <div className="flex flex-col w-full h-screen max-w-md py-24 mx-auto stretch">
-         <div className="overflow-auto h-[88%] w-full">
+         <div className="overflow-auto w-full">
            {messages.map((m) => (
              <div
                key={m.id}
@@ -141,12 +168,16 @@ Follow the instructions below step by step to complete creating the Chef GPT app
 
      `import { useEffect, useRef } from "react";`
   
-   * Create a reference for the messages container and scroll the page when new messages appear:
+   * Create a reference for the messages container after the `useChat` hook line:
 
    ```typescript
      const messagesContainerRef = useRef<HTMLDivElement>(null);
-   
-     useEffect(() => {
+   ```
+
+   * Create a `useEffect` hook to scroll the messages container to the bottom whenever new messages are added:
+
+   ```typescript
+        useEffect(() => {
        if (messagesContainerRef.current) {
          messagesContainerRef.current.scrollTop =
            messagesContainerRef.current.scrollHeight;
@@ -154,10 +185,10 @@ Follow the instructions below step by step to complete creating the Chef GPT app
      }, [messages]);
    ```
 
-   * Attach the reference to the messages container created in step 3:
+   * Attach the reference to the messages `<div>` created in step 3:
 
    ```typescript
-    <div className="overflow-auto h-[88%] w-full" ref={messagesContainerRef}>
+    <div className="overflow-auto w-full" ref={messagesContainerRef}>
    ```
 
 9. Customize the page to add a button to prompt the AI to return a random recipe
@@ -186,7 +217,7 @@ Follow the instructions below step by step to complete creating the Chef GPT app
    * Call this function when the user clicks the button with the following code:
 
    ```typescript
-   <div className="flex flex-col justify-center items-center">
+   <div className="flex flex-col justify-center mb-2 items-center">
      <button
        className="bg-blue-500 p-2 text-white rounded shadow-xl"
        disabled={isLoading}
@@ -201,6 +232,12 @@ Follow the instructions below step by step to complete creating the Chef GPT app
    * Notice that the button is still available to be clicked even when the AI is processing a message
 
      * To prevent this, We can use the same `isLoading` value (similar to step 5) to disable the button and the input
+
+   * You might notice that the chat box may extend to the bottom of the page, where the new elements were added
+
+     * To reserve some space for the new elements, you can add a margin to the bottom of the chat container
+
+     * Add `mb-8` to the `input` class
 
    * The Code at this point should look like this:
 
@@ -231,7 +268,7 @@ Follow the instructions below step by step to complete creating the Chef GPT app
    
      return (
        <div className="flex flex-col w-full h-screen max-w-md py-24 mx-auto stretch">
-         <div className="overflow-auto h-[88%] w-full" ref={messagesContainerRef}>
+         <div className="overflow-auto mb-8 w-full" ref={messagesContainerRef}>
            {messages.map((m) => (
              <div
                key={m.id}
@@ -253,7 +290,7 @@ Follow the instructions below step by step to complete creating the Chef GPT app
            )}
          </div>
          <div className="fixed bottom-0 w-full max-w-md">
-           <div className="flex flex-col justify-center items-center">
+           <div className="flex flex-col justify-center mb-2 items-center">
              <button
                className="bg-blue-500 p-2 text-white rounded shadow-xl"
                disabled={isLoading}
@@ -263,7 +300,6 @@ Follow the instructions below step by step to complete creating the Chef GPT app
              >
                Random Recipe
              </button>
-             <p className="p-4">OR</p>
            </div>
            <form onSubmit={handleSubmit} className="flex justify-center">
              <input

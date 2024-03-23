@@ -1,22 +1,52 @@
 # Creating an Application with Vercel AI SDK
 
-1. Create your project: This will set up a new project for you using Next.js, a popular framework for building web applications
+1. Create your project
+
+   * This will set up a new project for you using Next.js templates
 
    * Open your terminal and type the following command:
 
     `npx create-next-app my-ai-app`
 
-2. Choose all default options: The command will ask you a series of questions
-  
-   * For now, just press the 'Enter' key each time to select the default options
+2. Choose all default options
 
-3. Navigate to the created folder: The command you ran in step 1 created a new folder called 'my-ai-app'
+   * When asked `Ok to proceed? (y)` press 'Enter' to confirm
+
+   * When asked `Would you like to use TypeScript? › No / Yes` pick default option `Yes`
+
+   * When asked `Would you like to use ESLint? › No / Yes` pick default option `Yes`
+
+   * When asked `Would you like to use Tailwind CSS? › No / Yes` pick default option `Yes`
+
+   * When asked `Would you like to use src/ directory? › No / Yes` pick default option `No`
+
+   * When asked `Would you like to use App Router? (recommended) › No / Yes` pick default option `Yes`
+
+   * When asked `Would you like to customize the default import alias (@/*)?` pick default option `No`
+
+   * Wait for the installation to finish
+
+3. Navigate to the created folder
+
+   * The command you ran in step 1 created a new folder called 'my-ai-app'
 
    * You need to navigate into this folder using the following command:
 
     `cd my-ai-app`
 
-4. Open the project in VSCode: Visual Studio Code (VSCode) is a code editor where you can write and manage your code
+4. Install the suggested dependencies
+
+   * These are the libraries that your project needs to run
+
+   * Install them with the following command:
+
+    `npm install ai openai`
+
+   * Wait for the installation to finish
+
+5. Open the project in VSCode
+
+   * Visual Studio Code (VSCode) is a code editor where you can write and manage your code
 
    * Open your project in VSCode with the following command:
 
@@ -26,12 +56,9 @@
 
     * If you don't have the 'Open with VSCode' option, you can open VSCode and use the 'File' > 'Open Folder' option to navigate to the 'my-ai-app' folder
 
-5. Install the suggested dependencies: These are the libraries that your project needs to run
-   * Install them with the following command:
+6. Create a `.env` file
 
-    `npm install ai openai`
-
-6. Create a `.env` file: This is a special file where you can store things like API keys
+   * This is a special file where you can store things like API keys
 
    * In the root folder of your project, create a new file named `.env`
 
@@ -41,7 +68,11 @@
 
 8. Get an API Key: This is the same key you set up in Exercise 2 of Lesson 01
 
-   * If you've lost it, don't worry. You can get a new one from your [API Keys](https://platform.openai.com/api-keys) configuration page
+   * If you have the key set up in your OS environment variables, you can get it by running `echo $OPENAI_API_KEY` in your terminal
+
+     * Even if you have it set up in your environment variables in your development machine, it's a good idea to store it in the `.env` file for this project, since later on you might need to handle different environments (like development, testing, and production) for the same project with NextJS using different `.env` files for each
+
+   * If you've lost you API Key, don't worry, you can get a new one from your [API Keys](https://platform.openai.com/api-keys) configuration page
 
 9. Replace the placeholder key: In the `.env` file, replace `xxxxx` with the OpenAI API key you got in the previous step and save the file
 
@@ -49,13 +80,13 @@
 
 10. Create a new file for instructing NextJS how to handle the API calls to OpenAI:
 
-    * In the root of your project, find the 'app' folder and create a new folder inside it named 'api'
+    * In the root of your project, find the `app` folder and create a new folder inside it named `api`
 
-    * Inside the 'api' folder, create another new folder named 'chat'
+    * Inside the `api` folder, create another new folder named `chat`
 
-    * Inside the 'chat' folder, create a new file named 'route.ts'
+    * Inside the `chat` folder, create a new file named `route.ts`
 
-    * Open the 'route.ts' file and paste the code:
+    * Open the `route.ts` file and paste the code:
 
     ```typescript
     import OpenAI from 'openai';
