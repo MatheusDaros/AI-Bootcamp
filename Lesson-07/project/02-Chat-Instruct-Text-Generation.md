@@ -13,8 +13,8 @@
 6. Configure the `Command for chat-instruct mode`
 
    * The `Chat-instruct` mode is useful for managing how each character will behave in the chat by giving specific instructions on how to respond the prompts
-    
-   * Make sure that your model is capable of speaking in other languages 
+
+   * As an example, let's test if the model can follow instructions to respond in Spanish
 
    * Put the following command:
 

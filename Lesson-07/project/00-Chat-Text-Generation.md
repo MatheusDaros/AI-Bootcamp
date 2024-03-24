@@ -5,7 +5,6 @@
    * Make sure that you have a model loaded before proceeding
    * ![select parameters tab](../project/images/parameters_tab.png)
   
-
 2. Configure the model inference parameters
 
    * Set the `max_new_tokens` to `512` to limit the length of the generated text

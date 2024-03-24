@@ -13,7 +13,7 @@
 
 5. At any time you can edit the `Textbox` content, even past messages and the generated responses before generating a new inference
 
-   * Different from the `Chat` interface, the `Notebook` interface gives you entire control over the conversation, without the need to "impersonate" the assistant nor editing message by message
+   * Different from the `Chat` interface, the `Notebook` interface gives you entire control over the conversation, without the need to _"impersonate"_ the assistant nor editing message by message
 
 6. You can Stop the generation process at any time by clicking the `Stop` button, change the content, and click `Generate` again to resume the process
 
@@ -21,7 +21,7 @@
 
 8. You can copy any chat history from the `Chat` tab to the `Notebook` by clicking in `Send to Notebook` button in the Hamburger Button
 
-9.  Pick our previous chat with the Spanish `Chat-instruct` example and send it to the notebook
+9. Pick our previous chat with the Spanish `Chat-instruct` example and send it to the notebook
 
 10. Append the following lines in the `Textbox`:
 

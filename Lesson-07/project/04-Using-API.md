@@ -5,9 +5,8 @@
    * Alternatively, you can use the `Session` tab to mark the `api` checkbox in the `Boolean command-line flags` pane
 
    * The `openai` checkbox must be checked in the `Available extensions` pane for the API to work correctly
-   
-   * After selecting click in `Apply flags/extensions and restart`
 
+   * After selecting click in `Apply flags/extensions and restart`
 
 2. The API will be available at <http://127.0.0.1:5000>
 
@@ -27,50 +26,32 @@
        "top_p": 0.9
      }'
    ```
-   or you can test it in the tab in the documentation at <http://127.0.0.1:5000/docs>:
+
+   * Alternatively, you can test it with  in the documentation at <http://127.0.0.1:5000/docs>:
    * ![completion](../project/images/completion_test.png)
 
-
 6. You can now adapt your scripts to consume this local API instead of the OpenAI APIs
-
-   * Use `sseclient-py` to stream data
-
-     * Install it with `pip install sseclient-py`
 
    * Example of a Python script to consume the local API
 
      ```python
      import requests
-     import sseclient
      import json
      
-     url = "http://127.0.0.1:5000/v1/chat/completions"
+     url = "http://127.0.0.1:5000/v1/completions"
      
      headers = {
          "Content-Type": "application/json"
      }
      
-     history = []
-     
      while True:
          user_message = input("> ")
-         history.append({"role": "user", "content": user_message})
-         data = {
-             "mode": "instruct",
-             "stream": True,
-             "messages": history
+         body = {
+             "prompt": user_message
          }
-     
-         stream_response = requests.post(url, headers=headers, json=data, verify=False, stream=True)
-         client = sseclient.SSEClient(stream_response)
-     
-         assistant_message = ''
-         for event in client.events():
-             payload = json.loads(event.data)
-             chunk = payload['choices'][0]['message']['content']
-             assistant_message += chunk
-             print(chunk, end='')
-     
-         print()
-         history.append({"role": "assistant", "content": assistant_message})
+         response = requests.post(url, headers=headers, json=body, verify=False)
+         message_response = json.loads(response.content.decode("utf-8"))
+         assistant_message = message_response['choices'][0]['text']
+         print(user_message + assistant_message)
+         print("\n")
      ```

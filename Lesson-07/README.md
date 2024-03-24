@@ -23,7 +23,9 @@ Prior to diving into this lesson, it is recommended to have a basic understandin
   * [Git](https://git-scm.com/downloads)
 * Learn how to use `git` commands to clone repositories
   * Docs: [Git](https://git-scm.com/doc)
-* Install and run [Text Generation WebUI](https://github.com/oobabooga/text-generation-webui?tab=readme-ov-file#how-to-install) on your device
+* Install the [Text Generation WebUI](https://github.com/oobabooga/text-generation-webui?tab=readme-ov-file#how-to-install) tool on your device
+  * Follow the instructions on the repository to install the tool
+  * Make sure you have the necessary dependencies and configurations on your device
 * Download a compatible GPT model and place in the correct `models` folder for Text Generation WebUI
 
 ## Review of Lesson 06
@@ -32,6 +34,7 @@ Prior to diving into this lesson, it is recommended to have a basic understandin
 * Capabilities of the Vercel NextJS AI SDK
 * Generative AI Tools
 * Creating the frontend code
+* Getting started with the Text Generation WebUI
 
 ## Exploring Different Models
 
