@@ -100,7 +100,7 @@
              role: "user",
              content:
                `Create a short ${genre} story with a ${tone} tone.`,
-           })}
+           })}>
      Generate Story
    </button>
    ```
