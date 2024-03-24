@@ -5,18 +5,17 @@
    * If you prefer, you can download the model by command line with the command `python download-model.py {organization}/{model-name}`
    * Or you can download it directly in the Models tab:
      * First access the Model table:
-      
+
          ![find model tab](../project/images/find_model_tab.png)
-      
+
      * If it is a `GGUF` model:
          ![get list of one model](../project/images/get_list_of_one_model.png)
-      
+
        * Choose witch you want to download:
            ![choose model](../project/images/choose_model.png)
 
-     *  Download it :
+     * Download it :
          ![download model](../project/images/download_model.png)
-
 
 2. Place the model files in the `text-generation-webui/models` directory
 
@@ -38,7 +37,6 @@
 
    * Click in the "reload" button to update the list of models after downloading or placing new models in the `text-generation-webui/models` directory:
      * ![select model](../project/images/select_model.png)
-                 
 
 4. When selecting a model, the Text Generation WebUI will automatically select a Model Loader suitable for it
 
@@ -49,7 +47,7 @@
    * Each Model Loader has different set of configurations and parameters, but most of them allow for selecting options for using CPU, GPU, VRAM and RAM limits, quantization and other helpful configurations
 
 5. After selecting the model and the Model Loader and configuring all parameters, you can click in `Load` to load the model:
-   
+
    * ![load model tab](../project/images/load_model.png)
 
    * Check your terminal for any error messages or warnings
