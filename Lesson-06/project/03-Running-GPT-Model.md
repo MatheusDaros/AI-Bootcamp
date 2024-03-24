@@ -1,14 +1,27 @@
 # Running Models with the Text Generation WebUI
 
-1. Download your favorite GPT model from the [Hugging Face](https://huggingface.co/models?pipeline_tag=text-generation&sort=downloads)
+1. Download a model
 
-   * If you prefer, you can download the model by command line with the command `python download-model.py {organization}/{model-name}`
-   * Or you can download it directly in the Models tab:
-     * First access the Model table:
+   * If you don't have any models in your device yet, you can download it directly in the Models tab
+
+     * First access the `Model` tab
 
          ![find model tab](../project/images/find_model_tab.png)
 
-     * If it is a `GGUF` model:
+     * Paste the link of the model download page in the `Download` box
+
+       * You can find many open models at [Hugging Face](https://huggingface.co/models?pipeline_tag=text-generation&sort=downloads)
+
+         * For example, you can download the lightweight `openai-community/gpt2` model from [here](https://huggingface.co/openai-community/gpt2)
+
+         * Or for more robust tasks you can download the `mistralai/Mistral-7B-v0.1` model from [here](https://huggingface.co/mistralai/Mistral-7B-v0.1)
+
+         * For a balanced performance you can use `TheBloke/Mistral-7B-v0.1-GGUF` with `mistral-7b-v0.1.Q4_K_M.gguf` quantization from [here](https://huggingface.co/TheBloke/Mistral-7B-v0.1-GGUF)
+
+     * Click in the `Download` button to download the model:
+           ![download model](../project/images/download_button.png)
+
+     * If it is a `GGUF` model you must select one file from the file list:
          ![get list of one model](../project/images/get_list_of_one_model.png)
 
        * Choose witch you want to download:
@@ -17,7 +30,11 @@
      * Download it :
          ![download model](../project/images/download_model.png)
 
-2. Place the model files in the `text-generation-webui/models` directory
+   * If you prefer, you can download the model by command line with the command `python download-model.py {organization}/{model-name}`
+
+2. Organize your models
+
+   * If you already have a model in your device, you can copy it to the `text-generation-webui/models` directory
 
    * Single file models like `GGUF` should be placed directly into the models folder
 
@@ -25,7 +42,7 @@
 
      * Place all the `.json`, `.bin`, `.model` (and others) files downloaded for the model in the same folder
 
-   * If you already have models on your device, you can specify the path to this folder by running the script with the `--model-dir /path/to/your/models` flag
+   * If you prefer to keep all your models in another folder, you can specify the path to this folder by running the script with the `--model-dir /path/to/your/models` flag
 
      * For example, for using your cached models in the Hugging Face Hub directory, you can run the script with the `--model-dir` flag and passing  `~/.cache/huggingface/hub` as argument
 
@@ -49,6 +66,8 @@
 5. After selecting the model and the Model Loader and configuring all parameters, you can click in `Load` to load the model:
 
    * ![load model tab](../project/images/load_model.png)
+
+     * You might need to click on `reload` for the models to appear in the dropdown after making changes to the models directory
 
    * Check your terminal for any error messages or warnings
 
