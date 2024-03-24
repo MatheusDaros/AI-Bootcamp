@@ -32,6 +32,8 @@
 
    * If you prefer, you can download the model by command line with the command `python download-model.py {organization}/{model-name}`
 
+   * If you're using the [Google Colab](https://colab.research.google.com/github/oobabooga/text-generation-webui/blob/main/Colab-TextGen-GPU.ipynb) notebook, you can download the model by passing the model download url as the `model_url` parameter
+
 2. Organize your models
 
    * If you already have a model in your device, you can copy it to the `text-generation-webui/models` directory

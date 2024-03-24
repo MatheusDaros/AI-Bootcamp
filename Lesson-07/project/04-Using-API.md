@@ -10,6 +10,10 @@
 
 2. The API will be available at <http://127.0.0.1:5000>
 
+   * If you're using the [Google Colab](https://colab.research.google.com/github/oobabooga/text-generation-webui/blob/main/Colab-TextGen-GPU.ipynb) notebook, you should check the `api` flag to enable the public API link to be called from over the web
+
+     * The API link for your instance will be displayed in the notebook output after `INFO OpenAI-compatible API URL:`
+
 3. Check the interactive API Documentation at <http://127.0.0.1:5000/docs>
 
 4. The Text Generation WebUI must have a model loaded for the API to be able to handle tasks
