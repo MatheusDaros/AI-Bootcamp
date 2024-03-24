@@ -26,6 +26,10 @@ We will also analyze the quality and accuracy of text generation based on differ
   * [Next.js installation](https://nextjs.org/docs/getting-started/installation)
 * Learn about the Next.js
   * Docs: [Next.js](https://nextjs.org/docs)
+* Install the [Text Generation WebUI](https://github.com/oobabooga/text-generation-webui?tab=readme-ov-file#how-to-install) tool on your device
+  * Follow the instructions on the repository to install the tool
+  * Make sure you have the necessary dependencies and configurations on your device
+* Download a compatible GPT model and place in the correct `models` folder for Text Generation WebUI
 
 ## Review of Lesson 07
 
