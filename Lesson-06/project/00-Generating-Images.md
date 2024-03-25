@@ -185,7 +185,7 @@
      ```tsx
      if (image) {
        return (
-         <div className="flex justify-center items-center h-screen gap-4">
+         <div className="flex justify-center items-center h-screen">
            <img src={`data:image/jpeg;base64,${image}`} />
          </div>
        );
