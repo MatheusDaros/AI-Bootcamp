@@ -197,10 +197,10 @@
    * Add a text area below the image in the conditional statement that we created in the previous step
 
      ```tsx
-     <div className="card flex justify-center items-center h-screen gap-4">
+     <div className="card w-full h-screen max-w-md py-24 mx-auto stretch">
        <img src={`data:image/jpeg;base64,${image}`} />
        <textarea
-          className="w-full text-white bg-black h-80"
+          className="mt-4 w-full text-white bg-black h-64"
           value={messages[messages.length - 1].content}
           readOnly
        />
@@ -210,10 +210,10 @@
    * Modify the `div` above with the `card` class to display the image and the recipe one below the other
 
      ```tsx
-     <div className="card w-full h-screen max-w-md py-24 mx-auto stretch gap-4">
+     <div className="card w-full h-screen max-w-md py-24 mx-auto stretch">
        <img src={`data:image/jpeg;base64,${image}`} />
        <textarea
-         className="mt-4 w-full text-white bg-black h-80"
+         className="mt-4 w-full text-white bg-black h-64"
          value={messages[messages.length - 1].content}
          readOnly
        />
