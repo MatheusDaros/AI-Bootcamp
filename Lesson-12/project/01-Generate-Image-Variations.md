@@ -66,9 +66,9 @@
    ```
 
 9. Run the file
-  >Make sure to run the script from the same directory where the `Coconut.png` image is located. You can use `cd` to navigate to the correct directory
-  
 
+   >Make sure to run the script from the same directory where the `Coconut.png` image is located. You can use `cd` to navigate to the correct directory
+  
    ```bash
    # Linux/MacOS
    python <filename>.py
@@ -105,6 +105,7 @@
     ```
 
 13. Run the file again
+
     >Make sure to run the script from the same directory where the `Coconut.png` and `Mask.png` images are located. You can use `cd` to navigate to the correct directory
 
     ```bash

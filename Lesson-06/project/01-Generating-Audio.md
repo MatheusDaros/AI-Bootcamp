@@ -14,6 +14,21 @@
    * Add a button to generate audio instructions for the recipe inside the image return statement. Place it after the `textarea` tag
 
      ```tsx
+     <div className="flex flex-col justify-center mb-2 items-center">
+       {!audioIsLoading && !audio && (
+         <button
+           className="bg-blue-500 p-2 text-white rounded shadow-xl"
+           onClick={() => {}}
+         >
+           Generate Audio
+         </button>
+       )}
+     </div>
+     ```
+
+   * After adding the code, the `return` statement should look like this:
+
+   ```tsx
      if (image) {
        return (
          <div className="card w-full h-screen max-w-md py-24 mx-auto stretch">
@@ -51,6 +66,12 @@
      ```
 
    * Add a conditional rendering to show a loading message while the audio is being generated
+
+     ```tsx
+     {audioIsLoading && !audio && <p> Audio is being generated... </p>}
+     ```
+
+   * After adding the code, the `return` statement should look like this:
 
      ```tsx
      if (image) {

@@ -30,13 +30,15 @@
        "top_p": 0.9
      }'
    ```
-  For Windows users, use this command instead:
 
-  ```cmd
-  curl http://127.0.0.1:5000/v1/completions -H "Content-Type: application/json" -d "{\"prompt\": \"This is a cake recipe:\\n\\n1.\", \"max_tokens\": 200, \"temperature\": 1, \"top_p\": 0.9}"
-  ```
+   For Windows users, use this command instead:
+
+   ```cmd
+   curl http://127.0.0.1:5000/v1/completions -H "Content-Type: application/json" -d "{\"prompt\": \"This is a cake recipe:\\n\\n1.\", \"max_tokens\": 200, \"temperature\": 1, \"top_p\": 0.9}"
+   ```
 
    * Alternatively, you can test it within the documentation at <http://127.0.0.1:5000/docs>:
+
    * ![completion](../project/images/completion_test.png)
 
 6. You can now adapt your scripts to consume this local API instead of the OpenAI APIs
