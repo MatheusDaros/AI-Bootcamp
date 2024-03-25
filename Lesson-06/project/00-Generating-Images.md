@@ -1,12 +1,12 @@
 # Extending the Chef GPT App with Image Generation
 
-1. Open the Chef GPT page we created in the last lesson on your IDE
+1. Open the Chef GPT page that we created in the last lesson on your IDE
 
 2. Remove the text input to enter messages
 
    * Remove this part of the code:
 
-     ```html
+     ```tsx
      <form onSubmit={handleSubmit} className="flex justify-center">
           <input
             className="w-[95%] p-2 mb-8 border border-gray-300 rounded shadow-xl text-black"
@@ -16,6 +16,16 @@
             onChange={handleInputChange}
           />
      </form>
+     ```
+
+   * Remove the unused imports from the `useChat` hook
+
+     ```tsx
+     const {
+       messages,
+       isLoading,
+       append,
+     } = useChat();
      ```
 
 3. After the user clicks on "Random Recipe", change the button text to "Generate Image"
@@ -80,27 +90,37 @@
      
      ```
 
-   * Fill the function in the `onClick` event of the button to call the `images` API we have just created by passing the last message in the body
+   * Go back to the `page.tsx` file and complete the function in the `onClick` event of the `Generate image` button. This function should call the images API we just created, passing the last message in the body
 
      ```tsx
-     async () => {
-       const response = await fetch("api/images", {
-         method: "POST",
-         headers: {
-           "Content-Type": "application/json",
-         },
-         body: JSON.stringify({
-           message: messages[messages.length - 1].content,
-         }),
-       });
-       const data = await response.json();
-       console.log(data);
-     };
+     <button
+       className="bg-blue-500 p-2 text-white rounded shadow-xl"
+       disabled={isLoading}
+       onClick={async () => {
+         const response = await fetch("api/images", {
+           method: "POST",
+           headers: {
+             "Content-Type": "application/json",
+           },
+           body: JSON.stringify({
+             message: messages[messages.length - 1].content,
+           }),
+         });
+         const data = await response.json();
+         console.log(data);
+       }}
+     >
+       Generate image
+     </button>
      ```
 
 5. Display a loading spinner while the image is being generated
 
-   * Add the `useState` import from `react`
+   * Add the `useState` import to the existing `react` import at the top of the file
+
+    ```tsx
+    import { useEffect, useRef, useState } from "react";
+    ```
 
    * Add a new state to keep track of the image loading state after the `useChat` hook
 
@@ -108,11 +128,33 @@
      const [imageIsLoading, setImageIsLoading] = useState(false);
      ```
 
-   * Add `setImageIsLoading(true);` before the fetch call in the `onClick` event of the `Generate image` button
+   * Change the `imageIsLoading` state to true before the fetch call in the `onClick` event of the `Generate image` button and change it back to false after the `console.log(data);` line
 
-   * Add `setImageIsLoading(false);` after the `console.log(data);` line
+    ```tsx
+    <button
+      className="bg-blue-500 p-2 text-white rounded shadow-xl"
+      disabled={isLoading}
+      onClick={async () => {
+        setImageIsLoading(true)
+        const response = await fetch("api/images", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            message: messages[messages.length - 1].content,
+          }),
+        });
+        const data = await response.json();
+        console.log(data);
+        setImageIsLoading(false);
+      }}
+    >
+      Generate image
+    </button>
+    ```
 
-   * Add a conditional statement before the `return` statement in the `Chat` component to display the loading animation instead of the chat interface while the image is being generated
+   * Add a conditional statement before the `return` statement of our code to display the loading animation instead of the chat interface while the image is being generated
 
      ```tsx
      if (imageIsLoading) {
@@ -128,15 +170,15 @@
      }
      ```
 
-6. Display the generated image in the page when it's ready
+6. Display the generated image on the page when it's ready
 
-   * Add a new state to keep track of the image URL after the `imageIsLoading` state
+   * Add a new state to keep track of the image URL after the `imageIsLoading` state that we created at step 5
 
      ```tsx
      const [image, setImage] = useState<string | null>(null);
      ```
 
-   * Replace the `console.log(data);` line with `setImage(data);`
+   * Replace the `console.log(data);` line inside of the `onClick` event of our `Generate image` button with `setImage(data);`
 
    * Add a conditional statement before the `return` statement in the `Chat` component to display the image instead of the chat interface when the image is ready
 
@@ -150,15 +192,15 @@
      }
      ```
 
-7. Display the recipe for that dish below the image in a text area
+7. Display the recipe for the dish below the image in a text area
 
-   * Add a text box below the image in the conditional statement
+   * Add a text area below the image in the conditional statement that we created in the previous step
 
      ```tsx
-     <div className="flex justify-center items-center h-screen">
+     <div className="card w-full h-screen max-w-md py-24 mx-auto stretch">
        <img src={`data:image/jpeg;base64,${image}`} />
        <textarea
-          className="w-full text-white bg-black"
+          className="mt-4 w-full text-white bg-black h-64"
           value={messages[messages.length - 1].content}
           readOnly
        />
@@ -171,7 +213,7 @@
      <div className="card w-full h-screen max-w-md py-24 mx-auto stretch">
        <img src={`data:image/jpeg;base64,${image}`} />
        <textarea
-         className="mt-4 w-full text-white bg-black"
+         className="mt-4 w-full text-white bg-black h-64"
          value={messages[messages.length - 1].content}
          readOnly
        />
