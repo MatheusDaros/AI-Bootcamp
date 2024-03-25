@@ -20,13 +20,13 @@
 
    * Remove the unused imports from the `useChat` hook
 
-    ```tsx
-    const {
-      messages,
-      isLoading,
-      append,
-    } = useChat();
-    ```
+     ```tsx
+     const {
+       messages,
+       isLoading,
+       append,
+     } = useChat();
+     ```
 
 3. After the user clicks on "Random Recipe", change the button text to "Generate Image"
 
