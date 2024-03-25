@@ -40,7 +40,7 @@
 
 3. The button should set the `audioIsLoading` state to `true` while the audio is being generated
 
-   * Replace the `onClick` event of the button with a call to the `setAudioIsLoading` function
+   * Modify the `onClick` event of the button to add a call to the `setAudioIsLoading` function
 
      ```tsx
      onClick={() => {
