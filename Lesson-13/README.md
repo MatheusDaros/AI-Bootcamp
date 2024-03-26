@@ -4,7 +4,7 @@ In this lesson, we will explore more about AI Image Generation with Stable Diffu
 
 We're going to use different models and techniques for text-to-image generation tasks. We'll use the Stable Diffusion WebUI tool, which can handle many complex tasks needed to run these models and provides a simple, intuitive interface for interaction.
 
-While we use the Stable Diffusion WebUI, we'll learn about some technical details of how stable diffusion models workand the possible configurations and parameters to optimize these models for our hardware. We'll also learn about the various sampling and denoising algorithms that can be used to generate images, and how to use the API for a more programmatic approach.
+While we use the Stable Diffusion WebUI, we'll learn about some technical details of how stable diffusion models work and the possible configurations and parameters to optimize these models for our hardware. We'll also learn about the various sampling and denoising algorithms that can be used to generate images, and how to use the API for a more programmatic approach.
 
 By the end of this lesson, we'll explore various types of models and checkpoints publicly available to download from public hubs. We'll also test the limitations and capabilities of some of these models.
 
