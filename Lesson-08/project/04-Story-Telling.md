@@ -1,6 +1,10 @@
 # Building a Storytelling Application
 
-1. Start a new project with the NextJS AI SDK template
+1. Start a new project with the NextJS AI SDK
+
+  * Follow the same instructions from exercise 02-Vercel-NextJS-AI-SDK from Lesson 05, but use a different project name in the create command. For example:
+
+    `npx create-next-app story-telling-app`
 
 2. Update the 'page.tsx' file with an explanation about the app
 
