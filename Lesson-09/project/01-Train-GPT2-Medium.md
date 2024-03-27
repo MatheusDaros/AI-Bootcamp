@@ -1,6 +1,6 @@
 # Training GPT-2 Medium
 
-1. Create an account at [Google Colab](colab.research.google.com)
+1. Create an account at [Google Colab](https://colab.research.google.com)
 
    * Unless you have access to a good cluster of GPUs, training even the most basic GPT-2 model can be very time consuming and expensive
 

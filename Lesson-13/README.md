@@ -26,6 +26,7 @@ By the end of this lesson, we'll explore various types of models and checkpoints
 * Learn how to use `git` commands to clone repositories
   * Docs: [Git](https://git-scm.com/doc)
 * Install [Stable Diffusion WebUI](https://github.com/AUTOMATIC1111/stable-diffusion-webui) on your device and all the correct dependencies for your hardware
+    * Make sure you have a GPU with at least 4GB of dedicated GPU virtual memory, since this is pre-requisite to run most models locally
 
 ## Review of Lesson 12
 
