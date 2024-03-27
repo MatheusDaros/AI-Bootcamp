@@ -28,15 +28,15 @@
 
 3. Navigate to the created folder
 
-   * The command you ran in step 1 created a new folder called 'story-telling-app'
+   * The command you executed in step 1 created a new folder called 'story-telling-app'
 
-   * You need to navigate into this folder using the following command:
+   * Navigate into this folder by using the following command:
 
     `cd story-telling-app`
 
 4. Install the suggested dependencies
 
-   * These are the libraries that your project needs to run
+   * These libraries are required for your project to run
 
    * Install them with the following command:
 
@@ -48,7 +48,7 @@
 
    * Visual Studio Code (VSCode) is a code editor where you can write and manage your code
 
-   * Open your project in VSCode with the following command:
+   * Use the following command to open your project in VSCode:
 
     `code .`
 
@@ -64,7 +64,7 @@
 
     * Inside the `chat` folder, create a new file named `route.ts`
 
-    * Open the `route.ts` file and paste the code following code. This will setup the AI to act as a storyteller:
+    * Open the `route.ts` file and paste the following code. This will set up the AI to act as a storyteller:
 
     ```typescript
     import OpenAI from 'openai';
@@ -97,9 +97,9 @@
     }
     ```
 
-    * Replace "http://localhost:5000/v1" with your local api endpoint and
+    * In the base URL parameter, replace 5000 with the port number that you have configured for your local API endpoint. Ensure that your local API is running.
 
-7. Update the 'page.tsx' file with a basic explanation about the app and placeholders for the code we will add:
+7. Update the `page.tsx` file by adding a basic description of the app and placeholders for the code that will be added in the subsequent steps:
 
    ```tsx
    "use client";
@@ -131,9 +131,9 @@
    }
    ```
 
-8. Set up what we will need before proceding to add the functionalities
+8. Set up the necessary elements before proceeding to add the functionalities
 
-   * Import `useState` and `useChat` hooks at the top of the code, below `"use client";`. Then destruct `append`, `messages` and `isLoading` from the `useChat` hook:
+   * At the top of the code, below `"use client";`, import the `useState` and `useChat` hooks. Then, destructure append, messages, and isLoading from the `useChat` hook:
 
    ```tsx
    "use client";
@@ -182,7 +182,7 @@
   };
   ```
 
-  * The Code at this point should look like this:
+  * The code at this point should look like this:
 
   ```tsx
   "use client";
@@ -222,7 +222,7 @@
   // rest of the code
   ```
 
-10. Include radio buttons of story genres for the user to select
+9. Include radio buttons of story genres for the user to select
 
    * Replace `{/* genre selection code */}` with the following code:
 
@@ -252,7 +252,7 @@
    </div>
    ```
 
-11. Include radio buttons for the user to select the tone of the story
+10. Include radio buttons for the user to select the tone of the story
 
    * Replace `{/* tone selection code */}` with the following code:
 
@@ -282,7 +282,7 @@
    </div>
    ```
 
-12. Include a button for the user to generate the story
+11. Include a button for the user to generate the story
 
    * Replace `{/* button selection code */}` with the following code:
 
@@ -300,7 +300,7 @@
      Generate Story
    </button>
    ```
-13. Include a element to display the generated story
+12. Include an element to display the generated story
 
    * Replace `{/* chat messages code */}` with the following code:
 
@@ -316,7 +316,7 @@
    </div>
    ```
 
-14. The Code at this point should look like this:
+13. The final code should look like this:
 
    ```tsx
    "use client";
@@ -441,9 +441,9 @@
    }
    ```
 
-15. Test the app to evaluate how the AI responds to the user's requests
+14. Test the app to evaluate how the AI responds to the user's requests
 
-   * Run the app by executing the following command in the terminal:
+   * Run the app by executing the following command on the terminal:
 
    ```bash
    npm run dev
