@@ -6,7 +6,7 @@ url = "http://127.0.0.1:7860"
 
 for i in range(4):
     payload = {
-        "prompt": "bomb explosion, cartoon, comic, flat, boom, bright, blast, explode, effect, flash, explosion"
+        "prompt": "Comic bomb boom. Hand drawn cartoon explosion bomb effect, splash, exclamation smoke element. Doodle hand drawn text boom, pow"
     }
 
     response = requests.post(url=f"{url}/sdapi/v1/txt2img", json=payload)
