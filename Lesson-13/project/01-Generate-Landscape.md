@@ -11,3 +11,5 @@
    * Experiment with different sampling parameters
 
    * Experiment with different CFG scales
+
+![generate image](../project/images/generate-landscape-image.png)
