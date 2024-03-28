@@ -10,12 +10,18 @@
 
 3. Log in with your account
 
-4. Follow the steps in the notebook to train a GPT-2 model with the sample data provided
+4. upload to your google drive root the `shakespeare.txt` file in the project folder.
+
+5. Follow the steps in the notebook to train a GPT-2 model with the sample data provided
 
    * Pick the smallest model available (`124M`) for this exercise
+   
+   * Use the sample data (`"shakespeare.txt"`) saved in your google drive to train the model
 
-   * Use the sample data (`"shakespeare.txt"`) provided in the notebook to train the model
+6. Fine-tune the model until it reaches a `loss` under `2.0`
 
-5. Fine-tune the model until it reaches a `loss` under `2.0`
+   *  Modify the parameter `restore_from` to `'latest'` and add `overwrite=True` if you want to continue finetuning an existing model without creating duplicate copies
+     
+     ![configure finetuning to repeat](../project/images/configure_finetuning_to_repat.png)
 
-6. Generate some text from the new pre-trained model
+7. Generate some text from the new pre-trained model
