@@ -1,6 +1,6 @@
 # Training GPT-2 Small
 
-1. Create an account at [Google Colab](colab.research.google.com)
+1. Create an account at [Google Colab](https://colab.research.google.com)
 
    * Unless you have access to a good cluster of GPUs, training even the most basic GPT-2 model can be very time consuming and expensive
 
@@ -10,7 +10,7 @@
 
 3. Log in with your account
 
-4. Save this [Shakespeare complete works](https://www.gutenberg.org/cache/epub/100/pg100.txt)  as `shakespeare.txt`  and upload to you google drive root.
+4. upload to your google drive root the `shakespeare.txt` file in the project folder.
 
 5. Follow the steps in the notebook to train a GPT-2 model with the sample data provided
 
