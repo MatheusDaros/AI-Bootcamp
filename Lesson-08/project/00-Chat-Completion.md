@@ -5,6 +5,7 @@
    >As of **27th of March of 2024**, the `main` branch of the Text Generation WebUI application have a bug in the `chat` endpoint, documented [in this issue](https://github.com/oobabooga/text-generation-webui/issues/5761)
    >>The fix has been developed in [this PR](https://github.com/oobabooga/text-generation-webui/pull/5722) and has been merged in the `dev` branch
    >>>Currently, to use the `chat` endpoint, you must use the `dev` branch of the Text Generation WebUI application by running `git checkout dev` after cloning and doing a clean install of the project
+   >>>>Or you can apply the fix manually by editing the `extensions/openai/typing.py` file and changing the line `110` to `user_bio: str | None = Field(default='', description="The user description/personality.")`
 
 2. Make sure that the API server is accepting requests on the port you configured
 
