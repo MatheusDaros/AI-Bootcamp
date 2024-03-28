@@ -11,7 +11,7 @@
    * Examples:
 
      ```text
-     As an expert in prompt engineering, write a prompt to tell engaging stories about a theme that the user will provide in the next message. The stories should be engaging, entertaining, and inspiring. They should include a mix of humor, drama, and suspense to captivate the audience. Use vivid descriptions and relatable characters to bring the stories to life. The user will provide the theme in the next message. Answer this message with "OK" only.
+     As a professional storyteller, write a prompt to tell engaging stories about a theme that the user will provide in the next message. The stories should be engaging, entertaining, and inspiring. They should include a mix of humor, drama, and suspense to captivate the audience. Use vivid descriptions and relatable characters to bring the stories to life. The user will provide the theme in the next message. Answer this message with "OK" only.
      ```
 
      ```text
