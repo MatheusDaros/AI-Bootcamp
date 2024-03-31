@@ -78,12 +78,13 @@ We will overview the image generation techniques involving multi-modal models, n
 * [DALL·E-3](https://labs.openai.com/) with [Designer](https://www.bing.com/images/create) (formerly known as Bing Image Creator)
 * [Midjourney](https://www.midjourney.com/showcase)
 * [DreamStudio](https://beta.dreamstudio.ai/generate)
+* [Picsart](https://picsart.com/create/editor)
 * [Image-FX](https://aitestkitchen.withgoogle.com/tools/image-fx)
 
 ### Comparing Image Generation Quality
 
 * Practical exercise
-  * Exercise 2: [Generate Images with ChatGPT and Bing](./project/01-Generate-Images.md) to compare outputs
+  * Exercise 2: [Generate Images with AI Tools](./project/01-Generate-Images.md) to compare outputs
 
 ### Overview of Image Generation Techniques
 
@@ -112,9 +113,13 @@ We will overview the image generation techniques involving multi-modal models, n
   * The process is repeated until the noise vector matches the target image
 * Using Hugging Face's [Stable Diffusion Pipelines](https://huggingface.co/docs/diffusers/quicktour)
   * Hardware requirements
+    * Alternative: [Google Colab](https://colab.research.google.com/github/huggingface/notebooks/blob/main/diffusers/diffusers_intro.ipynb)
   * Dependencies
-  * Installation
+  * [Installation](https://huggingface.co/docs/diffusers/installation)
   * Usage
+    * [Loading models and configuring schedulers](https://huggingface.co/docs/diffusers/using-diffusers/loading)
+    * [Running a pipeline](https://huggingface.co/docs/diffusers/using-diffusers/write_own_pipeline)
+  * Text-to-image Pipeline [parameters](https://huggingface.co/docs/diffusers/api/pipelines/stable_diffusion/text2img)
 
 ### Using Diffusion Models with Python
 

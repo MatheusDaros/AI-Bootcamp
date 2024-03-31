@@ -120,7 +120,7 @@ For consolidating the knowledge acquired in this week, the students should compl
 6. Configure the assistant prompt to be efficient at answering strictly painting descriptions
 7. Create a page for the user to pick an option from a selection of painting themes
 8. Include a button to send a message to the assistant for it to generate a painting description with the selected theme
-9. When the assistant answers, display the generated output in a text area
+9. When the assistant answers, display the generated output in a text box
 10. Create a button for the user to request the image to be generated based on the assistant's output
 11. Create a form after the button for the user to choose the image generation parameters
 12. Include a button to request the image to be generated
