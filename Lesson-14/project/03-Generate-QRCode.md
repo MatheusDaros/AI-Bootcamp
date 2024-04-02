@@ -4,7 +4,7 @@
 
    * Download `Ghostmix` model [here](https://civitai.com/api/download/models/76907?type=Model&format=SafeTensor&size=pruned&fp=fp16)
   
-   * Put the downloaded file in your models folder located at `stable-diffusion-webui/models/Stable-diffusion`
+   * Place the downloaded file in the `stable-diffusion-webui/models/Stable-diffusion` directory within your models folder
   
 2. Download the Brightness Control model
 
@@ -14,7 +14,7 @@
 
 3. Select the model and enter the text-to-image setting
 
-   * Click on the refresh icon and then select `Ghostmix`, it will set the model that we downloaded in step 1 as the `Stable Diffusion checkpoint`
+   * Click on the refresh icon and select `Ghostmix`. This will set the model that we downloaded in step 1 as the `Stable Diffusion checkpoint`
      
    * Use `a cubism painting of a town with a lot of houses in the snow with a sky background, Andreas Rocha, matte painting concept art, a detailed matte painting, blurry, blurry_background, blurry_foreground, depth_of_field` as the prompt and `ugly, disfigured, low quality, nsfw` as the negative prompt
 
@@ -22,7 +22,7 @@
 
 4. Generate a QR code
 
-   * Generate a QR code using this [site](https://www.qrcode-monkey.com/). Prefer using a white foreground and black background to create a more beautiful image.
+   * Generate a QR code using this [site](https://qr.io/). It is recommended to invert the colors (white foreground and black background) to create a more aesthetically pleasing image
 
    * ![qr code](../project/images/image2.png)
   
@@ -79,7 +79,7 @@
 
       * ![controlnet unit1](../project/images/image5.png)
   
-8. Press the generate button and see the result
+8. Press the `Generate` button to view the result
 
       * Example:
 
