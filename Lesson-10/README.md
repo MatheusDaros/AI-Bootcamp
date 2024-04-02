@@ -4,7 +4,7 @@ In this lesson, we will learn how to extend the capabilities of GPTs by using as
 
 We are going to use OpenAI Platform to create and test an assistant, managing threads and messages, and using the augmentation jobs with it. We are going to learn the practical applications of assistants and how these can be used to consistently respond to structured text generation tasks for many different threads from many users.
 
-We are also going to learn and experiment with RAG techniques by running a local GPT model using the NVidia Chat with RTX tool. We are going to feed a local dataset to it and ask questions about information that is present in it. We are going to discover how GPTs can return information about things not present in their training data by providing the correct contextual information and instructions to retrieve it.
+We are also going to learn and experiment with RAG techniques by running local tools. We are going to feed a local dataset to these tools and ask questions about information that is present in it. We are going to discover how GPTs can return information about things not present in their training data by providing the correct contextual information and instructions to retrieve it.
 
 ## Prerequisites
 
