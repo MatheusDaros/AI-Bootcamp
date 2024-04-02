@@ -1,67 +1,86 @@
 # Generating a QRCode with a ControlNet
 
-1. Download an anime model to use as Stable Diffusion checkpoint
+1. Download a model to use as Stable Diffusion checkpoint
 
-   * Download `Anything v5` model [here](https://civitai.com/api/download/models/30163)
+   * Download `Ghostmix` model [here](https://civitai.com/api/download/models/76907?type=Model&format=SafeTensor&size=pruned&fp=fp16)
   
    * Put the downloaded file in your models folder located at `stable-diffusion-webui/models/Stable-diffusion`
   
-2. Download the QR code control model
+2. Download the Brightness Control model
 
-   * Download the QR code control model [here](https://huggingface.co/Nacholmo/controlnet-qr-pattern-v2/tree/main/automatic1111) by clicking on the download icon of the file finished in `.safetensors`
+   * Download the Brightness Control model [here](https://huggingface.co/ioclab/ioc-controlnet/resolve/main/models/control_v1p_sd15_brightness.safetensors)
   
    * Put the downloaded file in ControlNet models folder located at `stable-diffusion-webui/extensions/sd-webui-controlnet/models`
 
-   * ![qr code model](../project/images/image0.png)
-
 3. Select the model and enter the text-to-image setting
 
-   * Click on the refresh icon and then select `Anything v5`, it will set the model that we downloaded in step 1 as the `Stable Diffusion checkpoint`
+   * Click on the refresh icon and then select `Ghostmix`, it will set the model that we downloaded in step 1 as the `Stable Diffusion checkpoint`
      
-   * Use `Japanese painting, mountains, 1girl` as the prompt and `ugly, disfigured, low quality, blurry, nsfw` as the negative prompt
+   * Use `a cubism painting of a town with a lot of houses in the snow with a sky background, Andreas Rocha, matte painting concept art, a detailed matte painting, blurry, blurry_background, blurry_foreground, depth_of_field` as the prompt and `ugly, disfigured, low quality, nsfw` as the negative prompt
 
    * ![txt2img settings](../project/images/image1.png)
 
 4. Generate a QR code
 
-   * Generate a QR code using the default options of this [site](https://www.qr-code-generator.com/)
+   * Generate a QR code using this [site](https://www.qrcode-monkey.com/). Prefer using a white foreground and black background to create a more beautiful image.
+
+   * ![qr code](../project/images/image2.png)
   
 5. Use the following settings in the `Generation` tab:
 
-   * Sampling Method: DPM++ 2M Karras
-   * Sampling Step: 20
-   * Hires Fix: On – Upscaler: Latent. Upscale by 2. Denoising strength: 0.7
+   * Sampling Method: Euler a
+   * Sampling Steps: 20
    * Width: 512
    * Height: 512
    * CFG Scale: 7
-   * ![generation settings](../project/images/image2.png)
+   * ![generation settings](../project/images/image3.png)
   
-6. Upload the QR code image
+6. Configure ControlNet unit 0
 
    * On the text2img page, expand the ControlNet section. You should see an empty image canvas under ControlNet Unit 0 > Single Image.
 
    * Upload the QR code to the Image Canvas
   
-   * Mark the `Enable` and `Pixel perfect` checkboxes
+   * Mark the `Enable` checkbox
 
-   * ![qr code upload](../project/images/image3.png)
+   * Use the following settings:
 
-7. Use the following settings in the same `ControlNet` tab that you uploaded the QR code image:
+      * Control Type: Tile/Blur
 
-   * ControlNet Model: QRPattern_v2_9500 [2d8d5750]
-   * Control Weight: 1.1 (This needs to be adjusted for each prompt)
-   * Control Mode: Balanced
-   * Resize Mode: Crop and Resize
-   * ![controlnet settings](../project/images/image4.png)
+      * Preprocessor: Tile resample
+
+      * ControlNet Model: Control_v1p_sd15_brightness [5f6aa6ed]
+
+      * Control Weight: 0.5
+
+      * Starting Control Step: 0.15
+
+      * Ending Control Step: 0.5
+
+      * ![controlnet unit 0](../project/images/image4.png)
+
+7. Configure ControlNet unit 1
+
+   * Upload the QR code to the Image Canvas
+  
+   * Mark the `Enable` checkbox
+
+   * Use the following settings:
+
+      * Preprocessor: Inpaint_global_harmonious
+
+      * ControlNet Model: Control_v1p_sd15_brightness [5f6aa6ed]
+
+      * Control Weight: 0.5
+
+      * Starting Control Step: 0.5
+
+      * Ending Control Step: 0.9
+
+      * ![controlnet unit1](../project/images/image5.png)
   
 8. Press the generate button and see the result
 
-9. Experiment by changing:
+      * Example:
 
-   * Prompts
-
-   * Cfg: How many times to improve the generated image iteratively; higher values take longer; very low values can produce bad results
-
-   * Samples steps: How strongly the image should conform the prompt - lower values produce more creative results
-
-   * ![example](../project/images/example.png)
+      * ![example](../project/images/example.png)
