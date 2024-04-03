@@ -125,7 +125,7 @@ OpenAI Assistants are currently enabled with a good set of [Useful Toos](https:/
 
 * Practical exercises
   * Exercise 3: Create an assistant and [Provide a File](./project/02-RAG-Assistant.md) for it to retrieve information from, and then test it with a message thread
-  * Exercise 4: [Feed a local dataset](./project/03-RAG-With-Local-Dataset.md) to NVidia's Chat with RTX tool and test it with a message
+  * Exercise 4: [Feed a local dataset](./project/03-RAG-With-Local-Dataset.md) to superbooga extension and test it with a message
 
 ## Next Steps
 
