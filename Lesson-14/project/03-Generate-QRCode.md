@@ -6,7 +6,7 @@
   
    * Put the downloaded file in ControlNet models folder located at `stable-diffusion-webui/extensions/sd-webui-controlnet/models`
 
-3. Select the model and enter the text-to-image setting
+2. Select the model and enter the text-to-image setting
 
    * Click on the refresh icon and select `Ghostmix` (the same model we used in the previous exercise)
      
@@ -14,13 +14,13 @@
 
    * ![txt2img settings](../project/images/image1.png)
 
-4. Generate a QR code
+3. Generate a QR code
 
    * Generate a QR code using this [site](https://qr.io/). It is recommended to invert the colors (white foreground and black background) to create a more aesthetically pleasing image
 
    * ![qr code](../project/images/image2.png)
   
-5. Use the following settings in the `Generation` tab:
+4. Use the following settings in the `Generation` tab:
 
    * Sampling Method: Euler a
    * Sampling Steps: 20
@@ -29,7 +29,7 @@
    * CFG Scale: 7
    * ![generation settings](../project/images/image3.png)
   
-6. Configure ControlNet unit 0
+5. Configure ControlNet unit 0
 
    * On the text2img page, expand the ControlNet section. You should see an empty image canvas under ControlNet Unit 0 > Single Image.
 
@@ -53,7 +53,7 @@
 
       * ![controlnet unit 0](../project/images/image4.png)
 
-7. Configure ControlNet unit 1
+6. Configure ControlNet unit 1
 
    * Upload the QR code to the Image Canvas
   
@@ -73,7 +73,7 @@
 
       * ![controlnet unit1](../project/images/image5.png)
   
-8. Press the `Generate` button to view the result
+7. Press the `Generate` button to view the result
 
       * Example:
 
