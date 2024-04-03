@@ -132,7 +132,7 @@ Due to the random nature of the denoising diffusion process, we're going to noti
 ## Generating Images with a ControlNet
 
 * Practical exercises
-  * Exercise 3: Experiment with [Consistent Portrait Generation](./project/02-Generate-Portrait.md) using the ControlNet to generate eight portrait pictures of the same fictional character
+  * Exercise 3: Experiment with [Human Pose Generation](./project/02-Generate-Pose.md) using the ControlNet to generate an image with a specify human pose
   * Exercise 4: Generate a [QR Code Art](./project/03-Generate-QRCode.md) to a website using the ControlNet
 
 ## Next Steps

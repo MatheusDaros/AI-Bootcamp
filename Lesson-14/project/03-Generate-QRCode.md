@@ -1,12 +1,6 @@
-# Generating a QRCode with a ControlNet
-
-1. Download a model to use as Stable Diffusion checkpoint
-
-   * Download `Ghostmix` model [here](https://civitai.com/api/download/models/76907?type=Model&format=SafeTensor&size=pruned&fp=fp16)
+# Generating a QRCode with ControlNet extension
   
-   * Place the downloaded file in the `stable-diffusion-webui/models/Stable-diffusion` directory within your models folder
-  
-2. Download the Brightness Control model
+1. Download the `Brightness Control` model
 
    * Download the Brightness Control model [here](https://huggingface.co/ioclab/ioc-controlnet/resolve/main/models/control_v1p_sd15_brightness.safetensors)
   
@@ -14,7 +8,7 @@
 
 3. Select the model and enter the text-to-image setting
 
-   * Click on the refresh icon and select `Ghostmix`. This will set the model that we downloaded in step 1 as the `Stable Diffusion checkpoint`
+   * Click on the refresh icon and select `Ghostmix` (the same model we used in the previous exercise)
      
    * Use `a cubism painting of a town with a lot of houses in the snow with a sky background, Andreas Rocha, matte painting concept art, a detailed matte painting, blurry, blurry_background, blurry_foreground, depth_of_field` as the prompt and `ugly, disfigured, low quality, nsfw` as the negative prompt
 
