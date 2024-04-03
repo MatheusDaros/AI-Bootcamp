@@ -1,32 +1,26 @@
-# Generating a QRCode with a ControlNet
-
-1. Download a model to use as Stable Diffusion checkpoint
-
-   * Download `Ghostmix` model [here](https://civitai.com/api/download/models/76907?type=Model&format=SafeTensor&size=pruned&fp=fp16)
+# Generating a QRCode with ControlNet extension
   
-   * Place the downloaded file in the `stable-diffusion-webui/models/Stable-diffusion` directory within your models folder
-  
-2. Download the Brightness Control model
+1. Download the `Brightness Control` model
 
    * Download the Brightness Control model [here](https://huggingface.co/ioclab/ioc-controlnet/resolve/main/models/control_v1p_sd15_brightness.safetensors)
   
    * Put the downloaded file in ControlNet models folder located at `stable-diffusion-webui/extensions/sd-webui-controlnet/models`
 
-3. Select the model and enter the text-to-image setting
+2. Select the model and enter the text-to-image setting
 
-   * Click on the refresh icon and select `Ghostmix`. This will set the model that we downloaded in step 1 as the `Stable Diffusion checkpoint`
+   * Click on the refresh icon and select `Ghostmix` (the same model we used in the previous exercise)
      
    * Use `a cubism painting of a town with a lot of houses in the snow with a sky background, Andreas Rocha, matte painting concept art, a detailed matte painting, blurry, blurry_background, blurry_foreground, depth_of_field` as the prompt and `ugly, disfigured, low quality, nsfw` as the negative prompt
 
    * ![txt2img settings](../project/images/image1.png)
 
-4. Generate a QR code
+3. Generate a QR code
 
    * Generate a QR code using this [site](https://qr.io/). It is recommended to invert the colors (white foreground and black background) to create a more aesthetically pleasing image
 
    * ![qr code](../project/images/image2.png)
   
-5. Use the following settings in the `Generation` tab:
+4. Use the following settings in the `Generation` tab:
 
    * Sampling Method: Euler a
    * Sampling Steps: 20
@@ -35,7 +29,7 @@
    * CFG Scale: 7
    * ![generation settings](../project/images/image3.png)
   
-6. Configure ControlNet unit 0
+5. Configure ControlNet unit 0
 
    * On the text2img page, expand the ControlNet section. You should see an empty image canvas under ControlNet Unit 0 > Single Image.
 
@@ -59,7 +53,7 @@
 
       * ![controlnet unit 0](../project/images/image4.png)
 
-7. Configure ControlNet unit 1
+6. Configure ControlNet unit 1
 
    * Upload the QR code to the Image Canvas
   
@@ -79,7 +73,7 @@
 
       * ![controlnet unit1](../project/images/image5.png)
   
-8. Press the `Generate` button to view the result
+7. Press the `Generate` button to view the result
 
       * Example:
 
