@@ -26,7 +26,7 @@ By the end of this lesson, we'll explore various types of models and checkpoints
 * Learn how to use `git` commands to clone repositories
   * Docs: [Git](https://git-scm.com/doc)
 * Install [Stable Diffusion WebUI](https://github.com/AUTOMATIC1111/stable-diffusion-webui) on your device and all the correct dependencies for your hardware
-  * Make sure you have a GPU with at least 4GB of dedicated GPU virtual memory, since this is pre-requisite to run most models locally
+  * Make sure you have a GPU with at least 4GB of dedicated GPU virtual memory, as this is a prerequisite to run most models locally
 
 ## Review of Lesson 12
 
@@ -59,7 +59,7 @@ By the end of this lesson, we'll explore various types of models and checkpoints
 ## Generating Images with Stable Diffusion WebUI
 
 * Selecting a Model (checkpoint)
-  * The starting model is the "classic" `runwayml/stable-diffusion-v1-5` [Model](https://huggingface.co/runwayml/stable-diffusion-v1-5) that we used in previous examples
+  * The starting model is the "classic" `runwayml/stable-diffusion-v1-5` [Model](https://huggingface.co/runwayml/stable-diffusion-v1-5), which we used in previous examples
   * Specifically, the version used is `v1-5-pruned-emaonly`, that is not suitable for fine-tuning, but it's ideal for inference (generating images), since it uses less VRAM
     * The "full" `v1-5-pruned` version is suitable for fine-tuning, but it uses more VRAM
       * The term "ema-only" refers to the fact that the model uses only the Exponential Moving Average (EMA) of the weights, which is a technique used to stabilize the training of the model
@@ -73,7 +73,7 @@ By the end of this lesson, we'll explore various types of models and checkpoints
   * Width and height: The size of the output image
     * For example, you can set the width to 512 and the height to 384 to generate a 4:3 aspect ratio image, or for portrait images, you can set the width to 512 and the height to 768 for a 2:3 aspect ratio
   * Batch size: Number of images to be generated each time
-    * This consumes more VRAM, but it's often much more practical to generate multiple images at once and discard unsatisfactory ones, rather than generating them one by one repeatedly until you achieve a good result
+    * This consumes more VRAM, but it's often much more practical to generate multiple images at once and discard unsatisfactory ones, rather than generating them one by one repeatedly until a good result is achieved
 * Configuring the sampling options
   * Sampling steps: The fixed number of steps to sample the image
     * Generally, the more steps, the more detailed the image will be, but also the longer it will take to generate
@@ -149,9 +149,9 @@ By the end of this lesson, we'll explore various types of models and checkpoints
   * Using an [Extension](https://github.com/Iyashinouta/sd-model-downloader)
 * Recommendations
   * High resolution model [SDXL](https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0)
-    * Not good for readable text, faces or object compositionality
+    * Not suitable for generating readable text, faces, or objects with compositional structure
   * Standard resolution photorealistic model [Photon](https://civitai.com/models/84728/photon)
-    * Has some problems with rendering hands and fingers
+    * Has some issues with rendering hands and fingers
   * Versatile model for digital art, drawings, anime and painting [GhostMix](https://civitai.com/models/36520?modelVersionId=76907)
     * Requires the use of LoRAs for perfect results
     * Not very good for photorealistic images, or even to generate images of "common" persons or scenes

@@ -2,7 +2,7 @@
 
 1. Create an account at [OpenAI](https://platform.openai.com/signup)
 
-2. Top up your account with at least **5 USD** credits
+2. Top up your account with at least **5 USD** in credits
 
 3. Open the [Assistants](https://platform.openai.com/assistants) tab
 
@@ -10,11 +10,11 @@
 
 5. Fill in the assistant's name and instructions
 
-   * Configure the instructions for the assistant to generate stories upon requests
+   * Configure the instructions for the assistant to generate stories upon request
 
 6. Choose the `gpt-4-turbo-preview` model
 
-7. Enable `Retrieval` checkbox
+7. Enable `Retrieval` the checkbox
 
 8. Close the modal
 
@@ -28,4 +28,4 @@
 
 13. Keep messaging inside the same thread to reuse the chat history inside the context
 
-14. Experiment passing a set of instructions together with the message to see how the assistant behaves
+14. Experiment with passing a set of instructions together with the message to see how the assistant behaves

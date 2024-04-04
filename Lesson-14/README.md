@@ -2,11 +2,11 @@
 
 In this lesson we'll learn about prompting techniques and best practices for generating images using AI models, and how to properly control the diffusion process to produce images accordingly to our expectations.
 
-We're going to start by understanding how the prompts in text space are correlated to the images in the training data, and then we'll experiment with several different prompt engineering practices to try and generate precise images that correctly follows our instructions.
+We're going to start by understanding how prompts in the text space correlate with the images in the training data, and then we'll experiment with several different prompt engineering practices to try and generate precise images that correctly follows our instructions.
 
-We're going to test what kind of terms and instructions models are able to process better, and also how some models can benefit from the use of negative prompts to avoid certain flaws or deformations in the generated images.
+We're going to test which terms and instructions models can process more effectively, and also how some models can benefit from the use of negative prompts to avoid certain flaws or deformations in the generated images.
 
-Due to the random nature of the denoising diffusion process, we're going to notice how difficult it is to get consistent results across several generations, or even to guide specific elements on arrangements in the images generated, like poses, layouts, scales and such details. To address this, we're going to learn how to use a ControlNet to guide the diffusion process and to control the generation of images in a more precise way.
+ue to the random nature of the denoising diffusion process, it can be difficult to achieve consistent results across multiple generations, or even to guide specific elements on arrangements in the images generated, like poses, layouts, scales and such details. To address this, we will learn how to use a ControlNet to guide the diffusion process and control image generation more precisely.
 
 ## Prerequisites
 

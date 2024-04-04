@@ -80,7 +80,7 @@ The process involves two main steps: forward diffusion and backward denoising:
   * The backward process is iterative, starting from pure noise and gradually reducing the noise level until it reconstructs an image that corresponds to the initial data distribution
   * The output is a sample that resembles a natural image from the dataset it was trained on, or if text conditioning is used, an image that corresponds to the text description.
 
-Training the model involves optimizing a loss function that measures the difference between the predicted noise and the actual noise added during the forward diffusion process
+Training the model involves optimizing a loss function, which measures the difference between the predicted noise and the actual noise added during the forward diffusion process
 
 * After training, the model can generate new images by starting from a random Gaussian noise image and iteratively denoising it using the learned denoising process
 
@@ -114,7 +114,7 @@ For consolidating the knowledge acquired in this week, the students should compl
 
 1. Create a github repository for your project
 2. Add all members of your group
-3. Create a README.md file with the description of your project
+3. Create a README.md file that describes your project
 4. Create a new application from scratch using NextJS
 5. Create an assistant in OpenAI that is able to suggest and describe a painting based on a short description from the user
 6. Configure the assistant prompt to be efficient at answering strictly painting descriptions

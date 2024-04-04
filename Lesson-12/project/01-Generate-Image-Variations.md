@@ -2,7 +2,7 @@
 
 1. Make sure that you have set up your keys correctly with the exercise `01-OpenAI-Key.md` from Lesson 01
 
-2. Make sure that your `venv` is activates
+2. Make sure that your `venv` is activated
 
 3. Run the following code on your terminal:
 
@@ -65,7 +65,7 @@
    print(f"Variation: {response.data[0].url}")
    ```
 
-9. Run the file
+9. Execute the Python script
 
    >Make sure to run the script from the same directory where the `Coconut.png` image is located. You can use `cd` to navigate to the correct directory
   
@@ -104,7 +104,7 @@
     print(f"Edit: {response.data[0].url}")
     ```
 
-13. Run the file again
+13. Execute the Python script again
 
     >Make sure to run the script from the same directory where the `Coconut.png` and `Mask.png` images are located. You can use `cd` to navigate to the correct directory
 

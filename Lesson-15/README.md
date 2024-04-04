@@ -6,7 +6,7 @@ We're going to explore how models can be fine-tuned and enhanced using LoRAs and
 
 By the second half of this lesson we're going to explore more on the idea of extracting information from images, and we're going to learn about a technique called "Computer Vision" and how it can be used to process text from images.
 
-We're going to see an overview on how the same versatile Transformers architecture we've been seeing before for text and image generation can be used again for image processing tasks. We're going to experiment using transformers to run Zero-shot detection and classification tasks to better understand what computer vision can do.
+We're going to see an overview on how the same versatile Transformers architecture we've previously discussed for text and image generation can be used again for image processing tasks. We're going to experiment using transformers to run Zero-shot detection and classification tasks to better understand what computer vision can do.
 
 Finally, we're going to learn how to install and use the Vision Process WebUI to run computer vision tasks on our own devices.
 
@@ -80,11 +80,11 @@ Finally, we're going to learn how to install and use the Vision Process WebUI to
 * Convolutional Neural Networks (`CNNs`) for image processing
   * CNNs were the first models to achieve state-of-the-art results on computer vision tasks before the rise of transformers-based models
 * Vision Transformer (`ViT`)
-  * Model that split images into fixed-size patches and  linearly embed them (flattened and projected into a higher-dimensional space) along with positional encodings to retain information about their original location in the image
-    * These embeddings can then processed by the transformer encoder to perform tasks like the prompts from text generation models or even image generation
+  * Model that splits images into fixed-size patches and  linearly embed them (flattened and projected into a higher-dimensional space) along with positional encodings to retain information about their original location in the image
+    * These embeddings can then be processed by the transformer encoder to perform tasks like the prompts from text generation models or even image generation
 * Detecting Transformers (`DETR`)
   * This model uses a convolutional neural network (CNN) backbone to extract a feature map from the input image, and then this map is then flattened and passed through a series of transformer encoders and decoders to produce the final output
-  * The encoder processes the feature map to capture the relationships between different parts of the image, and the decoder takes in a fixed number of learned positional embeddings called "object queries" and decodes them in parallel to predict both the classes and bounding boxes of the objects
+  * The encoder processes the feature map to capture the relationships between different parts of the image, and the decoder takes in a fixed number of learned positional embeddings called "object queries" and decodes them in parallel to predict the classes of the objects and their bounding boxes
 
 ## Computer Vision Models
 
@@ -106,9 +106,9 @@ Finally, we're going to learn how to install and use the Vision Process WebUI to
 
 * Practical exercises
   * Exercise 1: Run a [Zero-shot object detection pipeline](./project/00-Object-Detection.md)
-    * Code [ObjectDetection.py](./project/ObjectDetection.py) and run it one object name and a file as argument to output an image with the object detected inside a box
+    * Code [ObjectDetection.py](./project/ObjectDetection.py) and run it with one object name and a file as arguments to output an image with the object detected inside a box
   * Exercise 2: Run a [Zero-shot image classification pipeline](./project/01-Image-Classification.md)
-    * Code [ImageClassification.py](./project/ImageClassification.py) and run it with a file as argument to output a description of the image
+    * Code [ImageClassification.py](./project/ImageClassification.py) and run it with a file as an argument to output a description of the image
 
 ## Identifying Images with the Vision Process WebUI
 

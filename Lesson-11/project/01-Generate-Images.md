@@ -32,7 +32,7 @@
 
 2. Click on `New Canvas +` to create a new blank project
 
-3. Click in the `Photos` tab and choose `Generate with AI`
+3. Click on the `Photos` tab and choose `Generate with AI`
 
 4. Describe the image you want to create in the input box
 

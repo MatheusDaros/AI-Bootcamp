@@ -1,8 +1,8 @@
 # Lesson 16: AI Applications
 
-In this final lesson we're going to wrap all the major concepts we've learned so far for generative AI, and we're going to put them to practice by creating a new application that integrates many AI functionalities.
+In this final lesson we're going to wrap all the major concepts we've learned so far for generative AI, and we're going to put them into practice by creating a new application that integrates many AI functionalities.
 
-By the end of this lesson you should be well prepared for starting to ideate and plan your final project, and you should be able to start prototyping your ideas by using the tools and replicating the techniques we used in all the lessons within this bootcamp.
+By the end of this lesson you should be well prepared to start ideating and planning your final project, and you should be able to start prototyping your ideas by using the tools and replicating the techniques we used in all the lessons within this bootcamp.
 
 ## Prerequisites
 
@@ -32,10 +32,10 @@ By the end of this lesson you should be well prepared for starting to ideate and
 
 ## Integrating AI Functionalities
 
-* Creating a new Next.js application
-* Adding a [page](./project/00-Computer-Vision-Page.md) for uploading images and processing them with Computer Vision
-* Adding a [page](./project/01-Chat-Page.md) for chatting with a text generation model
-* Adding a [page](./project/02-Image-Generation-Page.md) for generating images with an image generation model
+* Create a new Next.js application
+* Add a [page](./project/00-Computer-Vision-Page.md) to upload images and process them with Computer Vision
+* Add a [page](./project/01-Chat-Page.md) to chat with a text generation model
+* Add a [page](./project/02-Image-Generation-Page.md) to generate images with an image generation model
 
 ## Final project
 
