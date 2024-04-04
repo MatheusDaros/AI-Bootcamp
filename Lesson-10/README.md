@@ -2,9 +2,9 @@
 
 In this lesson, we will learn how to extend the capabilities of GPTs by using assistants and retrieval-augmented generation (RAG) tools.
 
-We are going to use OpenAI Platform to create and test an assistant, managing threads and messages, and using the augmentation jobs with it. We are going to learn the practical applications of assistants and how these can be used to consistently respond to structured text generation tasks for many different threads from many users.
+We are going to use the OpenAI Platform to create and test an assistant, manage threads and messages, and use augmentation jobs with it. We are going to learn about the practical applications of assistants and how they can be used to consistently respond to structured text generation tasks across many different threads from various users.
 
-We are also going to learn and experiment with RAG techniques by running local tools. We are going to feed a local dataset to these tools and ask questions about information that is present in it. We are going to discover how GPTs can return information about things not present in their training data by providing the correct contextual information and instructions to retrieve it.
+We are also going to learn and experiment with RAG techniques by running local tools. We are going to feed a local dataset to these tools and ask questions about the information present in it. We are going to discover how GPTs can return information about topics not present in their training data by providing the correct contextual information and instructions for retrieval.
 
 ## Prerequisites
 
@@ -88,8 +88,8 @@ We are also going to learn and experiment with RAG techniques by running local t
 
 ## Building and Testing an Assistant with OpenAI APIs
 
-OpenAI [Assistants](https://platform.openai.com/docs/assistants/overview) provides a quick and easy way to setup and test custom made assistants powered by the GPT models. The assistants can be programmed to respond to specific prompts or commands in a structured way to provide consistent and helpful responses to users.
-OpenAI Assistants are currently enabled with a good set of [Useful Toos](https://platform.openai.com/docs/assistants/tools) for things like interpreting code, knowledge retrieval, running functions (like getting the weather of a city or similar tasks), and more.
+OpenAI [Assistants](https://platform.openai.com/docs/assistants/overview) provide a quick and easy way to set up and test custom-made assistants powered by GPT models. The assistants can be programmed to respond to specific prompts or commands in a structured way to provide consistent and helpful responses to users.
+OpenAI Assistants are currently enabled with a good set of [Useful Tools](https://platform.openai.com/docs/assistants/tools) for things like interpreting code, knowledge retrieval, running functions (like getting the weather of a city or similar tasks), and more.
 
 * Practical exercises
   * Exercise 1: [Creating a simple assistant](./project/00-Create-Assistant.md) with instructions to tell engaging pirate stories
@@ -105,12 +105,12 @@ OpenAI Assistants are currently enabled with a good set of [Useful Toos](https:/
   * Instead of including the whole information in the context, the GPT can be programmed to automatically select fragments of the provided augmenting data that are more relevant to the current prompt
     * This allows the GPT to generate responses based on the content of the external sources of huge sizes, without exceeding the context size limit when generating the responses
 * Retrieving relevant information from a bigger dataset
-  * The provided data is divided into _chunks_ and stored in a database in an organized way
-    * All of the chunks are indexed and the embeddings of the chunks are calculated to form some sort of _metadata_ for the chunks and what information they relate to
-  * When a prompt is given to the GPT, the chunks are compared to the prompt and the most relevant chunks are selected to be included in the context of the prompt
-    * A vector search calculates the embeddings of the indexed chunks against the embeddings of the prompt, and the most similar chunks are selected to be included in the context of the prompt
+  * The provided data are divided into _chunks_ and stored in a database in an organized way
+    * All of the chunks are indexed and their embeddings are calculated to form some sort of _metadata_ that relates to the information they contain
+  * When a prompt is given to the GPT, it compares the chunks to the prompt and selects the most relevant ones to be included in the context of the prompt
+    * A vector search calculates the embeddings of the indexed chunks against those of the prompt, and selects the most similar chunks to be included in the context of the prompt
 * Feeding the GPT with retrieved information
-  * When the chunks are appended to the context, the model fine-tuning for instructions allows for modifying the model's behavior to generate responses based on the content of the chunks while generating the responses
+  * When the chunks are appended to the context, the model's fine-tuning for instructions allows it to modify its behavior to generate responses based on the content of the chunks
 
 ## Retrieval-Augmented Generation (RAG) Tools
 

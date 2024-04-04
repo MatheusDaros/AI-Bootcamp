@@ -26,7 +26,7 @@
 
 3. Open the `Notebook` tab
 
-4. Input the following prompt in the `Textbox`:
+4. Input the following prompt into the `Textbox`:
 
    ```text
    <|begin-user-input|>
@@ -38,19 +38,19 @@
    ASSISTANT:
    ```
 
-5. Hit `Generate` to generate the response
+5. Click `Generate` to produce the response
 
    * The `<|injection-point|>` will be empty, since we haven't loaded any data yet
 
    * The generated response should be a generic hallucination from the model or something similar
 
-6. Scroll down to see the `File input` tab and upload the [Sample Data](./SampleText.txt) to it
+6. Scroll down to see the `File input` tab and upload the [Sample Data](./SampleText.txt) there
 
    * Configure `\n` as the `Chunk separator` to split the file into paragraphs
 
 7. Click on `Load data` to add the _chunks_ to the database
 
-8. Test the prompt again
+8. Test the prompt once more
 
    * The response should now contain information from the Sample Data
 
@@ -64,6 +64,6 @@
 
    * This only works in the `instruct` mode
 
-   * In the `chat` mode, the extension will work to keep an extended context with the history of the conversation
+   * In the `chat` mode, the extension maintains an extended context with the conversation history
 
      * At each new message, the most relevant past messages will be appended to the context string, and the extension will ignore the external data sources

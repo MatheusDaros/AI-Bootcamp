@@ -14,13 +14,13 @@
 
 4. Upload a file with the contents of the book [Moby Dick](./MobyDick.txt) (public domain)
 
-5. Ask again the assistant to generate the story again
+5. Ask the assistant to generate the story again
 
 6. Clone your current assistant and clear the custom instructions
 
 7. Enable the `Retrieval` tool toggle
 
-8. Ask about a question not present in the training data of this model, but present in the [Sample Data](./SampleText.txt)
+8. Ask a question that is not present in the training data of this model, but is present in the [Sample Data](./SampleText.txt)
 
    * Use a prompt like this:
 
@@ -28,13 +28,13 @@
         Who is the Captain of the Star-Potato?
         ```
 
-   * The expected output should not have much information about it, for example:
+   * The expected output should not contain much information, for example:
 
         ```text
         I'm not sure what the "Star-Potato" refers to as it doesn't appear to be a real ship or entity. Is it possible that you may be referring to a fictional spaceship or an inside joke? If you can provide more context or details, I'd be happy to try to help.
         ```
 
-9. Upload the [Sample Data](./SampleText.txt) to the chat message
+9. Upload the [Sample Data](./SampleText.txt) into the chat message
 
 10. Ask the same prompt again
 
@@ -44,7 +44,7 @@
         The Captain of the Star-Potato is P1R4T3YOHO123, the most notorious pirate of the cosmos[1].
         ```
 
-11. Try to ask something not included in Sample Data but related to it
+11. Try asking something not included in the Sample Data but related to it
 
     * Use a prompt like this:
 

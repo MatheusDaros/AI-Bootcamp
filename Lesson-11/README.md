@@ -89,7 +89,7 @@ We will overview the image generation techniques involving multi-modal models, n
 ### Overview of Image Generation Techniques
 
 * Multi-modal approach
-  * AI applications like ChatGPT are enabled to consume and generate data in multiple formats, like text, image, video and audio (so called multi-modal AIs)
+  * AI applications, such as ChatGPT, can consume and generate data in multiple formats, including text, image, video, and audio. These are known as multi-modal AIs
   * DALL·E is a variant of the GPT-3 transformer model developed by OpenAI that leverages the concept of unsupervised learning where the model learns to generate images from text descriptions
     * DALL·E uses a technique called "transformer language models" to generate images from text descriptions, by learning the relationship between the two from a large dataset
 * Neural Network based Models
@@ -129,7 +129,6 @@ We will overview the image generation techniques involving multi-modal models, n
 
 ## Next Steps
 
-* Generating images with AI
 * Image generation models
 * Stable diffusion overview
 * OpenAI Image Generation APIs
