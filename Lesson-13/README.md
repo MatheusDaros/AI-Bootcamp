@@ -175,9 +175,26 @@ By the end of this lesson, we'll explore various types of models and checkpoints
 
 * Downloading models
   * From [Hugging Face](https://huggingface.co/models?pipeline_tag=text-to-image&library=diffusers&sort=downloads) (filter for "Diffusers" under "Library")
+    * You can download models easily using a [model downloader extension](https://github.com/Iyashinouta/sd-model-downloader)
+      * Download and install using the `Extensions` tab
+        * Use `Install from URL` tab
+        * Paste the extension url in the `URL for extension's git repository` input field
+        * Click the `Install` button
+        * Go for the `Installed` tab
+        * Click the `Apply and restart UI` button
+      * After installing, go for the `Model Downloader tab`
   * From [CivitAI](https://civitai.com/models?tag=base+model) (filter for "Checkpoints" under "Model Types")
-  * Using an [Extension](https://github.com/Iyashinouta/sd-model-downloader)
-* Recommendations
+    * A great way to safely download models from CivitAI is to use the [CivitAI Helper Extension](https://github.com/zixaphir/Stable-Diffusion-Webui-Civitai-Helper)
+      * Download and install using the `Extensions` tab
+        * Use `Install from URL` tab
+        * Paste the extension url in the `URL for extension's git repository` input field
+        * Click the `Install` button
+        * Go for the `Installed` tab
+        * Click the `Apply and restart UI` button
+      * Go for `Civitai Helper` tab
+        * Use the `Download Model` pane to get model information from a link and download it
+          * You can use the `Block NSFW Level Above` filter to conveniently filter out images tagged as NSFW
+  * From other websites like [PromptHero](https://prompthero.com/ai-models/text-to-image) and [Reddit](https://www.reddit.com/r/StableDiffusion/wiki/models/)
   * High resolution model [SDXL](https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0)
     * Not suitable for generating readable text, faces, or objects with compositional structure
   * Standard resolution photorealistic model [Photon](https://civitai.com/models/84728/photon)
