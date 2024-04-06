@@ -50,10 +50,18 @@ By the end of this lesson, we'll explore various types of models and checkpoints
   * Options for running in [Docker Containers](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Containers)
   * Options for running in [Online Services](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Online-Services)
 * Instructions for [Installing and Running](https://github.com/AUTOMATIC1111/stable-diffusion-webui?tab=readme-ov-file#installation-and-running)
+* Alternative [Online Services](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Online-Services)
 * Usage
   * Access the WebUI at <http://127.0.0.1:7860/> (default location)
   * Run with the `--api` flag to access the API at <http://127.0.0.1:7860/docs>
 * Main [Features](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Features)
+  * Stable Diffusion
+  * Text to Image
+  * Image to Image
+  * Inpainting
+  * Outpainting
+  * Image variations
+  * Resizing/Upscaling
 * Using Models and Checkpoints
 
 ## Generating Images with Stable Diffusion WebUI
@@ -62,23 +70,44 @@ By the end of this lesson, we'll explore various types of models and checkpoints
   * The starting model is the "classic" `runwayml/stable-diffusion-v1-5` [Model](https://huggingface.co/runwayml/stable-diffusion-v1-5), which we used in previous examples
   * Specifically, the version used is `v1-5-pruned-emaonly`, that is not suitable for fine-tuning, but it's ideal for inference (generating images), since it uses less VRAM
     * The "full" `v1-5-pruned` version is suitable for fine-tuning, but it uses more VRAM
-      * The term "ema-only" refers to the fact that the model uses only the Exponential Moving Average (EMA) of the weights, which is a technique used to stabilize the training of the model
+      * The term `EMAonly` refers to the fact that the model uses only the Exponential Moving Average (EMA) of the weights, which is a technique used to stabilize the training of the model
       * The "full" version has all the weights, including the EMA and the non-EMA, and thus uses more VRAM to be processed, but also provides more flexibility for fine-tuning
     * Pruned means that the model has been pruned to remove unnecessary/irrelevant weights, which makes it smaller and faster to process with almost negligible losses of performance/precision
   * To summarize, you can use the starting model to generate images, but consider changing it before attempting to fine-tune anything
 * Passing a prompt
   * Similar to the `Text Generation WebUI`, you can pass a prompt to the model to generate an image
   * We're going to see more about this in practice later on
+* Understanding the CLIP
+  * Every textual prompt passed as input must be encoded using the Contrastive Language-Image Pre-Training before being used to generate images
+  * The CLIP model is a neural network that learns to associate images and text in a way that allows it to understand the content of the images and the meaning of the text
+  * Every model has a limit on how many tokens can be passed as input, usually set at 75 (or 77) for base SD models
+    * This means that the prompt must be less than 75 tokens long, or it will be truncated
+    * Stable Diffusion WebUI allows for _infinite_ prompt length by [breaking the prompt in chunks](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Features#infinite-prompt-length)
+* Prompting techniques
+  * As a rule of thumb, the more specific and objective the prompt, the better the results
+  * As we saw with text-to-text models, the prompt is only effective when it is possible to relate its contents to what is included in the training data of the model
+  * For text-to-image tasks, many models allow for configuring the specific [attention/emphasis](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Features#attentionemphasis) of each term in the prompt
+  * Also these text-to-image models may follow instructions to avoid content specified in [Negative Prompts](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Negative-prompt)
+
+### Configurations
+
+* Hardware configurations
+  * Edit the `webui-user.sh` (Linux/MacOS) or `webui-user.bat` (Windows) file at the `COMMANDLINE_ARGS` line
+    * Using [Low VRAM Mode](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Features#4gb-videocard-support)
+    * Using [CPU only](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Command-Line-Arguments-And-Settings#running-on-cpu)
 * Configuring the image generation options
   * Width and height: The size of the output image
     * For example, you can set the width to 512 and the height to 384 to generate a 4:3 aspect ratio image, or for portrait images, you can set the width to 512 and the height to 768 for a 2:3 aspect ratio
+    * Due to the nature of the Stable Diffusion models, changing a single pixel length in the image resolution can have a significant impact on the output image generated, possibly changing it completely
+      * If you need to generate images in different resolutions, it's recommended to generate them in the native resolution of the model (usually 512 pixels) and then use the high resolution fix extension to improve the quality of the images generated in higher resolutions
+      * Other technique is to manipulate the [Image Generation Seed](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Features#sampling-method-selection) to try and keep outputs under a similar range
   * Batch size: Number of images to be generated each time
     * This consumes more VRAM, but it's often much more practical to generate multiple images at once and discard unsatisfactory ones, rather than generating them one by one repeatedly until a good result is achieved
 * Configuring the sampling options
   * Sampling steps: The fixed number of steps to sample the image
     * Generally, the more steps, the more detailed the image will be, but also the longer it will take to generate
     * At some point, adding more steps will not make a noticeable difference in the image quality, and could even start to degrade it in some algorithms
-  * Sampling method: What algorithm to use to sample the image on each step
+  * Sampling method: What [sampling algorithm](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Features#sampling-method-selection) to use to sample the image on each step
     * Old-School ODE solvers: ODEs (Ordinary Differential Equation) solvers are numerical methods used to solve differential equations, which are mathematical equations that relate some function with its derivatives
       * `Euler`: The simplest possible solver, which approximates the solution of an ODE by using finite differences to approximate the derivative
       * `Heun`: A more accurate but slower version of Euler that uses a second-order Runge-Kutta method used for the numerical solution of initial value problems
@@ -161,6 +190,16 @@ By the end of this lesson, we'll explore various types of models and checkpoints
   * Model file extensions
     * `ckpt` files are models where python can load serialized data, but they are dangerous since they can execute arbitrary code
     * `safetensors` files are not affected by the vulnerability of `ckpt` files, and are preferred whenever available
+  * Model weights
+    * `EMAonly` models use only the Exponential Moving Average of the weights
+      * These models are smaller and faster to process, and they require less VRAM to run
+      * They are ideal for generating images, but not suitable for fine-tuning
+    * `Full` models use all the weights, including the EMA and the non-EMA
+      * These models are larger and slower to process, and they require more VRAM to run
+      * They are ideal for training new models, but not suitable for generating images
+    * `Pruned` models have been pruned to remove unnecessary/irrelevant weights
+      * These models have less weights to process, and thus they are faster to run
+      * Removing weights can sometimes have a negative impact on the accuracy of the model for some prompts, especially for terms that are not very well represented in the training data
   * LoRAs (Low-Rank Adaptation)
     * LoRAs are a set of techniques used to adapt a model to a specific characteristic or dataset
     * Some models include this inside the checkpoint, increasing the quality of the generated images but also decreasing the compatibility with other LoRAs that could be used in conjunction with the model
