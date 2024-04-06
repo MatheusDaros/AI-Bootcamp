@@ -103,12 +103,21 @@ ue to the random nature of the denoising diffusion process, it can be difficult 
   * Running in [Low VRAM](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Troubleshooting#low-vram-video-cards)
   * Running in [CPU mode](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Command-Line-Arguments-and-Settings#running-on-cpu)
 
+## Generating Images with the API
+
+* Practical exercises
+  * Exercise 1: [Enable the API](./project/00-Enable-API.md)
+  * Exercise 2: [Generate Images](./project/01-Generate-Image-API.md) using the API
+    * Code [CallAPI.py](./project/CallAPI.py) and run it
+
+>Notice that the API implemented in the Stable Diffusion WebUI uses different endpoints from the OpenAI api, so you might need to adjust re-implement the API calls in your applications by changing the urls and endpoint names accordingly.
+
 ## Generating Images with Python
 
 * Practical exercises
-  * Exercise 1: [Photorealistic image generation](./project/00-Generate-Photo.md) by running a script with a preconfigured prompt
-    * Code [GeneratePhoto.py](./project/GeneratePhoto.py) and run it by passing a name of an object as argument
-  * Exercise 2: [Cartoon sequence generation](./project/01-Generate-Cartoon.md)
+  * Exercise 3: [Photorealistic image generation](./project/02-Generate-Photo.md) by running a script with a preconfigured prompt
+    * Code [GeneratePhoto.py](./project/GeneratePhoto.py) and run it
+  * Exercise 4: [Cartoon sequence generation](./project/03-Generate-Cartoon.md)
     * Code [GenerateCartoon.py](./project/GenerateCartoon.py) and run it to generate four images of a cartoonish bomb explosion in a sequence
 
 ## Using a ControlNet
@@ -144,16 +153,8 @@ ue to the random nature of the denoising diffusion process, it can be difficult 
 ## Generating Images with a ControlNet
 
 * Practical exercises
-  * Exercise 3: Experiment with [Human Pose Generation](./project/02-Generate-Pose.md) using the ControlNet to generate an image with a specify human pose
-  * Exercise 4: Generate a [QR Code Art](./project/03-Generate-QRCode.md) to a website using the ControlNet
-
-## Generating Images with the API
-
-* Practical exercises
-  * Exercise 5: [Enable the API](./project/04-Enable-API.md)
-  * Exercise 6: Write a python script to [Generate Images](./project/05-Generate-Image-API.md) using the API
-
->Notice that the API implemented in the Stable Diffusion WebUI uses different endpoints from the OpenAI api, so you might need to adjust re-implement the API calls in your applications by changing the urls and endpoint names accordingly.
+  * Exercise 5: Experiment with [Human Pose Generation](./project/04-Generate-Pose.md) using the ControlNet to generate an image with a specify human pose
+  * Exercise 6: Generate a [QR Code Art](./project/05-Generate-QRCode.md) to a website using the ControlNet
 
 ## Next Steps
 
