@@ -18,7 +18,7 @@
 
    * Use `a young male, outside a restaurant, brown eyes` as the prompt and `ugly, disfigured, low quality, nsfw, bad, immature` as the negative prompt
 
-   ![txt2img settings](../project/images/image6.png)
+   ![txt2img settings](../project/images/txt2image.png)
 
 4. Use the following settings in the `Generation` tab:
 
@@ -32,7 +32,7 @@
 
    * CFG Scale: `7`
 
-   * ![generation settings](../project/images/image7.png)
+   * ![generation settings](../project/images/pose-generation.png)
 
 5. Configure ControlNet
 
@@ -50,7 +50,7 @@
 
       * ControlNet Model: `Control_v11p_sd15_openpose [cab727d4]`
 
-      ![controlnet](../project/images/image8.png)
+      ![configure controlnet](../project/images/configure-pose-control.png)
 
 6. Press the `Generate` button to view the result
 

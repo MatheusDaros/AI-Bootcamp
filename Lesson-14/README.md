@@ -153,7 +153,7 @@ ue to the random nature of the denoising diffusion process, it can be difficult 
 ## Generating Images with a ControlNet
 
 * Practical exercises
-  * Exercise 5: Experiment with [Human Pose Generation](./project/04-Generate-Pose.md) using the ControlNet to generate an image with a specify human pose
+  * Exercise 5: Experiment with [Human Pose Generation](./project/04-Generate-Pose.md) using the ControlNet to control the image generation process
   * Exercise 6: Generate a [QR Code Art](./project/05-Generate-QRCode.md) to a website using the ControlNet
 
 ## Next Steps
