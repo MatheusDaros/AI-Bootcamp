@@ -78,6 +78,18 @@ ue to the random nature of the denoising diffusion process, it can be difficult 
       * For objects, you can include more generalist terms like: duplicated, blurry, pixelated, low quality, out of frame, cropped
       * For faces, depending in the pose and the close-up, you can include negative prompts like: poorly rendered face, deformed, disfigured, long neck, ugly
       * For landscapes, you can include negative prompts like: blurry, pixelated, out of frame, cropped, text, watermark, low quality, poorly drawn
+* Adjusting [Attention/Emphasis](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Features#attentionemphasis)
+  * You can select specific words in your prompt to give more or less emphasis to them by surrounding these words with special characters
+    * The tokenizer of the model will understand these special characters as attention markers, and will adjust the probabilities of the words accordingly when processing the prompt
+    * Each model might use different special characters to adjust the attention, so it's important to check the documentation of the model you are using
+    * The SD models used by the WebUI have two kinds of special characters to adjust the attention: `()` and `[]`
+      * Using a `(word)` increases attention to word by a factor of `1.1`
+      * Using a `((word))` increases attention to word by a factor of `1.21` (it calculates `1.1 * 1.1`)
+      * Using a `[word]` decreases attention to word by a factor of `1.1`
+      * Using a `(word:1.5)` increases attention to word by a factor of `1.5`
+      * Using a `(word:0.25)` decreases attention to word by a factor of `4` (it calculates `1 / 4` attention, or `1 / 0.25` reduction)
+      * If you eventually need to use these characters inside a prompt, you can escape them with a backslash (`\`) symbol, like `\(word\)` or `\[word\]`
+    * Some other models may use different special characters, like `{}`, `++`, `--`, etc., so it's important to check the documentation of the model/tooling that you are using
 * Prompt examples
   * [Prompt Templates](https://github.com/Dalabad/stable-diffusion-prompt-templates) repository
   * [Prompt Presets](https://openart.ai/presets) from OpenArt
@@ -134,6 +146,14 @@ ue to the random nature of the denoising diffusion process, it can be difficult 
 * Practical exercises
   * Exercise 3: Experiment with [Human Pose Generation](./project/02-Generate-Pose.md) using the ControlNet to generate an image with a specify human pose
   * Exercise 4: Generate a [QR Code Art](./project/03-Generate-QRCode.md) to a website using the ControlNet
+
+## Generating Images with the API
+
+* Practical exercises
+  * Exercise 5: [Enable the API](./project/04-Enable-API.md)
+  * Exercise 6: Write a python script to [Generate Images](./project/05-Generate-Image-API.md) using the API
+
+>Notice that the API implemented in the Stable Diffusion WebUI uses different endpoints from the OpenAI api, so you might need to adjust re-implement the API calls in your applications by changing the urls and endpoint names accordingly.
 
 ## Next Steps
 
