@@ -169,6 +169,7 @@ By the end of this lesson, we'll explore various types of models and checkpoints
   * Exercise 2: [Generate a landscape picture](./project/01-Generate-Landscape.md) with a specific prompt and settings
   * Exercise 3: [Generate a portrait picture](./project/02-Generate-Portrait.md) and inpaint the generated face
   * Exercise 4: [Generate a picture from a sketch](./project/03-Generate-Sketch.md)
+  * Exercise 5: [Edit a picture using sketch](./project/04-Edit-Sketch.md)
 
 ## Using Model Checkpoints
 
