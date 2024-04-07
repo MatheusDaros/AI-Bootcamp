@@ -14,14 +14,12 @@ By the end of this lesson you should be well prepared to start ideating and plan
 ## Review of Lesson 15
 
 * Image generation techniques
-* Generating videos
 * Fine-tuning models
 * LoRAs and VAEs
 * Working with image datasets
 * Extracting text information from images
 * Computer Vision models
 * Using transformers for image processing
-* Using the Vision Process WebUI
 * Processing image detection and classification tasks
 
 ## Implementing Many AI Tasks in Applications

@@ -159,6 +159,5 @@ ue to the random nature of the denoising diffusion process, it can be difficult 
 ## Next Steps
 
 * Experimenting with more ControlNet features
-* Overview on video generation
 * Fine-tuning stable diffusion models
 * Introduction to Computer Vision
