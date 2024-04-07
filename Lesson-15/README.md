@@ -25,9 +25,9 @@ We're going to see an overview on how the same versatile Transformers architectu
   * Docs: [Git](https://git-scm.com/doc)
 * Install [Stable Diffusion WebUI](https://github.com/AUTOMATIC1111/stable-diffusion-webui) on your device and all the correct dependencies for your hardware
 * Install [Dreambooth](https://github.com/d8ahazard/sd_dreambooth_extension) extension in Stable Diffusion WebUI and all the correct dependencies
-* Download the [Full SD1.5 model](https://huggingface.co/runwayml/stable-diffusion-v1-5/resolve/main/v1-5-pruned.safetensors?download=true)
+  * (Optional) Download the [Full SD1.5 model](https://huggingface.co/runwayml/stable-diffusion-v1-5/resolve/main/v1-5-pruned.safetensors?download=true)
 * Install the [Transformers](https://huggingface.co/docs/transformers/main/en/installation) library on your environment
-* Install [Vision Process WebUI](https://github.com/isLinXu/vision-process-webui) on your device and all the correct dependencies for your hardware
+* Install the [Clip Interrogator Extension](https://github.com/pharmapsychotic/clip-interrogator-ext)
 
 ## Review of Lesson 14
 
