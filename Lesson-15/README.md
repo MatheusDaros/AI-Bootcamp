@@ -118,7 +118,7 @@ We're going to see an overview on how the same versatile Transformers architectu
       * These approaches are useful for scenarios where collecting large amounts of labeled data is challenging or expensive
 * Using the [Simple Open-Vocabulary Object Detection with Vision Transformers](https://arxiv.org/abs/2205.06230) (`OWL-ViT`) model with [Hugging Face Transformers](https://huggingface.co/docs/transformers/en/model_doc/owlvit)
 * Using the [CLIP](https://www.pinecone.io/learn/series/image-search/clip/) model with [Hugging Face Transformers](https://huggingface.co/docs/transformers/en/model_doc/clip#usage-tips-and-example)
-  * Running an `Image-to-Text` task with CLIP in [Google Colab](https://colab.research.google.com/drive/1tuoAC5F4sC7qid56Z0ap-stR3rwdk0ZV?usp=sharing)
+  * Interacting with CLIP in [Google Colab](https://colab.research.google.com/github/mlfoundations/open_clip/blob/master/docs/Interacting_with_open_clip.ipynb)
 * Running [Zero-Shot](https://huggingface.co/tasks/zero-shot-classification) tasks for [Image Classification](https://huggingface.co/tasks/zero-shot-image-classification) and [Object Detection](https://huggingface.co/tasks/zero-shot-object-detection) with Hugging Face Transformers
 
 ## Running Computer Vision Tasks with Hugging Face Transformers
