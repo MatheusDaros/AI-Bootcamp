@@ -22,6 +22,14 @@ By the end of this lesson you should be well prepared to start ideating and plan
 * Using transformers for image processing
 * Processing image detection and classification tasks
 
+## Using Stable Diffusion WebUI for Image Descriptions
+
+* The `PNG Info` tool
+* Installing and using the [Clip Interrogator Extension](https://github.com/pharmapsychotic/clip-interrogator-ext)
+
+* Practical exercise:
+  * Exploring the [img2text features](./project/00-Img2Text-Features.md) of the Stable Diffusion WebUI
+
 ## Implementing Many AI Tasks in Applications
 
 * Computer Vision for processing input image
@@ -30,10 +38,11 @@ By the end of this lesson you should be well prepared to start ideating and plan
 
 ## Integrating AI Functionalities
 
-* Create a new Next.js application
-* Add a [page](./project/00-Computer-Vision-Page.md) to upload images and process them with Computer Vision
-* Add a [page](./project/01-Chat-Page.md) to chat with a text generation model
-* Add a [page](./project/02-Image-Generation-Page.md) to generate images with an image generation model
+* Practical exercises:
+  * Create a new Next.js application
+  * Add a [page](./project/01-Computer-Vision-Page.md) to upload images and process them with Computer Vision
+  * Add a [page](./project/02-Chat-Page.md) to chat with a text generation model
+  * Add a [page](./project/03-Image-Generation-Page.md) to generate images with an image generation model
 
 ## Final project
 
