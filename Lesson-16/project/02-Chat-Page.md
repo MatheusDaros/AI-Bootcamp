@@ -109,7 +109,7 @@
 
    ```javascript
    function Home() {
-     const [messageHistory, setmessageHistory] = useState([""]);
+     const [messageHistory, setMessageHistory] = useState([""]);
      const [inputValue, setInputValue] = useState("");
      const [isLoading, setIsLoading] = useState(false);
      const [prompt, setPrompt] = useState([{}]);
@@ -121,7 +121,7 @@
    ```javascript
    const handleInputChange = (e) => {
      setInputValue(e.target.value);
-     setMessages([
+     setPrompt([
        {
          role: "system",
          content: "Tell a story according to what the user has said to you",
@@ -147,7 +147,7 @@
      const data = await response.json();
      console.log(prompt);
      const newContent = data.choices[0].message.content;
-     setmessageHistory((prevmessageHistory) => [
+     setMessageHistory((prevmessageHistory) => [
        ...prevmessageHistory,
        newContent,
      ]);
@@ -222,7 +222,7 @@
     import { useState } from "react";
 
     export default function Home() {
-      const [messageHistory, setmessageHistory] = useState([""]);
+      const [messageHistory, setMessageHistory] = useState([""]);
       const [inputValue, setInputValue] = useState("");
       const [isLoading, setIsLoading] = useState(false);
       const [prompt, setPrompt] = useState([{}]);
