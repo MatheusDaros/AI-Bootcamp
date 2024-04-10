@@ -142,10 +142,9 @@
        headers: {
          "Content-Type": "application/json",
        },
-       body: JSON.stringify({ prompt }),
+       body: JSON.stringify({ messages: prompt }),
      });
      const data = await response.json();
-     console.log(prompt);
      const newContent = data.choices[0].message.content;
      setMessageHistory((prevmessageHistory) => [
        ...prevmessageHistory,
@@ -249,7 +248,6 @@
           body: JSON.stringify({ prompt }),
         });
         const data = await response.json();
-        console.log(prompt);
         const newContent
     ```
 
