@@ -75,86 +75,88 @@
 
 ## Create Your Next.js Project
 
-1. Create your project:
+11. Create your project:
 
-   ```bash
-   npx create-next-app my-ai-app
-   ```
+```bash
+npx create-next-app my-ai-app
+```
 
-2. Choose all default options.
+12. Choose all default options.
 
-3. Navigate to the created folder:
+13. Navigate to the created folder:
 
-   ```bash
-   cd my-ai-app
-   ```
+```bash
+cd my-ai-app
+```
 
-4. Open the `global.css` file and import these modules at the top of the page:
+14. Open the `global.css` file and import these modules at the top of the page:
 
-   ```css
-   @tailwind base;
-   @tailwind components;
-   @tailwind utilities;
-   ```
+```css
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+```
 
-5. Open the `pages/index.tsx` file.
+15. Open the `pages/index.tsx` file.
 
-6. At the top of the file, import the `useState` hook:
+16. At the top of the file, import the `useState` hook:
 
-   ```javascript
-   import { useState } from "react";
-   ```
+```javascript
+import { useState } from "react";
+```
 
-7. Define the initial state of the variables we'll be using:
+17. Define the initial state of the variables we'll be using:
 
-   ```javascript
-   function Home() {
-     const [messageHistory, setMessageHistory] = useState([""]);
-     const [inputValue, setInputValue] = useState("");
-     const [isLoading, setIsLoading] = useState(false);
-     const [prompt, setPrompt] = useState([{}]);
-   }
-   ```
+```javascript
+export default function Home() {
+  const [messages, setMessages] = useState([
+    {
+      role: "system",
+      content: "Craft a narrative based on the user's input",
+    },
+  ]);
+  const [inputValue, setInputValue] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
+}
+```
 
-8. Write a function that updates the input value as the user types and updates the messages state accordingly:
+18. Write a function that updates the input value to whatever the user has typed in:
 
-   ```javascript
-   const handleInputChange = (e) => {
-     setInputValue(e.target.value);
-     setPrompt([
-       {
-         role: "system",
-         content: "Tell a story according to what the user has said to you",
-       },
-       { role: "user", content: e.target.value },
-     ]);
-   };
-   ```
+```javascript
+const handleInputChange = (e: any) => {
+  setInputValue(e.target.value);
+};
+```
 
-9. Write a function to generate text that will handle sending the user's message to the text generation webUI server:
+19. Write a function to generate text that will handle sending the user's message to the text generation webUI server:
 
-   ```javascript
-   const generateText = async () => {
-     setIsLoading(true);
-     setInputValue("");
-     const response = await fetch("http://127.0.0.1:5000/v1/chat/completions", {
-       method: "POST",
-       headers: {
-         "Content-Type": "application/json",
-       },
-       body: JSON.stringify({ messages: prompt }),
-     });
-     const data = await response.json();
-     const newContent = data.choices[0].message.content;
-     setMessageHistory((prevmessageHistory) => [
-       ...prevmessageHistory,
-       newContent,
-     ]);
-     setIsLoading(false);
-   };
-   ```
+```javascript
+const generateText = async () => {
+  setIsLoading(true);
+  setInputValue("");
+  setMessages((prevMessages) => [
+    ...prevMessages,
+    { role: "user", content: inputValue },
+  ]);
+  const userQueryData = [...messages, { role: "user", content: inputValue }];
+  const response = await fetch("http://127.0.0.1:5000/v1/chat/completions", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({ messages: userQueryData }),
+  });
+  const data = await response.json();
+  const newContent = data.choices[0].message.content;
+  setMessages((prevMessages) => [
+    ...prevMessages,
+    { role: "assistant", content: newContent },
+  ]);
+  setIsLoading(false);
+};
+```
 
-10. Return the JSX structure for the Home component:
+20. Return the JSX structure for the Home component:
 
     ```javascript
     return (
@@ -166,25 +168,25 @@
     );
     ```
 
-11. Inside the returned JSX, use a map method to iterate through `messageHistory` and display each message:
+21. Inside the returned JSX, use a map method to iterate through `messageHistory` and display each message:
 
     ```javascript
     return (
-      <div>
-        <div className="px-10">
-          {history.map((content, index) => (
-            <div className="py-5" key={index}>
-              {content}
+    <div>
+      <div className="px-10">
+        {messages.map(({ content, role }, index) =>
+          index > 0 ? (
+            <div className="py-5 mx-auto" key={index}>
+              <p className="font-bold">{role === "user" ? "You" : "AI"}</p>
+              <p> {content}</p>
             </div>
-          ))}
-        </div>
-        {/* Loading indicator */}
-        {/* Input field and button */}
+          ) : null
+        )}
       </div>
-    );
+    )
     ```
 
-12. Add an input field and a button for user interaction:
+22. Add an input field and a button for user interaction:
 
     ```javascript
     <div className="py-5 flex justify-center">
@@ -205,7 +207,7 @@
     </div>
     ```
 
-13. Conditionally render a loading indicator if `isLoading` is true above the button:
+23. Conditionally render a loading indicator if `isLoading` is true above the button added in the previous step:
 
     ```javascript
     {
@@ -213,42 +215,83 @@
     }
     ```
 
-14. If you followed all the steps correctly, your component should look like this:
+24. If you followed all the steps correctly, your component should look like this:
 
-    ```javascript
-    "use client";
+```javascript
+"use client";
 
-    import { useState } from "react";
+import { useState } from "react";
 
-    export default function Home() {
-      const [messageHistory, setMessageHistory] = useState([""]);
-      const [inputValue, setInputValue] = useState("");
-      const [isLoading, setIsLoading] = useState(false);
-      const [prompt, setPrompt] = useState([{}]);
+export default function Home() {
+  const [messages, setMessages] = useState([
+    {
+      role: "system",
+      content: "Craft a narrative based on the user's input",
+    },
+  ]);
+  const [inputValue, setInputValue] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
 
-      const handleInputChange = (e: any) => {
-        setInputValue(e.target.value);
-        setPrompt([
-          {
-            role: "system",
-            content: "Tell a story according to the what the user has said to you",
-          },
-          { role: "user", content: e.target.value },
-        ]);
-      };
+  const handleInputChange = (e: any) => {
+    setInputValue(e.target.value);
+  };
 
-      const generateText = async () => {
-        setIsLoading(true);
-        setInputValue("");
-        const response = await fetch("http://127.0.0.1:5000/v1/chat/completions", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({ prompt }),
-        });
-        const data = await response.json();
-        const newContent
-    ```
+  const generateText = async () => {
+    setIsLoading(true);
+    setInputValue("");
+    setMessages((prevMessages) => [
+      ...prevMessages,
+      { role: "user", content: inputValue },
+    ]);
+    const userQueryData = [...messages, { role: "user", content: inputValue }];
+    const response = await fetch("http://127.0.0.1:5000/v1/chat/completions", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ messages: userQueryData }),
+    });
+    const data = await response.json();
+    const newContent = data.choices[0].message.content;
+    setMessages((prevMessages) => [
+      ...prevMessages,
+      { role: "assistant", content: newContent },
+    ]);
+    setIsLoading(false);
+  };
 
-15. Now all that's left is for you to test how the AI will continue the story depending on what you say to it.
+  return (
+    <div>
+      <div className="px-10">
+        {messages.map(({ content, role }, index) =>
+          index > 0 ? (
+            <div className="py-5 mx-auto" key={index}>
+              <p className="font-bold">{role === "user" ? "You" : "AI"}</p>
+              <p> {content}</p>
+            </div>
+          ) : null
+        )}
+      </div>
+      {isLoading && <p className="flex justify-center pt-5">Loading...</p>}
+      <div className="py-5 flex justify-center">
+        <input
+          type="text"
+          value={inputValue}
+          onChange={handleInputChange}
+          className="bg-gray-100 p-2 mr-2 rounded shadow"
+          placeholder="Continue the story"
+        />
+        <button
+          disabled={!inputValue || isLoading}
+          className="bg-blue-500 p-2 text-white rounded shadow-xl disabled:bg-blue-500/20"
+          onClick={generateText}
+        >
+          Send
+        </button>
+      </div>
+    </div>
+  );
+}
+```
+
+25. Now all that's left is for you to test how the AI will continue the story depending on what you say to it.
