@@ -73,39 +73,25 @@
 
 10. The API is now running on the http://127.0.0.1:5000/v1/completions endpoint.
 
-## Create Your Next.js Project
+11. Create a new folder to hold our page layout and our logic.
 
-11. Create your project:
+- In the root of your project, find the `app` folder and create a new folder inside it named `text-generation`.
 
-```bash
-npx create-next-app my-ai-app
-```
+- Inside the `text-generation` folder create a `page.tsx` file and access it.
 
-12. Choose all default options.
-
-13. Navigate to the created folder:
-
-```bash
-cd my-ai-app
-```
-
-14. Open the `global.css` file and import these modules at the top of the page:
-
-```css
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-```
-
-15. Open the `pages/index.tsx` file.
-
-16. At the top of the file, import the `useState` hook:
+12. At the top of the file, import the `useState` hook:
 
 ```javascript
 import { useState } from "react";
 ```
 
-17. Define the initial state of the variables we'll be using:
+13. Define the initial state of the variables we'll be using:
+
+- Messages will be useful keep track of the conversation messages. It's an array of objects where each object represents a message in the conversation.
+
+- inputValue is a state variable that holds the current value of the input field where the user can type their message to continue the conversation.
+
+- isLoading controls whether a loading indicator should be displayed.
 
 ```javascript
 export default function Home() {
@@ -120,7 +106,7 @@ export default function Home() {
 }
 ```
 
-18. Write a function that updates the input value to whatever the user has typed in:
+14. Write a function that updates the input value to whatever the user has typed in:
 
 ```javascript
 const handleInputChange = (e: any) => {
@@ -128,7 +114,7 @@ const handleInputChange = (e: any) => {
 };
 ```
 
-19. Write a function to generate text that will handle sending the user's message to the text generation webUI server:
+15. Write a function that will handle sending the user's message to the text generation webUI server:
 
 ```javascript
 const generateText = async () => {
@@ -156,7 +142,7 @@ const generateText = async () => {
 };
 ```
 
-20. Return the JSX structure for the Home component:
+16. Return the JSX structure for the Home component:
 
     ```javascript
     return (
@@ -168,7 +154,7 @@ const generateText = async () => {
     );
     ```
 
-21. Inside the returned JSX, use a map method to iterate through `messageHistory` and display each message:
+17. Inside the returned JSX, use a map method to iterate through the `messages` and display each message:
 
     ```javascript
     return (
@@ -186,7 +172,7 @@ const generateText = async () => {
     )
     ```
 
-22. Add an input field and a button for user interaction:
+18. Add an input field and a button for user interaction:
 
     ```javascript
     <div className="py-5 flex justify-center">
@@ -207,7 +193,7 @@ const generateText = async () => {
     </div>
     ```
 
-23. Conditionally render a loading indicator if `isLoading` is true above the button added in the previous step:
+19. Conditionally render a loading indicator if `isLoading` is true above the button added in the previous step:
 
     ```javascript
     {
@@ -215,7 +201,7 @@ const generateText = async () => {
     }
     ```
 
-24. If you followed all the steps correctly, your component should look like this:
+20. If you followed all the steps correctly, your component should look like this:
 
 ```javascript
 "use client";
@@ -294,4 +280,4 @@ export default function Home() {
 }
 ```
 
-25. Now all that's left is for you to test how the AI will continue the story depending on what you say to it.
+21. Now all that's left is for you to test how the AI will continue the story depending on what you say to it.
